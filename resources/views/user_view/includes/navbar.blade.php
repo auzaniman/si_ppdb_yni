@@ -1,8 +1,8 @@
 <nav id="navbar_top" class="fixed-top navbar navbar-expand-lg p-lg-2">
   <div class="container-fluid me-lg-2">
-    <a class="navbar-brand d-none d-lg-block ms-lg-4" href="#">
+    <a class="navbar-brand d-none d-lg-block ms-lg-4" href="{{ route('home')}}">
       <img
-        src="assets/img/logo/logo.png"
+        src="{{ url ('frontend/assets/img/logo/logo.png')}}"
         class="me-lg-2"
         width="30"
         alt=""
@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="main_nav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link hvr-underline-from-center" href="#">HOME</a>
+          <a class="nav-link hvr-underline-from-center" href="">HOME</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -39,26 +39,26 @@
           <ul class="dropdown-menu">
             <li class="d-flex">
               <i class="fas fa-school"></i>
-              <a class="dropdown-item" href="#"> KBIT </a>
+              <a class="dropdown-item" href=""> KBIT </a>
             </li>
             <li class="d-flex">
               <i class="fas fa-thumbs-up"></i>
-              <a class="dropdown-item" href="#"> TKIT 1 </a>
+              <a class="dropdown-item" href=""> TKIT 1 </a>
             </li>
             <li class="d-flex">
               <i class="fas fa-thumbs-up"></i>
-              <a class="dropdown-item" href="#"> TKIT 2 </a>
+              <a class="dropdown-item" href=""> TKIT 2 </a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link hvr-underline-from-center" href="#">SDIT</a>
+          <a class="nav-link hvr-underline-from-center" href="">SDIT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hvr-underline-from-center" href="#">SMPIT</a>
+          <a class="nav-link hvr-underline-from-center" href="">SMPIT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hvr-underline-from-center" href="#">SMAIT</a>
+          <a class="nav-link hvr-underline-from-center" href="">SMAIT</a>
         </li>
         <!-- <li class="nav-item dropdown">
           <a
@@ -129,24 +129,24 @@
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle hvr-underline-from-center"
-            href="#"
+            href=""
             data-bs-toggle="dropdown"
           >
             PROGRAM
           </a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="#"> TKIT</a></li>
-            <li><a class="dropdown-item" href="#"> SDIT </a></li>
+            <li><a class="dropdown-item" href=""> TKIT</a></li>
+            <li><a class="dropdown-item" href=""> SDIT </a></li>
             <li>
-              <a class="dropdown-item" href="#"> SMPIT &raquo; </a>
-              <ul class="submenu submenu-left dropdown-menu">
+              <a class="dropdown-item" href=""> SMPIT </a>
+              {{-- <ul class="submenu submenu-left dropdown-menu">
                 <li><a class="dropdown-item" href="">Submenu item 1</a></li>
                 <li><a class="dropdown-item" href="">Submenu item 2</a></li>
                 <li><a class="dropdown-item" href="">Submenu item 3</a></li>
                 <li><a class="dropdown-item" href="">Submenu item 4</a></li>
-              </ul>
+              </ul> --}}
             </li>
-            <li><a class="dropdown-item" href="#"> SMAIT </a></li>
+            <li><a class="dropdown-item" href=""> SMAIT </a></li>
           </ul>
         </li>
       </ul>

@@ -345,7 +345,5 @@
 
     @include('user_view.components.script')
 
-    <!-- My JS -->
-    <script src="assets/js/app.js"></script>
   </body>
 </html>

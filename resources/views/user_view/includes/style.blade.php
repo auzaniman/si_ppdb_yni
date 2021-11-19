@@ -18,6 +18,9 @@
     href="{{ url ('frontend/assets/library/slick/slick-theme.css')}}"
   />
 
+  {{-- NICE SELECT --}}
+  <link rel="stylesheet" href="{{ url ('frontend/assets/library/jquery-nice-select/css/nice-select.css')}}">
+
   <!-- Font Awesome -->
   <script
     src="https://kit.fontawesome.com/b6726cd1f6.js"

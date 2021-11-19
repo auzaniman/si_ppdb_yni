@@ -23,7 +23,7 @@ Yayasan Nurul 'Ilmi
     <div class="carousel-item active">
       <div
         class="overlay-image"
-        style="background-image: url(assets/img/1.jpg)"
+        style="background-image: url(frontend/assets/img/1.jpg)"
       ></div>
       <div class="container">
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
@@ -32,19 +32,17 @@ Yayasan Nurul 'Ilmi
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
           assumenda.
         </p>
-        <button class="btn-custom border-0" data-hover="click-me">
-          <div>
-            <a href="" class="text-reset text-decoration-none"
-              >Sign up today</a
-            >
-          </div>
+        <button class="btn-custom border-0">
+          <a href="index-ppdb.html" class="text-decoration-none"
+            >Kunjungi Profil</a
+          >
         </button>
       </div>
     </div>
     <div class="carousel-item">
       <div
         class="overlay-image"
-        style="background-image: url(assets/img/2.jpg)"
+        style="background-image: url(frontend/assets/img/2.jpg)"
       ></div>
       <div class="container">
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
@@ -53,19 +51,17 @@ Yayasan Nurul 'Ilmi
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
           assumenda.
         </p>
-        <button class="border-0" data-hover="click-me">
-          <div>
-            <a href="" class="text-reset text-decoration-none"
-              >Sign up today</a
-            >
-          </div>
+        <button class="btn-custom border-0">
+          <a href="index-ppdb.html" class="text-decoration-none"
+            >Kunjungi Profil</a
+          >
         </button>
       </div>
     </div>
     <div class="carousel-item">
       <div
         class="overlay-image"
-        style="background-image: url(assets/img/3.jpg)"
+        style="background-image: url(frontend/assets/img/3.jpg)"
       ></div>
       <div class="container">
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
@@ -74,12 +70,10 @@ Yayasan Nurul 'Ilmi
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
           assumenda.
         </p>
-        <button class="border-0" data-hover="click-me">
-          <div>
-            <a href="" class="text-reset text-decoration-none"
-              >Sign up today</a
-            >
-          </div>
+        <button class="btn-custom border-0">
+          <a href="index-ppdb.html" class="text-decoration-none"
+            >Kunjungi Profil</a
+          >
         </button>
       </div>
     </div>
@@ -114,19 +108,17 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(assets/img/1.jpg)"
+            style="background-image: url(frontend/assets/img/1.jpg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SDIT <span class="ni-font">Nurul 'Ilmi</span>
             </div>
             <div class="unit-lokasi mt-2">Tenggarong</div>
             <div class="mt-auto">
-              <button class="btn-custom border-0" data-hover="click-me">
-                <div>
-                  <a href="" class="text-reset text-decoration-none"
-                    >Kunjungi Profil</a
-                  >
-                </div>
+              <button class="btn-custom border-0">
+                <a href="{{ route ('ppdb') }}" class="text-decoration-none"
+                  >Kunjungi Profil</a
+                >
               </button>
             </div>
           </div>
@@ -134,19 +126,17 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(assets/img/1.jpg)"
+            style="background-image: url(frontend/assets/img/1.jpg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SDIT <span class="ni-font">Nurul 'Ilmi</span>
             </div>
             <div class="unit-lokasi mt-2">Tenggarong</div>
             <div class="mt-auto">
-              <button class="btn-custom border-0" data-hover="click-me">
-                <div>
-                  <a href="" class="text-reset text-decoration-none"
-                    >Kunjungi Profil</a
-                  >
-                </div>
+              <button class="btn-custom border-0">
+                <a href="index-ppdb.html" class="text-decoration-none"
+                  >Kunjungi Profil</a
+                >
               </button>
             </div>
           </div>
@@ -154,19 +144,17 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(assets/img/1.jpg)"
+            style="background-image: url(frontend/assets/img/1.jpg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SDIT <span class="ni-font">Nurul 'Ilmi</span>
             </div>
             <div class="unit-lokasi mt-2">Tenggarong</div>
             <div class="mt-auto">
-              <button class="btn-custom border-0" data-hover="click-me">
-                <div>
-                  <a href="" class="text-reset text-decoration-none"
-                    >Kunjungi Profil</a
-                  >
-                </div>
+              <button class="btn-custom border-0">
+                <a href="index-ppdb.html" class="text-decoration-none"
+                  >Kunjungi Profil</a
+                >
               </button>
             </div>
           </div>
@@ -182,7 +170,7 @@ Yayasan Nurul 'Ilmi
   <div class="row align-items-center">
     <div class="col-lg-6">
       <img
-        src="assets/img/1.jpg"
+        src="{{ url ('frontend/assets/img/1.jpg')}}"
         class="img-fluid ms-0"
         alt="yayasan visi"
         width="400"
@@ -239,7 +227,7 @@ Yayasan Nurul 'Ilmi
   <div class="center mt-4">
     <div>
       <div class="card">
-        <img src="assets/img/1.jpg" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -251,7 +239,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="assets/img/2.jpg" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -263,7 +251,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="assets/img/3.jpg" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -275,7 +263,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="assets/img/2.jpg" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -287,7 +275,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="assets/img/1.jpg" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -320,7 +308,7 @@ Yayasan Nurul 'Ilmi
         </div>
         <div class="col-lg-6">
           <img
-            src="assets/img/face1.jpg"
+            src="{{ url ('frontend/assets/img/face1.jpg')}}"
             alt=""
             class="img-fluid ms-lg-5 ms-0"
           />
@@ -342,7 +330,7 @@ Yayasan Nurul 'Ilmi
         </div>
         <div class="col-lg-6">
           <img
-            src="assets/img/face1.jpg"
+            src="{{ url ('frontend/assets/img/face1.jpg')}}"
             alt=""
             class="img-fluid ms-lg-5 ms-0"
           />

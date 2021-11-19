@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user_view.pages.yayasan');
 })->name('home');
+
+Route::get('/form_pendaftaran', function () {
+    return view('user_view.pages.ppdb');
+})->name('ppdb');
+
+Route::get('/dashboard', function () {
+    return view('admin_view.pages.dashboard');
+})->name('dashboard');
+
+Route::get('/table_sma', function () {
+    return view('admin_view.pages.table_sma');
+})->name('smait');

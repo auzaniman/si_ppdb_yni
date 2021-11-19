@@ -25,10 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // MULTIDROPDOWN
-//	window.addEventListener("resize", function() {
-//		"use strict"; window.location.reload();
-//	});
-
 document.addEventListener("DOMContentLoaded", function () {
   /////// Prevent closing from click inside dropdown
   document.querySelectorAll(".dropdown-menu").forEach(function (element) {
@@ -70,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // end if innerWidth
 });
-// MULTIDROPDOWN END
 
 // CAROUSEL
 $(document).ready(function () {
@@ -114,10 +109,8 @@ $(document).ready(function () {
     ],
   });
 });
-// CAROUSEL END
 
 // TESTI
-//Testimoni
 $(document).ready(function () {
   $(".testi").slick({
     arrows: false,
@@ -139,4 +132,9 @@ $(document).ready(function () {
     fade: true,
     cssEase: "linear",
   });
+});
+
+// NICE SELECT
+$(document).ready(function () {
+  $("select").niceSelect();
 });

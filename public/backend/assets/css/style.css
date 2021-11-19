@@ -1,0 +1,8 @@
+/* TABLE */
+table tr td {
+  vertical-align: middle !important;
+}
+
+table tr th {
+  vertical-align: middle !important;
+}

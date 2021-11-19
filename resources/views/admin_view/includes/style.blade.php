@@ -17,3 +17,5 @@
   href="{{ url ('backend/assets/vendor/datatables/dataTables.bootstrap4.min.css')}}"
   rel="stylesheet"
 />
+
+<link rel="stylesheet" href="{{ url ('backend/assets/css/style.css')}}">

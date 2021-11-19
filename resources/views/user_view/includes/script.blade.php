@@ -18,3 +18,8 @@
     type="text/javascript"
     src="{{ url('frontend/assets/library/slick/slick.min.js')}}"
   ></script>
+
+  <script src="{{ url ('frontend/assets/library/jquery-nice-select/js/jquery.nice-select.js')}}"></script>
+
+  <!-- My JS -->
+    <script src="{{ url ('frontend/assets/js/app.js')}}"></script>
