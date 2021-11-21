@@ -1,4 +1,4 @@
-@extends('user_view.layouts.app')
+@extends('user_view.layouts.app_yayasan')
 
 @section('title')
 Yayasan Nurul 'Ilmi

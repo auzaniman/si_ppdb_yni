@@ -1,112 +1,149 @@
-<footer class="text-center text-lg-start">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-between p-3 social-media text-white"
-  >
-    <div class="mx-auto">
-      <a href="" class="text-white me-4 text-decoration-none">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="text-white me-4 text-decoration-none">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="text-white me-4 text-decoration-none">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="links">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold">
-            Yayasan <span class="ni-font">Nurul 'Ilmi</span>
-          </h6>
-          <hr class="mb-4 mt-0 d-inline-block mx-auto" />
-          <p><i class="fas fa-home me-3"></i> Koetai Kartanagara</p>
-          <p><i class="fas fa-envelope me-3"></i> yni@gmail.com/p></p>
-          <p><i class="fas fa-phone me-3"></i> + 62 xxxxxxxx</p>
-          <p><i class="fas fa-print me-3"></i> + 62 xxxxxxxx</p>
+<footer class="footer pt-5 mt-5">
+  <hr class="horizontal dark mb-5">
+  <div class="container">
+    <div class=" row">
+      <div class="col-md-3 mb-4 ms-auto">
+        <div>
+          <h6 class="text-gradient text-primary font-weight-bolder">Soft UI Design System</h6>
         </div>
-        <!-- Grid column -->
-
-        <div class="col-lg-2"></div>
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold">PROGRAM</h6>
-          <hr class="mb-4 mt-0 d-inline-block mx-auto" />
-          <p>
-            <a href="#!" class="">MDBootstrap</a>
-          </p>
-          <p>
-            <a href="#!" class="">MDWordPress</a>
-          </p>
-          <p>
-            <a href="#!" class="">BrandFlow</a>
-          </p>
-          <p>
-            <a href="#!" class="">Bootstrap Angular</a>
-          </p>
+        <div>
+          <h6 class="mt-3 mb-2 opacity-8">Social</h6>
+          <ul class="d-flex flex-row ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim/" target="_blank">
+                <i class="fab fa-facebook text-lg opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
+                <i class="fab fa-twitter text-lg opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
+                <i class="fab fa-dribbble text-lg opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
+                <i class="fab fa-github text-lg opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">
+                <i class="fab fa-youtube text-lg opacity-8"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold">GALERI</h6>
-          <hr class="mb-4 mt-0 d-inline-block mx-auto" />
-          <p>
-            <a href="#!" class="">Your Account</a>
-          </p>
-          <p>
-            <a href="#!" class="">Become an Affiliate</a>
-          </p>
-          <p>
-            <a href="#!" class="">Shipping Rates</a>
-          </p>
-          <p>
-            <a href="#!" class="">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold">UNIT USAHA</h6>
-          <hr class="mb-4 mt-0 d-inline-block mx-auto" />
-          <p>
-            <a href="#!" class="">Your Account</a>
-          </p>
-          <p>
-            <a href="#!" class="">Become an Affiliate</a>
-          </p>
-          <p>
-            <a href="#!" class="">Shipping Rates</a>
-          </p>
-          <p>
-            <a href="#!" class="">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-gradient text-primary text-sm">Company</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
+                Freebies
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
+                Premium Tools
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-gradient text-primary text-sm">Resources</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://iradesign.io/" target="_blank">
+                Illustrations
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
+                Bits & Snippets
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
+                Affiliate Program
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-gradient text-primary text-sm">Help & Support</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
+                Knowledge Center
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-soft-ui-footer" target="_blank">
+                Custom Development
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
+                Sponsorships
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+        <div>
+          <h6 class="text-gradient text-primary text-sm">Legal</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/terms" target="_blank">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/privacy" target="_blank">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
+                Licenses (EULA)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="text-center">
+          <p class="my-4 text-sm">
+            All rights reserved. Copyright © <script>
+              document.write(new Date().getFullYear())
+            </script> Soft UI Design System by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+          </p>
+        </div>
+      </div>
     </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-2 copyright">
-    © 2021 Copyright:
-    <a class="" href="#">Real-Engineer1453</a>
   </div>
-  <!-- Copyright -->
 </footer>
