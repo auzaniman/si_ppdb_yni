@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,14 +20,38 @@ Route::get('/', function () {
     return view('user_view.pages.yayasan');
 })->name('home');
 
+// Pendaftaran
 Route::get('/form_pendaftaran', function () {
     return view('user_view.pages.ppdb');
 })->name('ppdb');
 
-Route::get('/dashboard', function () {
-    return view('admin_view.pages.dashboard');
-})->name('dashboard');
+// Form
+Route::get('/form_smait', function () {
+    return view('user_view.pages.formulir.form_smait');
+})->name('ppdb_smait');
 
-Route::get('/table_sma', function () {
-    return view('admin_view.pages.table_sma');
-})->name('smait');
+Route::get('/form_smpit', function () {
+    return view('user_view.pages.formulir.form_smpit');
+})->name('ppdb_smpit');
+
+Route::get('/form_sdit', function () {
+    return view('user_view.pages.formulir.form_sdit');
+})->name('ppdb_sdit');
+
+// Admin
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+// Table
+Route::get('/table_smp', function () {
+  return view('admin_view.pages.table_smpit');
+})->name('smpit');
+
+Route::get('/table_sd', function () {
+  return view('admin_view.pages.table_sdit');
+})->name('sdit');
+
+Route::get('/student', [StudentController::class, 'smait'])->name('smait');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

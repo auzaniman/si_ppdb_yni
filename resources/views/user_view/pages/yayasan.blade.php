@@ -190,32 +190,59 @@ Yayasan Nurul 'Ilmi
 <!-- VISI MISI END -->
 
 <!-- PROGRAM -->
-<section class="container p-5 mt-4">
-  <div class="row mt-4">
-    <h2 class="text-center">PROGRAM</h2>
-  </div>
-  <div class="row text-center mt-4">
-    <div class="col-lg-4">
-      <i class="fas fa-school"></i>
-      <p>Bidang Pendidikan</p>
+<section class="program">
+  <div
+    class="content-2-2 container-xxl mx-auto p-0 position-relative"
+    style="font-family: 'Poppins', sans-serif">
+    <div class="text-center title-text">
+      <h1 class="text-title">3 Keys Benefit</h1>
+      <p class="text-caption" style="margin-left: 3rem; margin-right: 3rem">
+        You can easily manage your business with a powerful tools
+      </p>
     </div>
-    <div class="col-lg-4">
-      <i class="fas fa-school"></i>
-      <p>Bidang Sosial</p>
-    </div>
-    <div class="col-lg-4">
-      <i class="fas fa-school"></i>
-      <p>Bidang Usaha</p>
-    </div>
-  </div>
-  <div class="row text-center mt-5">
-    <div class="col-lg-6">
-      <i class="fas fa-school"></i>
-      <p>Bidang Kehumasan</p>
-    </div>
-    <div class="col-lg-6">
-      <i class="fas fa-school"></i>
-      <p>Bidang Religi</p>
+  
+    <div class="grid-padding text-center">
+      <div class="row">
+        <div class="col-lg-4 column">
+          <div class="icon">
+            <img
+              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-5.png"
+              alt=""
+            />
+          </div>
+          <h3 class="icon-title">Easy to Operate</h3>
+          <p class="icon-caption">
+            This can easily help you to<br />
+            grow up your business fast
+          </p>
+        </div>
+        <div class="col-lg-4 column">
+          <div class="icon">
+            <img
+              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-6.png"
+              alt=""
+            />
+          </div>
+          <h3 class="icon-title">Real-Time Analytic</h3>
+          <p class="icon-caption">
+            With real-time analytics, you<br />
+            can check data in real time
+          </p>
+        </div>
+        <div class="col-lg-4 column">
+          <div class="icon">
+            <img
+              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-7.png"
+              alt=""
+            />
+          </div>
+          <h3 class="icon-title">Very Full Secured</h3>
+          <p class="icon-caption">
+            With real-time analytics, we<br />
+            will guarantee your data
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

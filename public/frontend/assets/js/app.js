@@ -122,18 +122,6 @@ $(document).ready(function () {
   });
 });
 
-// ALUR PENDAFTARAN
-$(document).ready(function () {
-  $(".timeline-pendaftaran").slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: "linear",
-  });
-});
-
 // NICE SELECT
 $(document).ready(function () {
   $("select").niceSelect();

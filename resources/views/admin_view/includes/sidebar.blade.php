@@ -51,8 +51,8 @@
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Jenjang:</h6>
         <a class="collapse-item" href="{{route('smait')}}">SMAIT</a>
-        <a class="collapse-item" href="{{route('smait')}}">SMPIT</a>
-        <a class="collapse-item" href="{{route('smait')}}">SDIT</a>
+        <a class="collapse-item" href="{{route('smpit')}}">SMPIT</a>
+        <a class="collapse-item" href="{{route('sdit')}}">SDIT</a>
       </div>
     </div>
   </li>

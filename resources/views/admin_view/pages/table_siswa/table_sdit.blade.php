@@ -31,8 +31,12 @@ Table Data
           <thead>
             <tr>
               <th>Nama Siswa</th>
+              <th>NIK/NISN</th>
               <th>Asal Sekolah</th>
-              <th>Tinggal</th>
+              <th>Alamat</th>
+              <th>Status</th>
+              <th>Jurusan & Program</th>
+              <th>Status</th>
               <th>Jurusan & Program</th>
               <th>Status</th>
             </tr>
@@ -43,31 +47,35 @@ Table Data
                 Tiger Nixon
                 <button class="badge btn-success border-0" data-bs-toggle="modal" data-bs-target="#modalDetails">details</button>
               </td>
-              <!-- Modal -->
-              <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="modalDetailsLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalDetailsLabel">Modal title</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal END -->
               <td>SMPIT Nurul 'Ilmi</td>
               <td>Reguler</td>
               <td>IPA - Reguler</td>
               <td>Proses</td>
+              <td>IPA - Reguler</td>
+              <td>Proses</td>
+              <td>IPA - Reguler</td>
+              <td>Proses</td>
             </tr>
           </tbody>
+          <!-- Modal -->
+          <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="modalDetailsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalDetailsLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal END -->
         </table>
       </div>
     </div>
