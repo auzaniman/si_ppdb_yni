@@ -52,7 +52,7 @@
       </div>
       <div>
         <button class="btn-custom btn-red border-0">
-          <a href="{{ route('ppdb_sdit')}}" class="text-decoration-none"
+          <a href="{{ route('ppdb_sdit.create')}}" class="text-decoration-none"
             >Daftar</a
           >
         </button>
@@ -76,7 +76,7 @@
       </div>
       <div>
         <button class="btn-custom btn-blue border-0">
-          <a href="{{ route('ppdb_smpit')}}" class="text-decoration-none"
+          <a href="{{ route('ppdb_smpit.create')}}" class="text-decoration-none"
             >Daftar</a
           >
         </button>
@@ -101,7 +101,7 @@
       </div>
       <div>
         <button class="btn-custom btn-green border-0">
-          <a href="{{ route('ppdb_smait')}}" class="text-decoration-none"
+          <a href="{{ route('ppdb_smait.create')}}" class="text-decoration-none"
             >Daftar</a
           >
         </button>
@@ -126,7 +126,7 @@
       </p>
 
       {{-- Roadmap --}}
-      <div class="container">                      
+      <div class="container">
         <div class="row">
           <div class="col">
             <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">

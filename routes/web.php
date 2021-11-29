@@ -1,9 +1,14 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SMAITController;
+use App\Http\Controllers\SMPITController;
+use App\Http\Controllers\SDITController;
+use App\Http\Controllers\PPDBController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,42 +21,37 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Yayasan
 Route::get('/', function () {
     return view('user_view.pages.yayasan');
-})->name('home');
+  })->name('home');
 
-// Pendaftaran
-Route::get('/form_pendaftaran', function () {
-    return view('user_view.pages.ppdb');
-})->name('ppdb');
+// PPDB Home
+Route::get('/ppdb', [PPDBController::class, 'index'])->name('ppdb');
 
-// Form
-Route::get('/form_smait', function () {
-    return view('user_view.pages.formulir.form_smait');
-})->name('ppdb_smait');
+// PPDB Form
+Route::resource('ppdb_smait', SMAITController::class);
+Route::resource('ppdb_smpit', SMPITController::class);
+Route::resource('ppdb_sdit', SDITController::class);
 
-Route::get('/form_smpit', function () {
-    return view('user_view.pages.formulir.form_smpit');
-})->name('ppdb_smpit');
-
-Route::get('/form_sdit', function () {
-    return view('user_view.pages.formulir.form_sdit');
-})->name('ppdb_sdit');
+// Resource
+Route::resource('student', StudentController::class);
 
 // Admin
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::prefix('admin')
+->namespace('Admin')
+->middleware(['auth', 'admin'])
+->group(function() {
 
-// Table
-Route::get('/table_smp', function () {
-  return view('admin_view.pages.table_smpit');
-})->name('smpit');
+  // Dashboard
+  Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-Route::get('/table_sd', function () {
-  return view('admin_view.pages.table_sdit');
-})->name('sdit');
+  // Table
+  Route::get('/smait', [AdminController::class, 'smait'])->name('smait');
 
-Route::get('/student', [StudentController::class, 'smait'])->name('smait');
+  Route::get('/smpit', [AdminController::class, 'smpit'])->name('smpit');
+
+  Route::get('/sdit', [AdminController::class, 'sdit'])->name('sdit');
+});
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

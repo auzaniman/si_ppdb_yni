@@ -9,7 +9,7 @@ use App\Models\Department;
 use App\Models\Program;
 use Illuminate\Http\Request;
 
-class StudentController extends Controller
+class SMPITController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +28,19 @@ class StudentController extends Controller
      */
     public function create()
     {
+      $students = Student::all();
+      $schools = School::all();
+      $stays = Stay::all();
+      $departments = Department::all();
+      $programs = Program::all();
 
+      return view('user_view.pages.formulir.form_smpit', [
+        'students' => $students,
+        'schools' => $schools,
+        'stays' => $stays,
+        'departments' => $departments,
+        'programs' => $programs,
+        ]);
     }
 
     /**
@@ -39,29 +51,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-      $student = new Student();
 
-      $student->school_id = $request->school_id;
-      $student->stay_id = $request->stay_id;
-      $student->department_id = $request->department_id;
-      $student->program_id = $request->program_id;
-      $student->nama = $request->nama;
-      $student->ttl = $request->ttl;
-      $student->alamat = $request->alamat;
-      $student->asal_sekolah = $request->asal_sekolah;
-      $student->nisn = $request->nisn;
-      $student->nik = $request->nik;
-      $student->nama_ayah = $request->nama_ayah;
-      $student->nama_ibu = $request->nama_ibu;
-      $student->pekerjaan_ayah = $request->pekerjaan_ayah;
-      $student->pekerjaan_ibu = $request->pekerjaan_ibu;
-      $student->ukuran_baju = $request->ukuran_baju;
-      $student->hp_ortu = $request->hp_ortu;
-      $student->hp_siswa = $request->hp_siswa;
-
-      $student->save();
-
-      return redirect()->back()->with('status', 'Data Berhasil Ditambahkan');
     }
 
     /**

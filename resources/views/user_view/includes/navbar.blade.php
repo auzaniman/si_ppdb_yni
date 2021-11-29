@@ -15,8 +15,7 @@
       data-bs-toggle="collapse"
       data-bs-target="#main_nav"
       aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">
         <span class="divider"></span>
         <span class="divider2"></span>
@@ -60,72 +59,6 @@
         <li class="nav-item">
           <a class="nav-link hvr-underline-from-center" href="">SMAIT</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            data-bs-toggle="dropdown"
-          >
-            BID. PENDIDIKAN
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-            <li>
-              <a class="dropdown-item" href="#">
-                Dropdown item 2 &raquo;
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Submenu item 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Submenu item 2</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Submenu item 3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                Dropdown item 3 &raquo;
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 2</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 3</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 4</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"> Dropdown item 4 &raquo;</a>
-              <ul class="submenu dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 2</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 3</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another submenu 4</a>
-                </li>
-              </ul>
-            </li>
-            <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
-            <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
-          </ul>
-        </li> -->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle hvr-underline-from-center"
@@ -139,12 +72,6 @@
             <li><a class="dropdown-item" href=""> SDIT </a></li>
             <li>
               <a class="dropdown-item" href=""> SMPIT </a>
-              {{-- <ul class="submenu submenu-left dropdown-menu">
-                <li><a class="dropdown-item" href="">Submenu item 1</a></li>
-                <li><a class="dropdown-item" href="">Submenu item 2</a></li>
-                <li><a class="dropdown-item" href="">Submenu item 3</a></li>
-                <li><a class="dropdown-item" href="">Submenu item 4</a></li>
-              </ul> --}}
             </li>
             <li><a class="dropdown-item" href=""> SMAIT </a></li>
           </ul>

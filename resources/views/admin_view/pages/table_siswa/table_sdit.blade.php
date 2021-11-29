@@ -42,22 +42,23 @@ Table Data
             </tr>
           </thead>
           <tbody>
+            @forelse ($students as $student)
             <tr>
-              <td>
-                Tiger Nixon
-                <button class="badge btn-success border-0" data-bs-toggle="modal" data-bs-target="#modalDetails">details</button>
-              </td>
-              <td>SMPIT Nurul 'Ilmi</td>
-              <td>Reguler</td>
-              <td>IPA - Reguler</td>
-              <td>Proses</td>
-              <td>IPA - Reguler</td>
-              <td>Proses</td>
-              <td>IPA - Reguler</td>
-              <td>Proses</td>
+              <td>{{ $student->nama }}</td>
+              <td>{{ $student->nik }}/{{ $student->nisn }}</td>
+              <td>{{ $student->asal_sekolah }}</td>
+              <td>{{ $student->alamat }}</td>
+              <td>{{ $student->nama_ayah }}/{{ $student->pekerjaan_ayah }}</td>
+              <td>{{ $student->nama_ibu }}/{{ $student->pekerjaan_ibu }}</td>
+              <td>{{ $student->hp_siswa }}/{{ $student->hp_ortu }}</td>
+              <td>{{ $student->department->pilihan_jurusan }}-{{ $student->stay->pilihan_tinggal }}-{{ $student->program->pilihan_program }}</td>
+              <td>{{ $student->school->jenjang }}</td>
             </tr>
+            @empty
+
+            @endforelse
           </tbody>
-          <!-- Modal -->
+          {{-- <!-- Modal -->
           <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="modalDetailsLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -75,7 +76,7 @@ Table Data
               </div>
             </div>
           </div>
-          <!-- Modal END -->
+          <!-- Modal END --> --}}
         </table>
       </div>
     </div>

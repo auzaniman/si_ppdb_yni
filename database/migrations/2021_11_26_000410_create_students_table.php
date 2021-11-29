@@ -16,9 +16,9 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->foreignId('school_id');
-            $table->foreignId('stay_id');
-            $table->foreignId('department_id');
-            $table->foreignId('program_id');
+            $table->foreignId('stay_id')->nullable();
+            $table->foreignId('department_id')->nullable();
+            $table->foreignId('program_id')->nullable();
             $table->string('nama');
             $table->string('ttl');
             $table->string('alamat');

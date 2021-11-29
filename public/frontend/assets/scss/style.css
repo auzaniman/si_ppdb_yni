@@ -19,6 +19,11 @@
     rgba(124, 217, 184, 1) 7%,
     rgba(33, 209, 146, 1) 100%
   );
+  --dark-gradient-blue: linear-gradient(
+    90deg,
+    rgba(67, 89, 134, 1) 0%,
+    rgba(42, 56, 85, 1) 100%
+  );
   /* Fonts */
   --soft-white: #f0f0f0;
   --darken-blue: #293855;
@@ -77,6 +82,19 @@ q {
 
 .ni-font {
   font-family: "Revenue";
+}
+
+.bg-gradient-dark {
+  background: var(--dark-gradient-blue);
+}
+
+.py-7 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.border-radius {
+  border-radius: 1rem;
 }
 
 .bg-nav {
@@ -931,12 +949,12 @@ button:hover {
   border-radius: 10px;
 }
 
-.form-pendaftaran button {
+.form-pendaftaran .card-body button {
   margin-left: 7rem;
 }
 
 @media (max-width: 575.98px) {
-  .form-pendaftaran button {
+  .form-pendaftaran .card-body button {
     margin-left: 6rem;
   }
 }

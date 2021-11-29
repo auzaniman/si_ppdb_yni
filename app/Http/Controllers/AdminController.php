@@ -9,7 +9,7 @@ use App\Models\Department;
 use App\Models\Program;
 use Illuminate\Http\Request;
 
-class StudentController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +18,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-
+        return view('admin_view.pages.dashboard');
     }
 
     /**
@@ -28,7 +28,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -39,29 +39,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-      $student = new Student();
-
-      $student->school_id = $request->school_id;
-      $student->stay_id = $request->stay_id;
-      $student->department_id = $request->department_id;
-      $student->program_id = $request->program_id;
-      $student->nama = $request->nama;
-      $student->ttl = $request->ttl;
-      $student->alamat = $request->alamat;
-      $student->asal_sekolah = $request->asal_sekolah;
-      $student->nisn = $request->nisn;
-      $student->nik = $request->nik;
-      $student->nama_ayah = $request->nama_ayah;
-      $student->nama_ibu = $request->nama_ibu;
-      $student->pekerjaan_ayah = $request->pekerjaan_ayah;
-      $student->pekerjaan_ibu = $request->pekerjaan_ibu;
-      $student->ukuran_baju = $request->ukuran_baju;
-      $student->hp_ortu = $request->hp_ortu;
-      $student->hp_siswa = $request->hp_siswa;
-
-      $student->save();
-
-      return redirect()->back()->with('status', 'Data Berhasil Ditambahkan');
+      //
     }
 
     /**
@@ -107,5 +85,59 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         //
+    }
+
+    // Table SMA
+    public function smait()
+    {
+      $students = Student::where('school_id', '6')->get();
+      $schools = School::all();
+      $stays = Stay::all();
+      $departments = Department::all();
+      $programs = Program::all();
+
+      return view('admin_view.pages.table_siswa.table_sma', [
+        'students' => $students,
+        'schools' => $schools,
+        'stays' => $stays,
+        'departments' => $departments,
+        'programs' => $programs,
+        ]);
+    }
+
+    // Table SMP
+    public function smpit()
+    {
+      $students = Student::where('school_id', '5')->get();
+      $schools = School::all();
+      $stays = Stay::all();
+      $departments = Department::all();
+      $programs = Program::all();
+
+      return view('admin_view.pages.table_siswa.table_smpit', [
+        'students' => $students,
+        'schools' => $schools,
+        'stays' => $stays,
+        'departments' => $departments,
+        'programs' => $programs,
+        ]);
+    }
+
+    // Table SD
+    public function sdit()
+    {
+      $students = Student::where('school_id', '4')->get();
+      $schools = School::all();
+      $stays = Stay::all();
+      $departments = Department::all();
+      $programs = Program::all();
+
+      return view('admin_view.pages.table_siswa.table_sdit', [
+        'students' => $students,
+        'schools' => $schools,
+        'stays' => $stays,
+        'departments' => $departments,
+        'programs' => $programs,
+        ]);
     }
 }

@@ -60,7 +60,23 @@
         <li class="nav-item">
           <a class="nav-link hvr-underline-from-center" href="">SMAIT</a>
         </li>
-        
+
+        @guest
+        <li class="nav-item">
+          <form>
+            <button class="btn btn-primary nav-link hvr-underline-from-center" onclick="event.preventDefault(); location.href='{{ url('login')}}';" type="button">Login</button>
+          </form>
+        </li>
+        @endguest
+
+        @auth
+        <li class="nav-item">
+          <form action="{{ url('logout') }}" method="POST">
+            @csrf
+            <button class="btn btn-primary nav-link hvr-underline-from-center" type="submit">Logout</button>
+          </form>
+        </li>
+        @endauth
       </ul>
     </div>
     <!-- navbar-collapse.// -->
