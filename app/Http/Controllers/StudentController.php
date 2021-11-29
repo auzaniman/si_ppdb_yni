@@ -61,7 +61,10 @@ class StudentController extends Controller
 
       $student->save();
 
-      return redirect()->back()->with('status', 'Data Berhasil Ditambahkan');
+      return redirect()->back()->with([
+        'message' => 'Pendaftaran Berhasil',
+        'status' => 'Success'
+      ]);
     }
 
     /**

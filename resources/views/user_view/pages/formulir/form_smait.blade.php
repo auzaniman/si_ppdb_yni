@@ -14,9 +14,7 @@
         PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
-        Using a series of utilities, you can create this jumbotron, just
-        like the one in previous versions of Bootstrap. Check out the
-        examples below for how you can remix and restyle it to your liking.
+        Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
       </p>
       <button class="btn-custom border-0">
         <a href="{{ route('dashboard')}}" class="text-decoration-none"
@@ -57,6 +55,16 @@
 @endguest
 
 @auth
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
     <form action="{{ route('student.store') }}" method="POST">
@@ -88,8 +96,11 @@
                 type="text"
                 id="nama"
                 name="nama"
-                value=""
+                value="{{ old('nama')}}"
               />
+              @error('nama')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -102,8 +113,11 @@
                 type="text"
                 id="ttl"
                 name="ttl"
-                value=""
+                value="{{ old('ttl') }}"
               />
+              @error('ttl')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -116,8 +130,11 @@
                 type="text"
                 id="alamat"
                 name="alamat"
-                value=""
+                value="{{ old('alamat') }}"
               />
+              @error('alamat')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -130,8 +147,11 @@
                 type="text"
                 id="asal_sekolah"
                 name="asal_sekolah"
-                value=""
+                value="{{ old('asal_sekolah') }}"
               />
+              @error('asal_sekolah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -144,8 +164,11 @@
                 type="text"
                 id="nik"
                 name="nik"
-                value=""
+                value="{{ old('nik') }}"
               />
+              @error('nik')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -158,8 +181,11 @@
                 type="text"
                 id="nisn"
                 name="nisn"
-                value=""
+                value="{{ old('nisn') }}"
               />
+              @error('nisn')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -172,8 +198,11 @@
                 type="text"
                 id="nama_ayah"
                 name="nama_ayah"
-                value=""
+                value="{{ old('nama_ayah') }}"
               />
+              @error('nama_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -186,8 +215,11 @@
                 type="text"
                 id="pekerjaan_ayah"
                 name="pekerjaan_ayah"
-                value=""
+                value="{{ old('pekerjaan_ayah') }}"
               />
+              @error('pekerjaan_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -200,8 +232,11 @@
                 type="text"
                 id="nama_ibu"
                 name="nama_ibu"
-                value=""
+                value="{{ old('nama_ibu') }}"
               />
+              @error('nama_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -214,8 +249,11 @@
                 type="text"
                 id="pekerjaan_ibu"
                 name="pekerjaan_ibu"
-                value=""
+                value="{{ old('pekerjaan_ibu') }}"
               />
+              @error('pekerjaan_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -228,8 +266,11 @@
                 type="text"
                 id="ukuran_baju"
                 name="ukuran_baju"
-                value=""
+                value="{{ old('ukuran_baju') }}"
               />
+              @error('ukuran_baju')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -242,8 +283,11 @@
                 type="text"
                 id="hp_siswa"
                 name="hp_siswa"
-                value=""
+                value="{{ old('hp_siswa') }}"
               />
+              @error('hp_siswa')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -256,8 +300,11 @@
                 type="text"
                 id="hp_ortu"
                 name="hp_ortu"
-                value=""
+                value="{{ old('hp_ortu') }}"
               />
+              @error('hp_ortu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>

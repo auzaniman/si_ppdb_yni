@@ -52,14 +52,40 @@
 @endguest
 
 @auth
+@auth
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
-    <form action="" method="POST">
+    <form action="{{ route('student.store') }}" method="POST">
       @csrf
       <div class="card-body">
         <h5 class="card-title mb-2">Pendaftaran untuk SMAIT</h5>
         <h6 class="information">Silahkan isi formulir pendaftaran</h6>
         <div class="row mt-3">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="school_id">Pilihan Sekolah/label>
+              <select name="school_id" class="form-control wide mt-0 mb-2">
+                <option data-display="Pilih">-</option>
+                @foreach ($schools as $school)
+                <option value="{{ $school->id }}">
+                {{ $school->jenjang }}
+                </option>
+                @endforeach
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
               <label for="nama">Nama Siswa</label>
@@ -68,8 +94,11 @@
                 type="text"
                 id="nama"
                 name="nama"
-                value=""
+                value="{{ old('nama')}}"
               />
+              @error('nama')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -82,8 +111,11 @@
                 type="text"
                 id="ttl"
                 name="ttl"
-                value=""
+                value="{{ old('ttl') }}"
               />
+              @error('ttl')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -96,8 +128,11 @@
                 type="text"
                 id="alamat"
                 name="alamat"
-                value=""
+                value="{{ old('alamat') }}"
               />
+              @error('alamat')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -110,8 +145,11 @@
                 type="text"
                 id="asal_sekolah"
                 name="asal_sekolah"
-                value=""
+                value="{{ old('asal_sekolah') }}"
               />
+              @error('asal_sekolah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -124,8 +162,11 @@
                 type="text"
                 id="nik"
                 name="nik"
-                value=""
+                value="{{ old('nik') }}"
               />
+              @error('nik')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -138,8 +179,11 @@
                 type="text"
                 id="nisn"
                 name="nisn"
-                value=""
+                value="{{ old('nisn') }}"
               />
+              @error('nisn')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -152,8 +196,11 @@
                 type="text"
                 id="nama_ayah"
                 name="nama_ayah"
-                value=""
+                value="{{ old('nama_ayah') }}"
               />
+              @error('nama_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -166,8 +213,11 @@
                 type="text"
                 id="pekerjaan_ayah"
                 name="pekerjaan_ayah"
-                value=""
+                value="{{ old('pekerjaan_ayah') }}"
               />
+              @error('pekerjaan_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -180,8 +230,11 @@
                 type="text"
                 id="nama_ibu"
                 name="nama_ibu"
-                value=""
+                value="{{ old('nama_ibu') }}"
               />
+              @error('nama_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -194,8 +247,11 @@
                 type="text"
                 id="pekerjaan_ibu"
                 name="pekerjaan_ibu"
-                value=""
+                value="{{ old('pekerjaan_ibu') }}"
               />
+              @error('pekerjaan_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -208,8 +264,11 @@
                 type="text"
                 id="ukuran_baju"
                 name="ukuran_baju"
-                value=""
+                value="{{ old('ukuran_baju') }}"
               />
+              @error('ukuran_baju')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -222,8 +281,11 @@
                 type="text"
                 id="hp_siswa"
                 name="hp_siswa"
-                value=""
+                value="{{ old('hp_siswa') }}"
               />
+              @error('hp_siswa')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
@@ -236,19 +298,25 @@
                 type="text"
                 id="hp_ortu"
                 name="hp_ortu"
-                value=""
+                value="{{ old('hp_ortu') }}"
               />
+              @error('hp_ortu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="pilihan_tinggal">Pilihan Tinggal</label>
-              <select name="pilihan_tinggal" class="form-control wide mt-0 mb-2">
+              <label for="stay_id">Pilihan Tinggal</label>
+              <select name="stay_id" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
-                <option value="Asrama">Asrama</option>
-                <option value="Reguler">Reguler</option>
+                @foreach ($stays as $stay)
+                <option value="{{ $stay->id }}">
+                {{ $stay->pilihan_tinggal }}
+                </option>
+                @endforeach
               </select>
             </div>
           </div>
@@ -256,11 +324,14 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="pilihan_jurusan">Jurusan</label>
-              <select name="pilihan_jurusan" class="form-control wide mt-0 mb-2">
+              <label for="department_id">Pilihan Jurusan</label>
+              <select name="department_id" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
-                <option value="IPA">IPA</option>
-                <option value="IPS">IPS</option>
+                @foreach ($departments as $department)
+                <option value="{{ $department->id }}">
+                {{ $department->pilihan_jurusan }}
+                </option>
+                @endforeach
               </select>
             </div>
           </div>
@@ -268,29 +339,32 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="pilihan_program">Jurusan Program</label>
-              <select name="pilihan_program" class="form-control wide mt-0">
-                <option data-display="Pilih"></option>
-                <option value="Reguler">Reguler</option>
-                <option value="Tahfidz">Tahfidz</option>
+              <label for="program_id">Pilihan Program</label>
+              <select name="program_id" class="form-control wide mt-0 mb-2">
+                <option data-display="Pilih">-</option>
+                @foreach ($programs as $program)
+                <option value="{{ $program->id }}">
+                {{ $program->pilihan_program }}
+                </option>
+                @endforeach
               </select>
             </div>
           </div>
         </div>
-
         <div class="d-flex flex-column text-center px-5 mt-3 mb-3">
           <small class="agree-text"
             >Dengan mengisi formulir anda sudah masuk dalam daftar
             konfirmasi</small
           >
         </div>
-        <button class="btn-custom border-0">
-            <a href="{{ route ('dashboard')}}" class="text-decoration-none">Kirim</a>
+        <button class="btn-custom border-0" type="submit">
+            <a class="text-decoration-none">Kirim</a>
         </button>
       </div>
     </form>
   </div>
 </div>
+@endauth
 @endauth
 <!-- FORM PENDAFTARAN END -->
 @endsection

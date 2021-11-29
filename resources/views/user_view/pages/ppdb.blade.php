@@ -14,13 +14,11 @@
         PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
-        Using a series of utilities, you can create this jumbotron, just
-        like the one in previous versions of Bootstrap. Check out the
-        examples below for how you can remix and restyle it to your liking.
+        Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
       </p>
       <button class="btn-custom border-0">
-        <a href="{{ route('dashboard')}}" class="text-decoration-none"
-          >Kunjungi Profil</a
+        <a href="#daftar_sekolah" class="text-decoration-none"
+          >Daftar Sekarang</a
         >
       </button>
     </div>
@@ -29,7 +27,7 @@
 <!-- JUMBOTRON END -->
 
 <!-- UNIT -->
-<section class="unit-pendaftaran container p-lg-5 mt-4">
+<section class="unit-pendaftaran container p-lg-5 mt-4" id="daftar_sekolah">
   <div class="row mt-4">
     <h2 class="text-center mb-lg-4">PENDAFTARAN SEKOLAH</h2>
   </div>
@@ -112,7 +110,7 @@
 <!-- UNIT END -->
 
 <!-- ALUR PENDAFTARAN -->
-<section class="alur-pendaftaran p-lg-5">
+<section class="alur-pendaftaran p-lg-5" id="alur">
   <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5 mt-lg-5 text-center">
       <h1 class="display-5 fw-bold">Alur Pendaftaran</h1>
@@ -181,7 +179,7 @@
   </div>
 </section>
 
-<section class="wrapper-timeline">
+<section class="wrapper-timeline" id="timeline">
   <div id="jadwal" class="content-area-l5-2">
     <div class="container">
       <div

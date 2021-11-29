@@ -65,7 +65,7 @@
             href=""
             data-bs-toggle="dropdown"
           >
-            PROGRAM
+            Program
           </a>
           <ul class="dropdown-menu dropdown-menu-right">
             <li><a class="dropdown-item" href=""> TKIT</a></li>

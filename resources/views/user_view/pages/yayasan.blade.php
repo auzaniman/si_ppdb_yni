@@ -29,12 +29,11 @@ Yayasan Nurul 'Ilmi
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
         <h1>Koetai Kartanagara</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-          assumenda.
+          Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
         </p>
         <button class="btn-custom border-0">
-          <a href="index-ppdb.html" class="text-decoration-none"
-            >Kunjungi Profil</a
+          <a href="#unit_sekolah" class="text-decoration-none"
+            >Unit Sekolah</a
           >
         </button>
       </div>
@@ -48,12 +47,11 @@ Yayasan Nurul 'Ilmi
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
         <h1>Koetai Kartanagara</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-          assumenda.
+          Menjadi taman bermain dan belajar yang menyenangkan dengan pembiasaan nilai-nilai islami.
         </p>
         <button class="btn-custom border-0">
-          <a href="index-ppdb.html" class="text-decoration-none"
-            >Kunjungi Profil</a
+          <a href="#unit_sekolah" class="text-decoration-none"
+            >Unit Sekolah</a
           >
         </button>
       </div>
@@ -67,12 +65,11 @@ Yayasan Nurul 'Ilmi
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
         <h1>Koetai Kartanagara</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-          assumenda.
+          Terwujudnya Sekolah Islam Terpadu yang Ungugl, Bersih dan Berkarakter berlandaskan IMTAQ dan IPTEK.
         </p>
         <button class="btn-custom border-0">
-          <a href="index-ppdb.html" class="text-decoration-none"
-            >Kunjungi Profil</a
+          <a href="#unit_sekolah" class="text-decoration-none"
+            >Unit Sekolah</a
           >
         </button>
       </div>
@@ -100,7 +97,7 @@ Yayasan Nurul 'Ilmi
 <!-- HERO END -->
 
 <!-- UNIT SEKOLAH -->
-<section class="pt-5 mt-5">
+<section class="pt-5 mt-5" id="unit_sekolah">
   <h2 class="text-center mt-4">UNIT SEKOLAH</h2>
   <section class="section-popular-content mt-5 pt-3">
     <div class="container">
@@ -126,15 +123,15 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(frontend/assets/img/1.jpg)"
+            style="background-image: url(frontend/assets/img/2.jpg)"
           >
             <div class="unit-title mt-4 fw-bold">
-              SDIT <span class="ni-font">Nurul 'Ilmi</span>
+              SMPIT <span class="ni-font">Nurul 'Ilmi</span>
             </div>
             <div class="unit-lokasi mt-2">Tenggarong</div>
             <div class="mt-auto">
               <button class="btn-custom border-0">
-                <a href="index-ppdb.html" class="text-decoration-none"
+                <a href="{{ route ('ppdb') }}" class="text-decoration-none"
                   >Kunjungi Profil</a
                 >
               </button>
@@ -144,15 +141,15 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(frontend/assets/img/1.jpg)"
+            style="background-image: url(frontend/assets/img/3.jpg)"
           >
             <div class="unit-title mt-4 fw-bold">
-              SDIT <span class="ni-font">Nurul 'Ilmi</span>
+              SMAIT <span class="ni-font">Nurul 'Ilmi</span>
             </div>
             <div class="unit-lokasi mt-2">Tenggarong</div>
             <div class="mt-auto">
               <button class="btn-custom border-0">
-                <a href="index-ppdb.html" class="text-decoration-none"
+                <a href="{{ route ('ppdb') }}" class="text-decoration-none"
                   >Kunjungi Profil</a
                 >
               </button>
@@ -166,7 +163,7 @@ Yayasan Nurul 'Ilmi
 <!-- UNIT SEKOLAH END -->
 
 <!-- VISI MISI -->
-<section class="visi-misi container p-lg-5 p-4 mt-lg-5 mt-3">
+<section class="visi-misi container p-lg-5 p-4 mt-lg-5 mt-3" id="visi_misi">
   <div class="row align-items-center">
     <div class="col-lg-6">
       <img
@@ -190,17 +187,17 @@ Yayasan Nurul 'Ilmi
 <!-- VISI MISI END -->
 
 <!-- PROGRAM -->
-<section class="program">
+<section class="program" id="program_sekolah">
   <div
     class="content-2-2 container-xxl mx-auto p-0 position-relative"
     style="font-family: 'Poppins', sans-serif">
     <div class="text-center title-text">
-      <h1 class="text-title">3 Keys Benefit</h1>
+      <h1 class="text-title">3 Nilai Nurul Ilmi</h1>
       <p class="text-caption" style="margin-left: 3rem; margin-right: 3rem">
         You can easily manage your business with a powerful tools
       </p>
     </div>
-  
+
     <div class="grid-padding text-center">
       <div class="row">
         <div class="col-lg-4 column">
@@ -249,7 +246,7 @@ Yayasan Nurul 'Ilmi
 <!-- PROGRAM END -->
 
 <!-- KABAR BERITA -->
-<section class="wrapper-kabar-berita">
+<section class="wrapper-kabar-berita" id="kabar_berita">
   <h2 class="text-center">KABAR BERITA</h2>
   <div class="center mt-4">
     <div>
@@ -317,7 +314,7 @@ Yayasan Nurul 'Ilmi
 <!-- KABAR BERITA END -->
 
 <!-- TESTI SAMBUTAN -->
-<section class="wrapper-testimoni mt-lg-5 mt-3 p-lg-5 p-2">
+<section class="wrapper-testimoni mt-lg-5 mt-3 p-lg-5 p-2" id="testi">
   <h2 class="text-center">SAMBUTAN DAN TESTIMONI</h2>
   <div class="testi">
     <div>

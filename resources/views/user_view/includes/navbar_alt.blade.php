@@ -26,39 +26,16 @@
     <div class="collapse navbar-collapse" id="main_nav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link hvr-underline-from-center" href="">HOME</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle hvr-underline-from-center"
-            href="#"
-            data-bs-toggle="dropdown"
-          >
-            PAUD
-          </a>
-          <ul class="dropdown-menu">
-            <li class="d-flex">
-              <i class="fas fa-school"></i>
-              <a class="dropdown-item" href=""> KBIT </a>
-            </li>
-            <li class="d-flex">
-              <i class="fas fa-thumbs-up"></i>
-              <a class="dropdown-item" href=""> TKIT 1 </a>
-            </li>
-            <li class="d-flex">
-              <i class="fas fa-thumbs-up"></i>
-              <a class="dropdown-item" href=""> TKIT 2 </a>
-            </li>
-          </ul>
+          <a class="nav-link hvr-underline-from-center" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hvr-underline-from-center" href="">SDIT</a>
+          <a class="nav-link hvr-underline-from-center" href="#daftar_sekolah">Unit Sekolah</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hvr-underline-from-center" href="">SMPIT</a>
+          <a class="nav-link hvr-underline-from-center" href="#alur">Alur Pendaftaran</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hvr-underline-from-center" href="">SMAIT</a>
+          <a class="nav-link hvr-underline-from-center" href="#timeline">Timeline</a>
         </li>
 
         @guest
