@@ -63,6 +63,12 @@
 </div>
 @endif
 
+@if (session('status'))
+<div class="alert alert-success" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
     <form action="{{ route('student.store') }}" method="POST">
@@ -73,7 +79,7 @@
         <div class="row mt-3">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="school_id">Pilihan Sekolah/label>
+              <label for="school_id">Pilihan Sekolah</label>
               <select name="school_id" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
                 @foreach ($schools as $school)

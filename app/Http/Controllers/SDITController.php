@@ -34,7 +34,7 @@ class SDITController extends Controller
       $departments = Department::all();
       $programs = Program::all();
 
-      return view('user_view.pages.formulir.form_sdit', [
+      return view('user_view.pages.ppdb.form_sdit', [
         'students' => $students,
         'schools' => $schools,
         'stays' => $stays,

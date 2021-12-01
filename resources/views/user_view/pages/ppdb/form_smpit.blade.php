@@ -14,7 +14,9 @@
         PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
-        Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
+        Using a series of utilities, you can create this jumbotron, just
+        like the one in previous versions of Bootstrap. Check out the
+        examples below for how you can remix and restyle it to your liking.
       </p>
       <button class="btn-custom border-0">
         <a href="{{ route('dashboard')}}" class="text-decoration-none"
@@ -27,11 +29,6 @@
 <!-- JUMBOTRON END -->
 
 <!-- FORM PENDAFTARAN -->
-<section class="form-pendaftaran">
-  <h2 class="text-center mt-lg-5 text-uppercase pt-5">
-    Formulir Pendaftaran Online
-  </h2>
-
 @guest
 <section class="py-2 cta-cr" id="download-soft-ui">
   <div class="bg-gradient-dark position-relative m-3 border-radius overflow-hidden">
@@ -41,7 +38,7 @@
         <div class="col-md-7 mx-auto text-center">
           <h3 class="text-white mb-0">Jadi Bagian Keluarga Nurul 'Ilmi</h3>
           <h3 class="text-warning text-gradient mb-4">Tak kenal maka tak sayang.. Tak sayang maka tak berkembang</h3>
-          <p class="text-white mb-5">Kenali lebih dalam sekolah Nurul 'Ilmi. Ayo buat akun terlebih dahulu untuk melanjutkan mendaftar</p>
+          <p class="text-white mb-5">Kenali lebih dalam sekolah Nurul 'Ilmi. Ayo Login untuk melanjutkan mendaftar</p>
           <button class="btn-custom border-0" onclick="event.preventDefault(); location.href='{{ url('register')}}';" type="button">
               <a class="text-decoration-none"
                 >Buat Akun</a
@@ -65,6 +62,12 @@
 </div>
 @endif
 
+@if (session('status'))
+<div class="alert alert-success" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
     <form action="{{ route('student.store') }}" method="POST">
@@ -75,7 +78,7 @@
         <div class="row mt-3">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="school_id">Pilihan Sekolah/label>
+              <label for="school_id">Pilihan Sekolah</label>
               <select name="school_id" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
                 @foreach ($schools as $school)
@@ -367,6 +370,5 @@
   </div>
 </div>
 @endauth
-</section>
 <!-- FORM PENDAFTARAN END -->
 @endsection

@@ -34,7 +34,7 @@ class SMAITController extends Controller
       $departments = Department::all();
       $programs = Program::all();
 
-      return view('user_view.pages.formulir.form_smait', [
+      return view('user_view.pages.ppdb.form_smait', [
         'students' => $students,
         'schools' => $schools,
         'stays' => $stays,

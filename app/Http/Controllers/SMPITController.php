@@ -34,7 +34,7 @@ class SMPITController extends Controller
       $departments = Department::all();
       $programs = Program::all();
 
-      return view('user_view.pages.formulir.form_smpit', [
+      return view('user_view.pages.ppdb.form_smpit', [
         'students' => $students,
         'schools' => $schools,
         'stays' => $stays,

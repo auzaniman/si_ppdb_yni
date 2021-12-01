@@ -13,6 +13,6 @@ class PPDBController extends Controller
      */
     public function index()
     {
-        return view('user_view.pages.ppdb');
+        return view('user_view.pages.ppdb.ppdb');
     }
 }
