@@ -29,6 +29,10 @@
 <!-- JUMBOTRON END -->
 
 <!-- FORM PENDAFTARAN -->
+<section class="form-pendaftaran">
+  <h2 class="text-center mt-lg-5 text-uppercase pt-5">
+    Formulir Pendaftaran Online
+  </h2>
 @guest
 <section class="py-2 cta-cr" id="download-soft-ui">
   <div class="bg-gradient-dark position-relative m-3 border-radius overflow-hidden">
@@ -370,5 +374,6 @@
   </div>
 </div>
 @endauth
+</section>
 <!-- FORM PENDAFTARAN END -->
 @endsection

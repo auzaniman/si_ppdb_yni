@@ -112,19 +112,14 @@
 <!-- ALUR PENDAFTARAN -->
 <section class="alur-pendaftaran p-lg-5" id="alur">
   <div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5 mt-lg-5 text-center">
+    <div class="container-fluid py-5 mt-3 text-center">
       <h1 class="display-5 fw-bold">Alur Pendaftaran</h1>
       <h1 class="display-5 fw-bold">
         PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
-      <p class="fs-4 mb-5">
-        Using a series of utilities, you can create this jumbotron, just
-        like the one in previous versions of Bootstrap. Check out the
-        examples below for how you can remix and restyle it to your liking.
-      </p>
 
       {{-- Roadmap --}}
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col">
             <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">

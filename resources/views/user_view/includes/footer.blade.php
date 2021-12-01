@@ -4,7 +4,7 @@
     <div class=" row">
       <div class="col-md-3 mb-4 ms-auto">
         <div>
-          <h6 class="text-gradient text-primary font-weight-bolder">Soft UI Design System</h6>
+          <h6 class="text-gradient text-primary font-weight-bolder">Yayasan Nurul 'Ilmi</h6>
         </div>
         <div>
           <h6 class="mt-3 mb-2 opacity-8">Social</h6>
@@ -39,7 +39,7 @@
       </div>
       <div class="col-md-2 col-sm-6 col-6 mb-4">
         <div>
-          <h6 class="text-gradient text-primary text-sm">Company</h6>
+          <h6 class="text-gradient text-primary text-sm">Unit Sekolah</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item">
               <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
@@ -66,7 +66,7 @@
       </div>
       <div class="col-md-2 col-sm-6 col-6 mb-4">
         <div>
-          <h6 class="text-gradient text-primary text-sm">Resources</h6>
+          <h6 class="text-gradient text-primary text-sm">Program</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item">
               <a class="nav-link" href="https://iradesign.io/" target="_blank">
@@ -88,7 +88,7 @@
       </div>
       <div class="col-md-2 col-sm-6 col-6 mb-4">
         <div>
-          <h6 class="text-gradient text-primary text-sm">Help & Support</h6>
+          <h6 class="text-gradient text-primary text-sm">Mitra</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item">
               <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
@@ -115,7 +115,7 @@
       </div>
       <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
         <div>
-          <h6 class="text-gradient text-primary text-sm">Legal</h6>
+          <h6 class="text-gradient text-primary text-sm">Kontak</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item">
               <a class="nav-link" href="https://www.creative-tim.com/terms" target="_blank">
@@ -140,7 +140,7 @@
           <p class="my-4 text-sm">
             All rights reserved. Copyright © <script>
               document.write(new Date().getFullYear())
-            </script> Soft UI Design System by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </script> Yayasan Nurul 'Ilmi' by <a href="https://www.ynikoetaikartanagara.com" target="_blank">IT YNI</a>.
           </p>
         </div>
       </div>

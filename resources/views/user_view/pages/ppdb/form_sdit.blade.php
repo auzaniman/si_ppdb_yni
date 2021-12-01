@@ -5,6 +5,22 @@
 @endsection
 
 @section('content')
+@if (session('status'))
+<div class="alert alert-success" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+
 <!-- JUMBOTRON -->
 <section class="jumbotron">
   <div class="p-5 mb-4 bg-dark">
@@ -29,6 +45,10 @@
 <!-- JUMBOTRON END -->
 
 <!-- FORM PENDAFTARAN -->
+<section class="form-pendaftaran">
+  <h2 class="text-center mt-lg-5 text-uppercase pt-5">
+    Formulir Pendaftaran Online
+  </h2>
 @guest
 <section class="py-2 cta-cr" id="download-soft-ui">
   <div class="bg-gradient-dark position-relative m-3 border-radius overflow-hidden">
@@ -52,23 +72,6 @@
 @endguest
 
 @auth
-@auth
-@if ($errors->any())
-<div class="alert alert-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-@endif
-
-@if (session('status'))
-<div class="alert alert-success" role="alert">
-    {{ session('status') }}
-</div>
-@endif
-
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
     <form action="{{ route('student.store') }}" method="POST">
@@ -312,51 +315,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="stay_id">Pilihan Tinggal</label>
-              <select name="stay_id" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                @foreach ($stays as $stay)
-                <option value="{{ $stay->id }}">
-                {{ $stay->pilihan_tinggal }}
-                </option>
-                @endforeach
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="department_id">Pilihan Jurusan</label>
-              <select name="department_id" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                @foreach ($departments as $department)
-                <option value="{{ $department->id }}">
-                {{ $department->pilihan_jurusan }}
-                </option>
-                @endforeach
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="program_id">Pilihan Program</label>
-              <select name="program_id" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                @foreach ($programs as $program)
-                <option value="{{ $program->id }}">
-                {{ $program->pilihan_program }}
-                </option>
-                @endforeach
-              </select>
-            </div>
-          </div>
-        </div>
         <div class="d-flex flex-column text-center px-5 mt-3 mb-3">
           <small class="agree-text"
             >Dengan mengisi formulir anda sudah masuk dalam daftar
@@ -371,6 +329,6 @@
   </div>
 </div>
 @endauth
-@endauth
+</section>
 <!-- FORM PENDAFTARAN END -->
 @endsection
