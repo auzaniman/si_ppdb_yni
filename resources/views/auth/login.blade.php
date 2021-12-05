@@ -71,7 +71,7 @@
     </div>
 </div> --}}
 <section
-  class="h-100 w-100 login-form"
+  class="h-100 w-100"
   style="box-sizing: border-box; background-color: #f5f5f5">
   <div
     class="
