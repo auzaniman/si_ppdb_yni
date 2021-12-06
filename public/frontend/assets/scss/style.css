@@ -226,12 +226,6 @@ q {
   text-shadow: 0 0.05rem 0.15rem rgba(0, 0, 0, 0.35);
 }
 
-.visi-misi img {
-  border-radius: 10px;
-  -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
-}
-
 .wrapper-kabar-berita {
   width: 100%;
   padding-top: 20px;

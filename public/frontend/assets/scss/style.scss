@@ -194,6 +194,7 @@ q {
 
     p {
       color: var(--soft-white);
+      // padding-right: 14rem;
     }
   }
 
@@ -238,14 +239,6 @@ q {
         }
       }
     }
-  }
-}
-
-// VISI MISI
-.visi-misi {
-  img {
-    border-radius: 10px;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
   }
 }
 

@@ -23,7 +23,7 @@ Yayasan Nurul 'Ilmi
     <div class="carousel-item active">
       <div
         class="overlay-image"
-        style="background-image: url(frontend/assets/img/1.jpg)"
+        style="background-image: url(frontend/assets/img/YNI/SMAIT/1.jpeg)"
       ></div>
       <div class="container">
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
@@ -41,7 +41,7 @@ Yayasan Nurul 'Ilmi
     <div class="carousel-item">
       <div
         class="overlay-image"
-        style="background-image: url(frontend/assets/img/2.jpg)"
+        style="background-image: url(frontend/assets/img/YNI/SMAIT/2.jpeg)"
       ></div>
       <div class="container">
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
@@ -59,7 +59,7 @@ Yayasan Nurul 'Ilmi
     <div class="carousel-item">
       <div
         class="overlay-image"
-        style="background-image: url(frontend/assets/img/3.jpg)"
+        style="background-image: url(frontend/assets/img/YNI/SMAIT/3.jpeg)"
       ></div>
       <div class="container">
         <h1>Yayasan <span class="ni-font">Nurul 'Ilmi</span></h1>
@@ -102,10 +102,10 @@ Yayasan Nurul 'Ilmi
   <section class="section-popular-content mt-5 pt-3">
     <div class="container">
       <div class="section-popular-unit row justify-content-center">
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 me-4">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(frontend/assets/img/1.jpg)"
+            style="background-image: url(frontend/assets/img/YNI/SDIT/1.jpeg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SDIT <span class="ni-font">Nurul 'Ilmi</span>
@@ -123,7 +123,7 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(frontend/assets/img/2.jpg)"
+            style="background-image: url(frontend/assets/img/YNI/SMAIT/2.jpeg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SMPIT <span class="ni-font">Nurul 'Ilmi</span>
@@ -138,10 +138,10 @@ Yayasan Nurul 'Ilmi
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 ms-4">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(frontend/assets/img/3.jpg)"
+            style="background-image: url(frontend/assets/img/YNI/SMAIT/1.jpeg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SMAIT <span class="ni-font">Nurul 'Ilmi</span>
@@ -161,30 +161,6 @@ Yayasan Nurul 'Ilmi
   </section>
 </section>
 <!-- UNIT SEKOLAH END -->
-
-<!-- VISI MISI -->
-<section class="visi-misi container p-lg-5 p-4 mt-lg-5 mt-3" id="visi_misi">
-  <div class="row align-items-center">
-    <div class="col-lg-6">
-      <img
-        src="{{ url ('frontend/assets/img/1.jpg')}}"
-        class="img-fluid ms-0"
-        alt="yayasan visi"
-        width="400"
-        height="300"
-      />
-    </div>
-    <div class="col-lg-6">
-      <h2 class="">Visi Misi</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        eum inventore cumque suscipit illum dolorum eligendi hic corporis
-        nihil officiis, at animi vel dolores facere?
-      </p>
-    </div>
-  </div>
-</section>
-<!-- VISI MISI END -->
 
 <!-- PROGRAM -->
 <section class="program" id="program_sekolah">
@@ -251,7 +227,7 @@ Yayasan Nurul 'Ilmi
   <div class="center mt-4">
     <div>
       <div class="card">
-        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/YNI/SMAIT/3.jpeg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -263,7 +239,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/YNI/SMAIT/3.jpeg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -275,7 +251,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/YNI/SMAIT/3.jpeg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -287,7 +263,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/YNI/SMAIT/3.jpeg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -299,7 +275,7 @@ Yayasan Nurul 'Ilmi
     </div>
     <div>
       <div class="card">
-        <img src="{{ url ('frontend/assets/img/1.jpg')}}" class="card-img-top" alt="..." />
+        <img src="{{ url ('frontend/assets/img/YNI/SMAIT/3.jpeg')}}" class="card-img-top" alt="..." />
 
         <div class="card-body">
           <div class="card-content">
@@ -332,7 +308,7 @@ Yayasan Nurul 'Ilmi
         </div>
         <div class="col-lg-6">
           <img
-            src="{{ url ('frontend/assets/img/face1.jpg')}}"
+            src="{{ url ('frontend/assets/img/YNI/guru.jpeg')}}"
             alt=""
             class="img-fluid ms-lg-5 ms-0"
           />
