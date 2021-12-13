@@ -2,11 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
 use App\Models\School;
-use App\Models\Stay;
-use App\Models\Department;
-use App\Models\Program;
 use Illuminate\Http\Request;
 
 class SDITController extends Controller
@@ -28,18 +24,10 @@ class SDITController extends Controller
      */
     public function create()
     {
-      $students = Student::all();
       $schools = School::all();
-      $stays = Stay::all();
-      $departments = Department::all();
-      $programs = Program::all();
 
       return view('user_view.pages.ppdb.form_sdit', [
-        'students' => $students,
         'schools' => $schools,
-        'stays' => $stays,
-        'departments' => $departments,
-        'programs' => $programs,
         ]);
     }
 
@@ -60,7 +48,7 @@ class SDITController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student)
+    public function show()
     {
         //
     }
@@ -71,7 +59,7 @@ class SDITController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function edit(Student $student)
+    public function edit( )
     {
         //
     }
@@ -83,7 +71,7 @@ class SDITController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Student $student)
+    public function update(Request $request,  )
     {
         //
     }
@@ -94,7 +82,7 @@ class SDITController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function destroy( )
     {
         //
     }

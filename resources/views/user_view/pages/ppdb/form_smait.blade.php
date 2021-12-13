@@ -181,6 +181,23 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="kk">No KK</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="kk"
+                name="kk"
+                value="
+              />
+              @error('nik')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="nisn">NISN</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -215,6 +232,23 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="nik_ayah">NIK Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nik_ayah"
+                name="nik_ayah"
+                value="{{ old('nik_ayah') }}"
+              />
+              @error('nama_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="pekerjaan_ayah">Pekerjaan Ayah</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -239,6 +273,23 @@
                 id="nama_ibu"
                 name="nama_ibu"
                 value="{{ old('nama_ibu') }}"
+              />
+              @error('nama_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="nik_ibu">NIK Ibu</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nik_ibu"
+                name="nik_ibu"
+                value="{{ old('nik_ibu') }}"
               />
               @error('nama_ibu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
@@ -317,14 +368,28 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="stay_id">Pilihan Tinggal</label>
-              <select name="stay_id" class="form-control wide mt-0 mb-2">
+              <label for="up_kk">Upload KK</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="up_kk"
+                name="up_kk"
+                value=""
+              />
+              @error('hp_ortu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="stay">Pilihan Tinggal</label>
+              <select name="stay" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
-                @foreach ($stays as $stay)
-                <option value="{{ $stay->id }}">
-                {{ $stay->pilihan_tinggal }}
-                </option>
-                @endforeach
+                <option value="Reguler">Reguler</option>
+                <option value="Boarding">Boarding</option>
               </select>
             </div>
           </div>
@@ -332,14 +397,10 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="department_id">Pilihan Jurusan</label>
-              <select name="department_id" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                @foreach ($departments as $department)
-                <option value="{{ $department->id }}">
-                {{ $department->pilihan_jurusan }}
-                </option>
-                @endforeach
+              <label for="department">Pilihan Jurusan</label>
+              <select name="department" class="form-control wide mt-0 mb-2">
+                <option value="IPA">IPA</option>
+                <option value="IPS">IPS</option>
               </select>
             </div>
           </div>
@@ -347,14 +408,10 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="program_id">Pilihan Program</label>
-              <select name="program_id" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                @foreach ($programs as $program)
-                <option value="{{ $program->id }}">
-                {{ $program->pilihan_program }}
-                </option>
-                @endforeach
+              <label for="program">Pilihan Program</label>
+              <select name="program" class="form-control wide mt-0 mb-2">
+                <option value="Reguler">Reguler</option>
+                <option value="Tahfidz">Tahfidz</option>
               </select>
             </div>
           </div>
@@ -376,3 +433,11 @@
 </section>
 <!-- FORM PENDAFTARAN END -->
 @endsection
+
+Kolom No. Kartu Keluarga,
+Kolom No. NIK Siswa,
+Kolom No. NIK Ayah
+Kolom No. NIK Ibu
+Kolom No. Wa Siswa
+Kolom No. WA orang tua
+Kolom upload photo Kartu Keluarga PDF/JPG

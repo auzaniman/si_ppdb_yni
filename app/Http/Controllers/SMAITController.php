@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
+use App\Models\SMAIT;
 use App\Models\School;
-use App\Models\Stay;
-use App\Models\Department;
-use App\Models\Program;
+use App\Http\Requests\StoreSMAITRequest;
 use Illuminate\Http\Request;
 
 class SMAITController extends Controller
@@ -28,18 +26,12 @@ class SMAITController extends Controller
      */
     public function create()
     {
-      $students = Student::all();
+      $smait = SMAIT::all();
       $schools = School::all();
-      $stays = Stay::all();
-      $departments = Department::all();
-      $programs = Program::all();
 
       return view('user_view.pages.ppdb.form_smait', [
-        'students' => $students,
+        'smait' => $smait,
         'schools' => $schools,
-        'stays' => $stays,
-        'departments' => $departments,
-        'programs' => $programs,
         ]);
     }
 
@@ -49,18 +41,47 @@ class SMAITController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreSMAITRequest $request)
     {
+      $smait = new SMAIT();
 
+      $smait->school_id = $request->school_id;
+      $smait->stay = $request->stay;
+      $smait->department = $request->department;
+      $smait->program = $request->program;
+      $smait->nama = $request->nama;
+      $smait->ttl = $request->ttl;
+      $smait->alamat = $request->alamat;
+      $smait->asal_sekolah = $request->asal_sekolah;
+      $smait->nisn = $request->nisn;
+      $smait->nik = $request->nik;
+      $smait->kk = $request->kk;
+      $smait->nama_ayah = $request->nama_ayah;
+      $smait->nik_ayah = $request->nik_ayah;
+      $smait->nama_ibu = $request->nama_ibu;
+      $smait->nik_ibu = $request->nik_ibu;
+      $smait->pekerjaan_ayah = $request->pekerjaan_ayah;
+      $smait->pekerjaan_ibu = $request->pekerjaan_ibu;
+      $smait->ukuran_baju = $request->ukuran_baju;
+      $smait->hp_ortu = $request->hp_ortu;
+      $smait->hp_siswa = $request->hp_siswa;
+      $smait->image = $request->image;
+
+      SMAIT::create($request->all());
+      $smait->save();
+
+      return redirect()->back()->with([
+        'status' => 'Pendaftaran Berhasil Dilakukan, Silahkan Lakukan Konfirmasi Kepada Admin'
+      ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMAIT  $smait
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student)
+    public function show(SMAIT $smait)
     {
         //
     }
@@ -68,10 +89,10 @@ class SMAITController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMAIT  $smait
      * @return \Illuminate\Http\Response
      */
-    public function edit(Student $student)
+    public function edit(SMAIT $smait)
     {
         //
     }
@@ -80,10 +101,10 @@ class SMAITController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMAIT  $smait
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Student $student)
+    public function update(Request $request, SMAIT $smait)
     {
         //
     }
@@ -91,10 +112,10 @@ class SMAITController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMAIT  $smait
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function destroy(SMAIT $smait)
     {
         //
     }

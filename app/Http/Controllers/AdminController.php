@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
 use App\Models\School;
-use App\Models\Stay;
-use App\Models\Department;
-use App\Models\Program;
+use App\Models\SMAIT;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -45,10 +42,10 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $student)
+    public function show()
     {
         //
     }
@@ -56,10 +53,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function edit(Student $student)
+    public function edit()
     {
         //
     }
@@ -68,10 +65,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Student $student)
+    public function update()
     {
         //
     }
@@ -79,10 +76,10 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function destroy()
     {
         //
     }
@@ -90,54 +87,36 @@ class AdminController extends Controller
     // Table SMA
     public function smait()
     {
-      $students = Student::where('school_id', '6')->get();
+      $smait = SMAIT::where('school_id', '6')->get();
       $schools = School::all();
-      $stays = Stay::all();
-      $departments = Department::all();
-      $programs = Program::all();
 
       return view('admin_view.pages.table_siswa.table_sma', [
-        'students' => $students,
+        'smait' => $smait,
         'schools' => $schools,
-        'stays' => $stays,
-        'departments' => $departments,
-        'programs' => $programs,
         ]);
     }
 
     // Table SMP
     public function smpit()
     {
-      $students = Student::where('school_id', '5')->get();
+      $students = Request::where('school_id', '5')->get();
       $schools = School::all();
-      $stays = Stay::all();
-      $departments = Department::all();
-      $programs = Program::all();
 
       return view('admin_view.pages.table_siswa.table_smpit', [
         'students' => $students,
         'schools' => $schools,
-        'stays' => $stays,
-        'departments' => $departments,
-        'programs' => $programs,
         ]);
     }
 
     // Table SD
     public function sdit()
     {
-      $students = Student::where('school_id', '4')->get();
+      $students = Request::where('school_id', '4')->get();
       $schools = School::all();
-      $stays = Stay::all();
-      $departments = Department::all();
-      $programs = Program::all();
 
       return view('admin_view.pages.table_siswa.table_sdit', [
         'students' => $students,
         'schools' => $schools,
-        'stays' => $stays,
-        'departments' => $departments,
-        'programs' => $programs,
         ]);
     }
 }
