@@ -6,6 +6,7 @@ use App\Models\SMAIT;
 use App\Models\School;
 use App\Http\Requests\StoreSMAITRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class SMAITController extends Controller
 {
