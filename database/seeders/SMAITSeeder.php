@@ -17,7 +17,7 @@ class SMAITSeeder extends Seeder
     {
         $smait = [
           [
-            'school_id' => '3',
+            'school_id' => '6',
             'stay' => 'Reguler',
             'department' => 'IPA',
             'program' => 'Reguler',
