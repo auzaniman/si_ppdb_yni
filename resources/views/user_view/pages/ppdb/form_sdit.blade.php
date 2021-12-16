@@ -74,7 +74,7 @@
 @auth
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
-    <form action="{{ route('student.store') }}" method="POST">
+    <form action="{{ route('sdit.store') }}" method="POST">
       @csrf
       <div class="card-body">
         <h5 class="card-title mb-2">Pendaftaran untuk SMAIT</h5>
@@ -97,7 +97,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="nama">Nama Siswa</label>
+              <label for="nama">Nama Lengkap (Sesuai Akta Lahir)</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
@@ -114,49 +114,32 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="ttl">TTL</label>
+              <label for="nama_panggilan">Nama Panggilan</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
-                id="ttl"
-                name="ttl"
-                value="{{ old('ttl') }}"
+                id="nama_panggilan"
+                name="nama_panggilan"
+                value="{{ old('nama_panggilan')}}"
+              />
+              @error('nama_panggilan')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="jk">Jenis Kelamin</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="jk"
+                name="jk"
+                value="{{ old('Jenis Kelamin') }}"
               />
               @error('ttl')
-              <span class="bmd text-danger pl-5">{{ $message }}</span>
-              @enderror
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="alamat">Alamat</label>
-              <input
-                class="form-control mt-0 mb-2"
-                type="text"
-                id="alamat"
-                name="alamat"
-                value="{{ old('alamat') }}"
-              />
-              @error('alamat')
-              <span class="bmd text-danger pl-5">{{ $message }}</span>
-              @enderror
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="asal_sekolah">Asal Sekolah</label>
-              <input
-                class="form-control mt-0 mb-2"
-                type="text"
-                id="asal_sekolah"
-                name="asal_sekolah"
-                value="{{ old('asal_sekolah') }}"
-              />
-              @error('asal_sekolah')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -182,15 +165,406 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="nisn">NISN</label>
+              <label for="akta">No. Registrasi Akta Kelahiran</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
-                id="nisn"
-                name="nisn"
-                value="{{ old('nisn') }}"
+                id="akta"
+                name="akta"
+                value="{{ old('No. Akta') }}"
               />
-              @error('nisn')
+              @error('nik')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="tl">Tempat Lahir</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="tl"
+                name="tl"
+                value="{{ old('Tempat Lahir') }}"
+              />
+              @error('ttl')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="ttl">Tanggal Lahir</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="date"
+                id="ttl"
+                name="ttl"
+                value="{{ old('ttl') }}"
+              />
+              @error('ttl')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="agama">Agama</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="agama"
+                name="agama"
+                value="{{ old('agama') }}"
+              />
+              @error('agama')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="alamat">Alamat Siswa</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="alamat"
+                name="alamat"
+                value="{{ old('alamat') }}"
+              />
+              @error('alamat')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="transport">Alat Transportasi ke Sekolah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="transport"
+                name="transport"
+                value="{{ old('transport') }}"
+              />
+              @error('transport')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="j_tinggal">Jenis Tinggal</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="j_tinggal"
+                name="j_tinggal"
+                value="{{ old('j_tinggal') }}"
+              />
+              @error('j_tinggal')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="jarak">Jarak Tempat Tinggal Ke Sekolah (m/km)</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="jarak"
+                name="jarak"
+                value="{{ old('jarak') }}"
+              />
+              @error('jarak')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="waktu">Waktu Tempuh Ke Sekolah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="waktu"
+                name="waktu"
+                value="{{ old('waktu') }}"
+              />
+              @error('waktu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="penyakit">Penyakit yang pernah diderita</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="penyakit"
+                name="penyakit"
+                value="{{ old('penyakit') }}"
+              />
+              @error('penyakit')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="hp_ortu">No HP Ortu</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="hp_ortu"
+                name="hp_ortu"
+                value="{{ old('hp_ortu') }}"
+              />
+              @error('hp_ortu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="e_mail">Email jika punya</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="e_mail"
+                name="e_mail"
+                value="{{ old('e_mail') }}"
+              />
+              @error('e_mail')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="kip">No. KIP (Kartu Indonesia Pintar)</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="kip"
+                name="kip"
+                value="{{ old('kip') }}"
+              />
+              @error('kip')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="anak">Anak Keberapa</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="anak"
+                name="anak"
+                value="{{ old('anak') }}"
+              />
+              @error('anak')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="saudara">Jumlah Saudara Kandung</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="saudara"
+                name="saudara"
+                value="{{ old('saudara') }}"
+              />
+              @error('saudara')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="tiri">Jumlah Saudara Tiri</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="tiri"
+                name="tiri"
+                value="{{ old('tiri') }}"
+              />
+              @error('tiri')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="angkat">Jumlah Saudara Angkat</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="angkat"
+                name="angkat"
+                value="{{ old('angkat') }}"
+              />
+              @error('angkat')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="bahasa">Bahasa Sehari-hari dirumah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="bahasa"
+                name="bahasa"
+                value="{{ old('bahasa') }}"
+              />
+              @error('bahasa')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="bb">Berat Badan</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="bb"
+                name="bb"
+                value="{{ old('bb') }}"
+              />
+              @error('bb')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="tb">Tinggi Badan</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="tb"
+                name="tb"
+                value="{{ old('tb') }}"
+              />
+              @error('tb')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="gd">Golongan Darah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="gd"
+                name="gd"
+                value="{{ old('gd') }}"
+              />
+              @error('gd')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="hobi">Hobi</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="hobi"
+                name="hobi"
+                value="{{ old('hobi') }}"
+              />
+              @error('hobi')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="asal_sekolah">Asal Sekolah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="asal_sekolah"
+                name="asal_sekolah"
+                value="{{ old('asal_sekolah') }}"
+              />
+              @error('asal_sekolah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="alamat_asal">Alamat Asal Sekolah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="alamat_asal"
+                name="alamat_asal"
+                value="{{ old('alamat_asal') }}"
+              />
+              @error('alamat_asal')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -216,6 +590,57 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="nik_ayah">NIK Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nik_ayah"
+                name="nik_ayah"
+                value="{{ old('nik_ayah') }}"
+              />
+              @error('nik_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="ttl_ayah">TTL Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="ttl_ayah"
+                name="ttl_ayah"
+                value="{{ old('ttl_ayah') }}"
+              />
+              @error('ttl_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="p_ayah">Pendidikan Terakhir Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="p_ayah"
+                name="p_ayah"
+                value="{{ old('p_ayah') }}"
+              />
+              @error('p_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="pekerjaan_ayah">Pekerjaan Ayah</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -225,6 +650,40 @@
                 value="{{ old('pekerjaan_ayah') }}"
               />
               @error('pekerjaan_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="tk_ayah">Tempat Kerja Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="tk_ayah"
+                name="tk_ayah"
+                value="{{ old('tk_ayah') }}"
+              />
+              @error('tk_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="penghasilan_ayah">Penghasilan Perbulan Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="penghasilan_ayah"
+                name="penghasilan_ayah"
+                value="{{ old('penghasilan_ayah') }}"
+              />
+              @error('penghasilan_ayah')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -250,6 +709,57 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="nik_ibu">NIK Ibu</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nik_ibu"
+                name="nik_ibu"
+                value="{{ old('nik_ibu') }}"
+              />
+              @error('nik_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="ttl_ibu">TTL Ibu</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="ttl_ibu"
+                name="ttl_ibu"
+                value="{{ old('ttl_ibu') }}"
+              />
+              @error('ttl_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="p_ibu">Pendidikan Terakhir Ibu</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="p_ibu"
+                name="p_ibu"
+                value="{{ old('p_ibu') }}"
+              />
+              @error('p_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="pekerjaan_ibu">Pekerjaan Ibu</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -267,15 +777,15 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="ukuran_baju">Ukuran Baju</label>
+              <label for="tk_ibu">Tempat Kerja Ibu</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
-                id="ukuran_baju"
-                name="ukuran_baju"
-                value="{{ old('ukuran_baju') }}"
+                id="tk_ibu"
+                name="tk_ibu"
+                value="{{ old('tk_ibu') }}"
               />
-              @error('ukuran_baju')
+              @error('tk_ibu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -284,15 +794,15 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="hp_siswa">No HP Siswa</label>
+              <label for="penghasilan_ibu">Penghasilan Perbulan Ibu</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
-                id="hp_siswa"
-                name="hp_siswa"
-                value="{{ old('hp_siswa') }}"
+                id="penghasilan_ibu"
+                name="penghasilan_ibu"
+                value="{{ old('penghasilan_ibu') }}"
               />
-              @error('hp_siswa')
+              @error('penghasilan_ibu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -301,15 +811,118 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="hp_ortu">No HP Ortu</label>
+              <label for="alamat_ortu">Alamat Rumah Orangtua</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
-                id="hp_ortu"
-                name="hp_ortu"
-                value="{{ old('hp_ortu') }}"
+                id="alamat_ortu"
+                name="alamat_ortu"
+                value="{{ old('alamat_ortu') }}"
               />
-              @error('hp_ortu')
+              @error('alamat_ortu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="nama_wali">Nama Wali</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nama_wali"
+                name="nama_wali"
+                value="{{ old('nama_wali') }}"
+              />
+              @error('nama_wali')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="p_wali">Pendidikan Terakhir Wali</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="p_wali"
+                name="p_wali"
+                value="{{ old('p_wali') }}"
+              />
+              @error('p_wali')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="pekerjaan_wali">Pekerjaan Wali</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="pekerjaan_wali"
+                name="pekerjaan_wali"
+                value="{{ old('pekerjaan_wali') }}"
+              />
+              @error('pekerjaan_wali')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="penghasilan_wali">Penghasilan Perbulan Wali</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="penghasilan_wali"
+                name="penghasilan_wali"
+                value="{{ old('penghasilan_wali') }}"
+              />
+              @error('penghasilan_wali')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="hp_wali">No. HP Wali</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="hp_wali"
+                name="hp_wali"
+                value="{{ old('hp_wali') }}"
+              />
+              @error('hp_wali')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="alamat_wali">Alamat Wali</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="alamat_wali"
+                name="alamat_wali"
+                value="{{ old('alamat_wali') }}"
+              />
+              @error('alamat_wali')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
