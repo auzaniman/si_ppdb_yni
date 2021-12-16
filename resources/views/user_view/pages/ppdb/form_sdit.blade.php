@@ -74,7 +74,7 @@
 @auth
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
-    <form action="{{ route('sdit.store') }}" method="POST">
+    <form action="{{ route('ppdb_sdit.store') }}" method="POST">
       @csrf
       <div class="card-body">
         <h5 class="card-title mb-2">Pendaftaran untuk SMAIT</h5>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\School;
 use App\Models\SMAIT;
+use App\Models\SDIT;
 use App\Http\Requests\StoreSMAITRequest;
 use Illuminate\Http\Request;
 
@@ -85,6 +86,54 @@ class AdminController extends Controller
         //
     }
 
+    // Table TK1
+    public function tkit1()
+    {
+      $tkit1 = Request::where('school_id', '2')->get();
+      $schools = School::all();
+
+      return view('admin_view.pages.table_siswa.table_sdit', [
+        'tkit1' => $tkit1,
+        'schools' => $schools,
+        ]);
+    }
+
+    // Table TK2
+    public function tkit2()
+    {
+      $tkit2 = Request::where('school_id', '3')->get();
+      $schools = School::all();
+
+      return view('admin_view.pages.table_siswa.table_sdit', [
+        'tkit2' => $tkit2,
+        'schools' => $schools,
+        ]);
+    }
+
+    // Table SD
+    public function sdit()
+    {
+      $sdit = SDIT::where('school_id', '4')->get();
+      $schools = School::all();
+
+      return view('admin_view.pages.table_siswa.table_sdit', [
+        'sdit' => $sdit,
+        'schools' => $schools,
+        ]);
+    }
+
+    // Table SMP
+    public function smpit()
+    {
+      $smpit = Request::where('school_id', '5')->get();
+      $schools = School::all();
+
+      return view('admin_view.pages.table_siswa.table_smpit', [
+        'smpit' => $smpit,
+        'schools' => $schools,
+        ]);
+    }
+
     // Table SMA
     public function smait()
     {
@@ -97,27 +146,4 @@ class AdminController extends Controller
         ]);
     }
 
-    // Table SMP
-    public function smpit()
-    {
-      $students = Request::where('school_id', '5')->get();
-      $schools = School::all();
-
-      return view('admin_view.pages.table_siswa.table_smpit', [
-        'students' => $students,
-        'schools' => $schools,
-        ]);
-    }
-
-    // Table SD
-    public function sdit()
-    {
-      $students = Request::where('school_id', '4')->get();
-      $schools = School::all();
-
-      return view('admin_view.pages.table_siswa.table_sdit', [
-        'students' => $students,
-        'schools' => $schools,
-        ]);
-    }
 }

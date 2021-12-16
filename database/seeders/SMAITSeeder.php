@@ -40,7 +40,7 @@ class SMAITSeeder extends Seeder
             'image' => '1.jpeg'
           ],
           [
-            'school_id' => '3',
+            'school_id' => '6',
             'stay' => 'Reguler',
             'department' => 'IPA',
             'program' => 'Reguler',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\School;
 use App\Models\SDIT;
+use App\Http\Requests\StoreSDITRequest;
 use Illuminate\Http\Request;
 
 class SDITController extends Controller
@@ -40,7 +41,7 @@ class SDITController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreSDITRequest $request)
     {
       $sdit = $request->all();
       SDIT::create($sdit);
