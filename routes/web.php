@@ -34,9 +34,6 @@ Route::resource('ppdb_smait', SMAITController::class);
 Route::resource('ppdb_smpit', SMPITController::class);
 Route::resource('ppdb_sdit', SDITController::class);
 
-// Resource
-Route::resource('student', StudentController::class);
-
 // Admin
 Route::prefix('admin')
 ->namespace('Admin')

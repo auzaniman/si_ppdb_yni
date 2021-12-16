@@ -37,6 +37,7 @@ class SMAITSeeder extends Seeder
             'ukuran_baju' => 'L',
             'hp_siswa' => '0897677576',
             'hp_ortu' => '0876755765',
+            'image' => '1.jpeg'
           ],
           [
             'school_id' => '3',
@@ -59,6 +60,7 @@ class SMAITSeeder extends Seeder
             'ukuran_baju' => 'L',
             'hp_siswa' => '0897677676',
             'hp_ortu' => '0876755755',
+            'image' => '2.jpeg'
           ],
         ];
 

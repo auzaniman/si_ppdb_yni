@@ -42,21 +42,7 @@ Table Data
             </tr>
           </thead>
           <tbody>
-           @forelse ($students as $student)
-            <tr>
-              <td>{{ $student->nama }}</td>
-              <td>{{ $student->nik }}/{{ $student->nisn }}</td>
-              <td>{{ $student->asal_sekolah }}</td>
-              <td>{{ $student->alamat }}</td>
-              <td>{{ $student->nama_ayah }}/{{ $student->pekerjaan_ayah }}</td>
-              <td>{{ $student->nama_ibu }}/{{ $student->pekerjaan_ibu }}</td>
-              <td>{{ $student->hp_siswa }}/{{ $student->hp_ortu }}</td>
-              <td>{{ $student->department->pilihan_jurusan }}-{{ $student->stay->pilihan_tinggal }}-{{ $student->program->pilihan_program }}</td>
-              <td>{{ $student->school->jenjang }}</td>
-            </tr>
-            @empty
 
-            @endforelse
           </tbody>
         </table>
       </div>

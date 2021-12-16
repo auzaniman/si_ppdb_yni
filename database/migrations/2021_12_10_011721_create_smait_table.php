@@ -23,18 +23,18 @@ class CreateSmaitTable extends Migration
             $table->string('ttl');
             $table->string('alamat');
             $table->string('asal_sekolah');
-            $table->string('nisn')->unique();
-            $table->string('nik')->unique();
-            $table->string('kk')->unique();
+            $table->string('nisn');
+            $table->string('nik');
+            $table->string('kk');
             $table->string('nama_ayah');
-            $table->string('nik_ayah')->unique();
+            $table->string('nik_ayah');
             $table->string('nama_ibu');
-            $table->string('nik_ibu')->unique();
+            $table->string('nik_ibu');
             $table->string('pekerjaan_ayah');
             $table->string('pekerjaan_ibu');
             $table->string('ukuran_baju'); //S,M,L,XL
-            $table->string('hp_siswa')->unique();
-            $table->string('hp_ortu')->unique();
+            $table->string('hp_siswa');
+            $table->string('hp_ortu');
             $table->text('image');
             $table->timestamps();
         });

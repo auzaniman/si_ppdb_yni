@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class StoreSMAITRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class StoreSMAITRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return Auth::check();
     }
 
     /**
@@ -32,18 +33,18 @@ class StoreSMAITRequest extends FormRequest
         'ttl' => 'required',
         'alamat' => 'required',
         'asal_sekolah' => 'required',
-        'nisn' => 'required|integer|max:10',
-        'nik' => 'required|integer|max:16',
-        'kk' => 'required|integer|max:16',
+        'nisn' => 'required|max:10',
+        'nik' => 'required|max:16',
+        'kk' => 'required|max:16',
         'nama_ayah' => 'required',
-        'nik_ayah' => 'required|integer|max:16',
+        'nik_ayah' => 'required|max:16',
         'nama_ibu' => 'required',
-        'nik_ibu' => 'required|integer|max:16',
+        'nik_ibu' => 'required|max:16',
         'pekerjaan_ayah' => 'required',
         'pekerjaan_ibu' => 'required',
         'ukuran_baju' => 'required',
-        'hp_siswa' => 'required|integer',
-        'hp_ortu' => 'required|integer',
+        'hp_siswa' => 'required',
+        'hp_ortu' => 'required',
         'image' => 'required|image',
         ];
     }

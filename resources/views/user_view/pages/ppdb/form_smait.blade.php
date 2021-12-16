@@ -26,6 +26,22 @@
 </section>
 <!-- JUMBOTRON END -->
 
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+
+@if (session('status'))
+<div class="alert alert-success" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+
 <!-- FORM PENDAFTARAN -->
 <section class="form-pendaftaran">
   <h2 class="text-center mt-lg-5 text-uppercase pt-5">
@@ -55,25 +71,9 @@
 @endguest
 
 @auth
-@if ($errors->any())
-<div class="alert alert-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-@endif
-
-@if (session('status'))
-<div class="alert alert-success" role="alert">
-    {{ session('status') }}
-</div>
-@endif
-
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
-    <form action="{{ route('student.store') }}" method="POST">
+    <form action="{{ route('ppdb_smait.store') }}" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="card-body">
         <h5 class="card-title mb-2">Pendaftaran untuk SMAIT</h5>
@@ -187,9 +187,9 @@
                 type="text"
                 id="kk"
                 name="kk"
-                value="
+                value=""
               />
-              @error('nik')
+              @error('kk')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -240,7 +240,7 @@
                 name="nik_ayah"
                 value="{{ old('nik_ayah') }}"
               />
-              @error('nama_ayah')
+              @error('nik_ayah')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -291,7 +291,7 @@
                 name="nik_ibu"
                 value="{{ old('nik_ibu') }}"
               />
-              @error('nama_ibu')
+              @error('nik_ibu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -368,12 +368,12 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="up_kk">Upload KK</label>
+              <label for="image">Upload KK</label>
               <input
                 class="form-control mt-0 mb-2"
-                type="text"
-                id="up_kk"
-                name="up_kk"
+                type="file"
+                id="image"
+                name="image"
                 value=""
               />
               @error('hp_ortu')
@@ -399,6 +399,7 @@
             <div class="form-group">
               <label for="department">Pilihan Jurusan</label>
               <select name="department" class="form-control wide mt-0 mb-2">
+                <option data-display="Pilih">-</option>
                 <option value="IPA">IPA</option>
                 <option value="IPS">IPS</option>
               </select>
@@ -410,6 +411,7 @@
             <div class="form-group">
               <label for="program">Pilihan Program</label>
               <select name="program" class="form-control wide mt-0 mb-2">
+                <option data-display="Pilih">-</option>
                 <option value="Reguler">Reguler</option>
                 <option value="Tahfidz">Tahfidz</option>
               </select>
@@ -433,11 +435,3 @@
 </section>
 <!-- FORM PENDAFTARAN END -->
 @endsection
-
-Kolom No. Kartu Keluarga,
-Kolom No. NIK Siswa,
-Kolom No. NIK Ayah
-Kolom No. NIK Ibu
-Kolom No. Wa Siswa
-Kolom No. WA orang tua
-Kolom upload photo Kartu Keluarga PDF/JPG

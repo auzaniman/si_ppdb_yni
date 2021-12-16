@@ -34,26 +34,30 @@ Table Data
               <th>NIK/NISN</th>
               <th>Asal Sekolah</th>
               <th>Alamat</th>
-              <th>Nama Ayah/Pekerjaan</th>
-              <th>Nama Ibu/Pekerjaan</th>
+              <th>Nama Ayah/Pekerjaan/NIK</th>
+              <th>Nama Ibu/Pekerjaan/NIK</th>
               <th>HP Siswa/Ortu</th>
               <th>Jurusan/Tinggal/Program</th>
+              <th>File</th>
               <th>Status</th>
             </tr>
           </thead>
           <tbody>
 
-            @forelse ($students as $student)
+            @forelse ($smait as $sma)
             <tr>
-              <td>{{ $student->nama }}</td>
-              <td>{{ $student->nik }}/{{ $student->nisn }}</td>
-              <td>{{ $student->asal_sekolah }}</td>
-              <td>{{ $student->alamat }}</td>
-              <td>{{ $student->nama_ayah }}/{{ $student->pekerjaan_ayah }}</td>
-              <td>{{ $student->nama_ibu }}/{{ $student->pekerjaan_ibu }}</td>
-              <td>{{ $student->hp_siswa }}/{{ $student->hp_ortu }}</td>
-              <td>{{ $student->department->pilihan_jurusan }}-{{ $student->stay->pilihan_tinggal }}-{{ $student->program->pilihan_program }}</td>
-              <td>{{ $student->school->jenjang }}</td>
+              <td>{{ $sma->nama }}</td>
+              <td>{{ $sma->nik }}/{{ $sma->nisn }}/{{ $sma->kk }}</td>
+              <td>{{ $sma->asal_sekolah }}</td>
+              <td>{{ $sma->alamat }}</td>
+              <td>{{ $sma->nama_ayah }}/{{ $sma->pekerjaan_ayah }}/{{ $sma->nik_ayah }}</td>
+              <td>{{ $sma->nama_ibu }}/{{ $sma->pekerjaan_ibu }}/{{ $sma->nik_ibu }}</td>
+              <td>{{ $sma->hp_siswa }}/{{ $sma->hp_ortu }}</td>
+              <td>{{ $sma->department }}-{{ $sma->stay }}-{{ $sma->program }}</td>
+              <td>
+                <img src="{{ Storage::url($sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
+              <td>{{ $sma->school->jenjang }}</td>
             </tr>
             @empty
 
