@@ -241,6 +241,23 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="alamat">Alamat (Jalan, RT, RW)</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="alamat"
+                name="alamat"
+                value="{{ old('alamat') }}"
+              />
+              @error('alamat')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="trans_sekolah">Transportasi ke Sekolah</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -250,6 +267,23 @@
                 value=""
               />
               @error('trans_sekolah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="jarak_waktu">Jarak dan Waktu Tempuh ke Sekolah (Kilometer)</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="jarak_waktu"
+                name="jarak_waktu"
+                value="{{ old('jarak_waktu') }}"
+              />
+              @error('jarak_waktu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -292,7 +326,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="tb">Tinggi Badan</label>
+              <label for="tb">Tinggi Badan (cm)</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
@@ -309,7 +343,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="bb">Berat Badan</label>
+              <label for="bb">Berat Badan (Kg)</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="text"
@@ -335,23 +369,6 @@
                 value="{{ old('lingkar_kepala') }}"
               />
               @error('lingkar_kepala')
-              <span class="bmd text-danger pl-5">{{ $message }}</span>
-              @enderror
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="jarak_waktu">Jarak dan Waktu Tempuh ke Sekolah</label>
-              <input
-                class="form-control mt-0 mb-2"
-                type="text"
-                id="jarak_waktu"
-                name="jarak_waktu"
-                value="{{ old('jarak_waktu') }}"
-              />
-              @error('jarak_waktu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>

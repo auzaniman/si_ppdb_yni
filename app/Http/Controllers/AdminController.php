@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\School;
 use App\Models\TKIT1;
+use App\Models\TKIT2;
 use App\Models\SDIT;
 use App\Models\SMPIT;
 use App\Models\SMAIT;
@@ -102,10 +103,10 @@ class AdminController extends Controller
     // Table TK2
     public function tkit2()
     {
-      $tkit2 = Request::where('school_id', '3')->get();
+      $tkit2 = TKIT2::where('school_id', '3')->get();
       $schools = School::all();
 
-      return view('admin_view.pages.table_siswa.table_sdit', [
+      return view('admin_view.pages.table_siswa.table_tkit2', [
         'tkit2' => $tkit2,
         'schools' => $schools,
         ]);

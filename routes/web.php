@@ -1,11 +1,12 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\StudentController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\SMAITController;
-use App\Http\Controllers\SMPITController;
+use App\Http\Controllers\TKIT1Controller;
+use App\Http\Controllers\TKIT2Controller;
 use App\Http\Controllers\SDITController;
+use App\Http\Controllers\SMPITController;
+use App\Http\Controllers\SMAITController;
 use App\Http\Controllers\PPDBController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
