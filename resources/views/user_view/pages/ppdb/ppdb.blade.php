@@ -32,9 +32,59 @@
     <h2 class="text-center mb-lg-4">PENDAFTARAN SEKOLAH</h2>
   </div>
   <div class="row text-center mt-lg-5 mb-lg-4">
+    <div class="col-lg-6">
+      <img
+        src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}"
+        class="img-fluid"
+        width="200"
+        height="200"
+        alt=""
+      />
+      <p class="fs-3">TKIT 1</p>
+      <div class="mb-2">
+        <button class="btn-custom btn-red border-0">
+          <a href="" class="text-decoration-none"
+            >Kunjungi Profil</a
+          >
+        </button>
+      </div>
+      <div>
+        <button class="btn-custom btn-red border-0">
+          <a href="{{ route('ppdb_tkit1.create')}}" class="text-decoration-none"
+            >Daftar</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}"
+        class="img-fluid"
+        width="200"
+        height="200"
+        alt=""
+      />
+      <p class="fs-3">TKIT 2</p>
+      <div class="mb-2">
+        <button class="btn-custom btn-blue border-0">
+          <a href="" class="text-decoration-none"
+            >Kunjungi Profil</a
+          >
+        </button>
+      </div>
+      <div>
+        <button class="btn-custom btn-blue border-0">
+          <a href="" class="text-decoration-none"
+            >Daftar</a
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center mt-lg-5 mb-lg-4">
     <div class="col-lg-4">
       <img
-        src="{{ url ('frontend/assets/img/logo/logo.png')}}"
+        src="{{ url ('frontend/assets/img/YNI/SDIT/logo.png')}}"
         class="img-fluid"
         width="200"
         height="200"
@@ -58,7 +108,7 @@
     </div>
     <div class="col-lg-4">
       <img
-        src="{{ url ('frontend/assets/img/logo/logo.png')}}"
+        src="{{ url ('frontend/assets/img/YNI/SMPIT/logo.png')}}"
         class="img-fluid"
         width="200"
         height="200"
@@ -170,64 +220,6 @@
         </div>
       </div>
       {{-- End Roadmap --}}
-    </div>
-  </div>
-</section>
-
-<section class="wrapper-timeline" id="timeline">
-  <div id="jadwal" class="content-area-l5-2">
-    <div class="container">
-      <div
-        class="
-          row
-          justify-content-lg-start justify-content-center
-          align-items-start
-        "
-      >
-        <div class="col-xl-5 col-lg-6 col-md-10">
-          <div class="content-l5-2-content section__heading-2">
-            <h3>
-              Persyaratan Daftar Ulang:
-            </h3>
-            <ul class="mt-3">
-              <li>Menunjukkan Kuitansi/Bukti Pembayaran/Nomor Registrasi</li>
-              <li>Pas Foto Warna</li>
-              <li>Fotokopi Raport</li>
-              <li>Fotokopi Kartu Keluarga</li>
-              <li>Fotokopi Piagam</li>
-              <li>Fotokopi Ijazah</li>
-              <li>Biaya Pendaftaran</li>
-            </ul>
-          </div>
-        </div>
-        <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
-          <div id="timeline-content">
-            <h3 class="ms-5">
-              Lini Masa PPDB Online SMAIT
-              <br />
-              <span class="ni-font">Nurul 'Ilmi</span>
-            </h3>
-            <ul class="timeline">
-              <li class="event" data-date="1">
-                <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>1 Desember 2021 - 25 April 2022</p>
-              </li>
-              <li class="event" data-date="2">
-                <h3>Pendaftaran Online Gelombang 2</h3>
-                <p>16 Mei - 20 Juli 2022</p>
-              </li>
-              <li class="event" data-date="3">
-                <h3>Pengumuman</h3>
-                <p>-</p>
-              </li>
-              <li class="event" data-date="4">
-                <h3>Daftar Ulang</h3>
-                <p>-</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>

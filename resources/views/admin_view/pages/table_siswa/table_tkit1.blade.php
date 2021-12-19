@@ -17,7 +17,7 @@ Table Data
   <div class="card shadow mb-4">
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">
-        Pendaftaran SMAIT Nurul 'Ilmi
+        Pendaftaran TKIT 1 Nurul 'Ilmi
       </h6>
     </div>
     <div class="card-body">
@@ -30,33 +30,35 @@ Table Data
         >
           <thead>
             <tr>
-              <th>Nama Siswa</th>
-              <th>NIK/NISN</th>
-              <th>Asal Sekolah</th>
+              <th>Nama Siswa/Nama Panggilan/Kelamin</th>
+              <th>NIK</th>
               <th>Alamat</th>
-              <th>Nama Ayah/Pekerjaan/NIK</th>
-              <th>Nama Ibu/Pekerjaan/NIK</th>
-              <th>HP Siswa/Ortu</th>
-              <th>Jurusan/Tinggal/Program</th>
-              <th>File</th>
+              <th>Transportasi/Jarak dan Waktu ke Sekolah</th>
+              <th>No Akta</th>
+              <th>No HP</th>
+              <th>TB/BB</th>
+              <th>Lingkar Kepala</th>
+              <th>Jumlah Saudara</th>
+              <th>Nama Ayah/TTL Ayah/Pekerjaan Ayah/Pendidikan Ayah/Penghasilan Ayah</th>
+              <th>Nama Ibu/TTL Ibu/Pekerjaan Ibu/Pendidikan Ibu/Penghasilan Ibu</th>
               <th>Status</th>
             </tr>
           </thead>
           <tbody>
 
-            @forelse ($smait as $sma)
+            @forelse ($tkit1 as $tkit)
             <tr>
-              <td>{{ $sma->nama }}</td>
-              <td>{{ $sma->nik }}/{{ $sma->nisn }}/{{ $sma->kk }}</td>
-              <td>{{ $sma->asal_sekolah }}</td>
-              <td>{{ $sma->alamat }}</td>
-              <td>{{ $sma->nama_ayah }}/{{ $sma->pekerjaan_ayah }}/{{ $sma->nik_ayah }}</td>
-              <td>{{ $sma->nama_ibu }}/{{ $sma->pekerjaan_ibu }}/{{ $sma->nik_ibu }}</td>
-              <td>{{ $sma->hp_siswa }}/{{ $sma->hp_ortu }}</td>
-              <td>{{ $sma->department }}-{{ $sma->stay }}-{{ $sma->program }}</td>
-              <td>
-                <img src="{{ Storage::url($sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
-              </td>
+              <td>{{ $tkit->nama }}/{{ $tkit->nama_panggilan }}/{{ $tkit1->kelamin }}</td>
+              <td>{{ $tkit->nik }}</td>
+              <td>{{ $tkit->alamat }}</td>
+              <td>{{ $tkit->trans_sekolah }}/{{ $tkit1->jarak_waktu }}</td>
+              <td>{{ $tkit->no_akta }}</td>
+              <td>{{ $tkit->hp_ortu }}</td>
+              <td>{{ $tkit->tb }}/{{ $tkit1->bb }}</td>
+              <td>{{ $tkit->lingkar_kepala }}</td>
+              <td>{{ $tkit->jumlah_saudara }}</td>
+              <td>{{ $tkit->nama_ayah }}/{{ $tkit->ttl_ayah }}/{{ $tkit1->pekerjaan_ayah }}/{{ $tkit1->pendidikan_ayah }}/{{ $tkit1->penghasilan_ayah }}</td>
+              <td>{{ $tkit->nama_ibu }}/{{ $tkit->ttl_ibu }}/{{ $tkit1->pekerjaan_ibu }}/{{ $tkit1->pendidikan_ibu }}/{{ $tkit1->penghasilan_ibu }}</td>
               <td>{{ $sma->school->jenjang }}</td>
             </tr>
             @empty

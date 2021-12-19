@@ -67,16 +67,11 @@ class SMAITController extends Controller
       $smait->hp_ortu = $request->hp_ortu;
       $smait->hp_siswa = $request->hp_siswa;
       $smait->image = $request->image;
-      $smait['image'] = $request->file('image')->store(
-        'assets/ppdb', 'public'
-      );
+      $smait['image'] = $request->file('image')->store('', 'public');
 
-      SMAIT::create($request->all());
       $smait->save();
 
-      return redirect()->back()->with([
-        'status' => 'Pendaftaran Berhasil Dilakukan, Silahkan Lakukan Konfirmasi Kepada Admin'
-      ]);
+      return redirect()->route('success');
     }
 
     /**

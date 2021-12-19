@@ -46,9 +46,7 @@ class SDITController extends Controller
       $sdit = $request->all();
       SDIT::create($sdit);
 
-      return redirect()->back()->with([
-        'status' => 'Pendaftaran Berhasil Dilakukan, Silahkan Lakukan Konfirmasi Kepada Admin'
-      ]);
+      return redirect()->route('success');
     }
 
     /**
@@ -80,7 +78,7 @@ class SDITController extends Controller
      * @param  \App\Models\SDIT  $sdit
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,  )
+    public function update()
     {
         //
     }

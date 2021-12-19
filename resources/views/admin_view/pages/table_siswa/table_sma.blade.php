@@ -55,7 +55,7 @@ Table Data
               <td>{{ $sma->hp_siswa }}/{{ $sma->hp_ortu }}</td>
               <td>{{ $sma->department }}-{{ $sma->stay }}-{{ $sma->program }}</td>
               <td>
-                <img src="{{ Storage::url($sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
+                <img src="{{ asset('storage/assets/ppdb/'.$sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
               <td>{{ $sma->school->jenjang }}</td>
             </tr>

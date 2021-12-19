@@ -28,6 +28,66 @@
 </section>
 <!-- JUMBOTRON END -->
 
+{{-- Timeline --}}
+<section class="wrapper-timeline" id="timeline">
+  <div id="jadwal" class="content-area-l5-2">
+    <div class="container">
+      <div
+        class="
+          row
+          justify-content-lg-start justify-content-center
+          align-items-start
+        "
+      >
+        <div class="col-xl-5 col-lg-6 col-md-10">
+          <div class="content-l5-2-content section__heading-2">
+            <h3>
+              Persyaratan Daftar Ulang:
+            </h3>
+            <ul class="mt-3">
+              <li>Menunjukkan Kuitansi/Bukti Pembayaran/Nomor Registrasi</li>
+              <li>Pas Foto Warna</li>
+              <li>Fotokopi Raport</li>
+              <li>Fotokopi Kartu Keluarga</li>
+              <li>Fotokopi Piagam</li>
+              <li>Fotokopi Ijazah</li>
+              <li>Biaya Pendaftaran</li>
+            </ul>
+          </div>
+        </div>
+        <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
+          <div id="timeline-content">
+            <h3 class="ms-5">
+              Lini Masa PPDB Online SMAIT
+              <br />
+              <span class="ni-font">Nurul 'Ilmi</span>
+            </h3>
+            <ul class="timeline">
+              <li class="event" data-date="1">
+                <h3>Pendaftaran Online Gelombang 1</h3>
+                <p>1 Desember 2021 - 25 April 2022</p>
+              </li>
+              <li class="event" data-date="2">
+                <h3>Pendaftaran Online Gelombang 2</h3>
+                <p>16 Mei - 20 Juli 2022</p>
+              </li>
+              <li class="event" data-date="3">
+                <h3>Pengumuman</h3>
+                <p>-</p>
+              </li>
+              <li class="event" data-date="4">
+                <h3>Daftar Ulang</h3>
+                <p>-</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{-- End Timeline --}}
+
 <!-- FORM PENDAFTARAN -->
 <section class="form-pendaftaran">
   <h2 class="text-center mt-lg-5 text-uppercase pt-5">

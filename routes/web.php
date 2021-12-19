@@ -30,9 +30,15 @@ Route::get('/', function () {
 Route::get('/ppdb', [PPDBController::class, 'index'])->name('ppdb');
 
 // PPDB Form
-Route::resource('ppdb_smait', SMAITController::class);
-Route::resource('ppdb_smpit', SMPITController::class);
+Route::resource('ppdb_tkit1', TKIT1Controller::class);
 Route::resource('ppdb_sdit', SDITController::class);
+Route::resource('ppdb_smpit', SMPITController::class);
+Route::resource('ppdb_smait', SMAITController::class);
+
+// PPDB Checkout
+Route::get('success', function () {
+    return view('user_view.pages.success');
+  })->name('success');
 
 // Admin
 Route::prefix('admin')
@@ -44,11 +50,13 @@ Route::prefix('admin')
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
   // Table
-  Route::get('/smait', [AdminController::class, 'smait'])->name('smait');
+  Route::get('/tkit1', [AdminController::class, 'tkit1'])->name('tkit1');
+
+  Route::get('/sdit', [AdminController::class, 'sdit'])->name('sdit');
 
   Route::get('/smpit', [AdminController::class, 'smpit'])->name('smpit');
 
-  Route::get('/sdit', [AdminController::class, 'sdit'])->name('sdit');
+  Route::get('/smait', [AdminController::class, 'smait'])->name('smait');
 });
 
 Auth::routes();

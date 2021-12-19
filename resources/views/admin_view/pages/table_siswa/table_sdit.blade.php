@@ -17,7 +17,7 @@ Table Data
   <div class="card shadow mb-4">
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">
-        Pendaftaran SMAIT Nurul 'Ilmi
+        Pendaftaran SDIT Nurul 'Ilmi
       </h6>
     </div>
     <div class="card-body">
@@ -59,7 +59,7 @@ Table Data
               <td>{{ $sd->transport }}/{{ $sd->j_tinggal }}/{{ $sd->jarak }}/{{ $sd->waktu }}</td>
               <td>{{ $sd->penyakit }}</td>
               <td>{{ $sd->bb }}/{{ $sd->tb }}/{{ $sd->gd }}</td>
-              <td>{{ $sd->anak }}-{{ $sd->saudara }}-{{ $sd->tiri }}/{{ $sd->angkat }}</td>
+              <td>{{ $sd->anak }}/{{ $sd->saudara }}/{{ $sd->tiri }}/{{ $sd->angkat }}</td>
               <td>{{ $sd->nama_ayah }}/{{ $sd->ttl_ayah }}/{{ $sd->p_ayah }}/{{ $sd->pekerjaan_ayah }}/{{ $sd->tk_ayah }}/{{ $sd->penghasilan_ayah }}</td>
               <td>{{ $sd->nama_ibu }}/{{ $sd->ttl_ibu }}/{{ $sd->p_ibu }}/{{ $sd->pekerjaan_ibu }}/{{ $sd->tk_ibu }}/{{ $sd->penghasilan_ibu }}</td>
               <td>{{ $sd->nama_wali }}/{{ $sd->p_wali }}/{{ $sd->pekerjaan_wali }}/{{ $sd->penghasilan_wali }}</td>
