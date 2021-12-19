@@ -31,6 +31,7 @@ Route::get('/ppdb', [PPDBController::class, 'index'])->name('ppdb');
 
 // PPDB Form
 Route::resource('ppdb_tkit1', TKIT1Controller::class);
+Route::resource('ppdb_tkit2', TKIT2Controller::class);
 Route::resource('ppdb_sdit', SDITController::class);
 Route::resource('ppdb_smpit', SMPITController::class);
 Route::resource('ppdb_smait', SMAITController::class);
@@ -47,10 +48,12 @@ Route::prefix('admin')
 ->group(function() {
 
   // Dashboard
-  Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+  Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
   // Table
   Route::get('/tkit1', [AdminController::class, 'tkit1'])->name('tkit1');
+
+  Route::get('/tkit2', [AdminController::class, 'tkit2'])->name('tkit2');
 
   Route::get('/sdit', [AdminController::class, 'sdit'])->name('sdit');
 

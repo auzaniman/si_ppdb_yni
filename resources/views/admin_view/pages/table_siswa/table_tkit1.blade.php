@@ -48,18 +48,18 @@ Table Data
 
             @forelse ($tkit1 as $tkit)
             <tr>
-              <td>{{ $tkit->nama }}/{{ $tkit->nama_panggilan }}/{{ $tkit1->kelamin }}</td>
+              <td>{{ $tkit->nama }}/{{ $tkit->nama_panggilan }}/{{ $tkit->kelamin }}</td>
               <td>{{ $tkit->nik }}</td>
               <td>{{ $tkit->alamat }}</td>
-              <td>{{ $tkit->trans_sekolah }}/{{ $tkit1->jarak_waktu }}</td>
+              <td>{{ $tkit->trans_sekolah }}/{{ $tkit->jarak_waktu }}</td>
               <td>{{ $tkit->no_akta }}</td>
               <td>{{ $tkit->hp_ortu }}</td>
-              <td>{{ $tkit->tb }}/{{ $tkit1->bb }}</td>
+              <td>{{ $tkit->tb }}/{{ $tkit->bb }}</td>
               <td>{{ $tkit->lingkar_kepala }}</td>
               <td>{{ $tkit->jumlah_saudara }}</td>
-              <td>{{ $tkit->nama_ayah }}/{{ $tkit->ttl_ayah }}/{{ $tkit1->pekerjaan_ayah }}/{{ $tkit1->pendidikan_ayah }}/{{ $tkit1->penghasilan_ayah }}</td>
-              <td>{{ $tkit->nama_ibu }}/{{ $tkit->ttl_ibu }}/{{ $tkit1->pekerjaan_ibu }}/{{ $tkit1->pendidikan_ibu }}/{{ $tkit1->penghasilan_ibu }}</td>
-              <td>{{ $sma->school->jenjang }}</td>
+              <td>{{ $tkit->nama_ayah }}/{{ $tkit->ttl_ayah }}/{{ $tkit->pekerjaan_ayah }}/{{ $tkit->pendidikan_ayah }}/{{ $tkit->penghasilan_ayah }}</td>
+              <td>{{ $tkit->nama_ibu }}/{{ $tkit->ttl_ibu }}/{{ $tkit->pekerjaan_ibu }}/{{ $tkit->pendidikan_ibu }}/{{ $tkit->penghasilan_ibu }}</td>
+              <td>{{ $tkit->school->jenjang }}</td>
             </tr>
             @empty
 

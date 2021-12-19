@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\School;
-use App\Models\SMPIT;
 use Illuminate\Http\Request;
+use App\Models\TKIT2;
+use App\Models\School;
+use App\Http\Requests\StoreTKIT1Request;
 
-class SMPITController extends Controller
+class TKIT2Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class SMPITController extends Controller
      */
     public function index()
     {
-
+        //
     }
 
     /**
@@ -25,11 +26,11 @@ class SMPITController extends Controller
      */
     public function create()
     {
-      $smpit = SMPIT::all();
+      $tkit2 = TKIT2::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form_smpit', [
-        'smpit' => $smpit,
+      return view('user_view.pages.ppdb.form_tkit1', [
+        'tkit2' => $tkit2,
         'schools' => $schools,
         ]);
     }
@@ -40,18 +41,21 @@ class SMPITController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreTKIT1Request $request)
     {
+      $tkit2 = $request->all();
+      TKIT2::create($tkit2);
 
+      return redirect()->route('success');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
         //
     }
@@ -59,10 +63,10 @@ class SMPITController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit($id)
     {
         //
     }
@@ -71,10 +75,10 @@ class SMPITController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Student  $student
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update()
+    public function update(Request $request, $id)
     {
         //
     }
@@ -82,10 +86,10 @@ class SMPITController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Student  $student
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy()
+    public function destroy($id)
     {
         //
     }

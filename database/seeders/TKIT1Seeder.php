@@ -17,7 +17,7 @@ class TKIT1Seeder extends Seeder
     {
         $tkit1 = [
           [
-            'school_id' => 'auzan',
+            'school_id' => '2',
             'nama' => 'auzan',
             'nama_panggilan' => 'auzan',
             'kelamin' => 'auzan',

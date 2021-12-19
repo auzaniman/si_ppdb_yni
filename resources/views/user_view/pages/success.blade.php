@@ -24,12 +24,11 @@ Sukses Mendaftar
         alt=""
       />
       <div class="text-center w-100">
-        <h1 class="title-text">Checkout Successful</h1>
+        <h1 class="title-text">Pendaftaran Berhasil</h1>
         <p class="caption-text">
-          We've sent the receipt to your email<br
+          Silahkan Hubungi Admin Sekolah<br
             class="d-sm-block d-none"
           />
-          address is example@gmail.com
         </p>
         <div class="d-flex justify-content-center">
           <button class="btn btn-view d-inline-flex text-white">

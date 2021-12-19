@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\School;
-use App\Models\SMAIT;
-use App\Models\SDIT;
 use App\Models\TKIT1;
-use App\Http\Requests\StoreSMAITRequest;
+use App\Models\SDIT;
+use App\Models\SMPIT;
+use App\Models\SMAIT;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -126,7 +126,7 @@ class AdminController extends Controller
     // Table SMP
     public function smpit()
     {
-      $smpit = Request::where('school_id', '5')->get();
+      $smpit = SMPIT::where('school_id', '5')->get();
       $schools = School::all();
 
       return view('admin_view.pages.table_siswa.table_smpit', [
