@@ -11,13 +11,13 @@
     <div class="container-fluid py-5 mt-lg-5">
       <h1 class="display-5 fw-bold">Selamat Datang</h1>
       <h1 class="display-5 fw-bold">
-        PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
+        PPDB Online TKIT 1 <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
-        Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
+        Menjadi taman bermain dan belajar yang menyenangkan dengan pembiasaan  nilai-nilai islami.
       </p>
       <button class="btn-custom border-0">
-        <a href="{{ route('dashboard')}}" class="text-decoration-none"
+        <a href="" class="text-decoration-none"
           >Kunjungi Profil</a
         >
       </button>
@@ -72,18 +72,18 @@
         <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
           <div id="timeline-content">
             <h3 class="ms-5">
-              Lini Masa PPDB Online SMAIT
+              Lini Masa PPDB Online TKIT 1
               <br />
               <span class="ni-font">Nurul 'Ilmi</span>
             </h3>
             <ul class="timeline">
               <li class="event" data-date="1">
                 <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>1 Desember 2021 - 25 April 2022</p>
+                <p>10 Januari 2022 - 31 Maret 2022</p>
               </li>
               <li class="event" data-date="2">
                 <h3>Pendaftaran Online Gelombang 2</h3>
-                <p>16 Mei - 20 Juli 2022</p>
+                <p>1 April - 30 Juni 2022</p>
               </li>
               <li class="event" data-date="3">
                 <h3>Pengumuman</h3>
