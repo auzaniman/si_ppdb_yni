@@ -11,15 +11,13 @@
     <div class="container-fluid py-5 mt-lg-5">
       <h1 class="display-5 fw-bold">Selamat Datang</h1>
       <h1 class="display-5 fw-bold">
-        PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
+        PPDB Online SDIT <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
-        Using a series of utilities, you can create this jumbotron, just
-        like the one in previous versions of Bootstrap. Check out the
-        examples below for how you can remix and restyle it to your liking.
+        Menjadi sekolah dasar yang terbaik yang menerapkan sistem pendidikan islam terpadu.
       </p>
       <button class="btn-custom border-0">
-        <a href="{{ route('dashboard')}}" class="text-decoration-none"
+        <a href="" class="text-decoration-none"
           >Kunjungi Profil</a
         >
       </button>
@@ -74,7 +72,7 @@
         <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
           <div id="timeline-content">
             <h3 class="ms-5">
-              Lini Masa PPDB Online SMAIT
+              Lini Masa PPDB Online SDIT
               <br />
               <span class="ni-font">Nurul 'Ilmi</span>
             </h3>

@@ -11,13 +11,13 @@
     <div class="container-fluid py-5 mt-lg-5">
       <h1 class="display-5 fw-bold">Selamat Datang</h1>
       <h1 class="display-5 fw-bold">
-        PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
+        PPDB Online SMAIT <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
         Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
       </p>
       <button class="btn-custom border-0">
-        <a href="{{ route('dashboard')}}" class="text-decoration-none"
+        <a href="" class="text-decoration-none"
           >Kunjungi Profil</a
         >
       </button>
@@ -79,11 +79,11 @@
             <ul class="timeline">
               <li class="event" data-date="1">
                 <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>1 Desember 2021 - 25 April 2022</p>
+                <p>2 Januari 2022 - 23 April 2022</p>
               </li>
               <li class="event" data-date="2">
                 <h3>Pendaftaran Online Gelombang 2</h3>
-                <p>16 Mei - 20 Juli 2022</p>
+                <p>31 Mei 2022 - 23 Juli 2022</p>
               </li>
               <li class="event" data-date="3">
                 <h3>Pengumuman</h3>
@@ -101,6 +101,12 @@
   </div>
 </section>
 {{-- End Timeline --}}
+
+<section>
+  <div class="container">
+    <img src="{{ url('frontend/assets/img/YNI/SMAIT/posdig.jpeg') }}" alt="Poster Digital" class="img-fluid">
+  </div>
+</section>
 
 <!-- FORM PENDAFTARAN -->
 <section class="form-pendaftaran">
