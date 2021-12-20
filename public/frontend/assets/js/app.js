@@ -1,28 +1,28 @@
 // NAVBAR FIXED TOP ON SCROLL
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      document.getElementById("navbar_top").classList.add("bg-nav");
-    } else {
-      document.getElementById("navbar_top").classList.remove("bg-nav");
-    }
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   window.addEventListener("scroll", function () {
+//     if (window.scrollY > 50) {
+//       document.getElementById("navbar_top").classList.add("bg-nav");
+//     } else {
+//       document.getElementById("navbar_top").classList.remove("bg-nav");
+//     }
+//   });
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-  function myFunction(x) {
-    if (x.matches) {
-      // If media query matches
-      document.getElementById("navbar_top").classList.remove("fixed-top");
-    } else {
-      document.getElementById("navbar_top").classList.add("fixed-top");
-    }
-  }
+// document.addEventListener("DOMContentLoaded", function () {
+//   function myFunction(x) {
+//     if (x.matches) {
+//       // If media query matches
+//       document.getElementById("navbar_top").classList.remove("fixed-top");
+//     } else {
+//       document.getElementById("navbar_top").classList.add("fixed-top");
+//     }
+//   }
 
-  var x = window.matchMedia("(max-width: 700px)");
-  myFunction(x); // Call listener function at run time
-  x.addListener(myFunction); // Attach listener function on state changes
-});
+//   var x = window.matchMedia("(max-width: 700px)");
+//   myFunction(x); // Call listener function at run time
+//   x.addListener(myFunction); // Attach listener function on state changes
+// });
 
 // MULTIDROPDOWN
 document.addEventListener("DOMContentLoaded", function () {

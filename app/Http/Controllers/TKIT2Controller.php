@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\TKIT2;
 use App\Models\School;
-use App\Http\Requests\StoreTKIT1Request;
+use App\Http\Requests\StoreTKIT2Request;
 
 class TKIT2Controller extends Controller
 {
@@ -41,7 +41,7 @@ class TKIT2Controller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreTKIT1Request $request)
+    public function store(StoreTKIT2Request $request)
     {
       $tkit2 = $request->all();
       TKIT2::create($tkit2);

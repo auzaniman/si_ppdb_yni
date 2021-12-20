@@ -1,4 +1,4 @@
-<nav id="navbar_top" class="fixed-top navbar navbar-expand-lg p-lg-2">
+<nav class="fixed-top navbar bg-light navbar-light navbar-expand-lg p-lg-2">
   <div class="container-fluid me-lg-2">
     <a class="navbar-brand d-none d-lg-block ms-lg-4" href="{{ route('home')}}">
       <img
@@ -41,7 +41,7 @@
         @guest
         <li class="nav-item">
           <form>
-            <button class="btn btn-primary nav-link hvr-underline-from-center" onclick="event.preventDefault(); location.href='{{ url('login')}}';" type="button">Login</button>
+            <button class="btn text-white btn-primary nav-link hvr-underline-from-center" onclick="event.preventDefault(); location.href='{{ url('login')}}';" type="button">Login</button>
           </form>
         </li>
         @endguest
@@ -50,7 +50,7 @@
         <li class="nav-item">
           <form action="{{ url('logout') }}" method="POST">
             @csrf
-            <button class="btn btn-primary nav-link hvr-underline-from-center" type="submit">Logout</button>
+            <button class="btn text-white btn-primary nav-link hvr-underline-from-center" type="submit">Logout</button>
           </form>
         </li>
         @endauth

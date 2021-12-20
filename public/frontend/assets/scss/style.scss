@@ -102,13 +102,11 @@ q {
 }
 
 // NAVBAR
-.bg-nav {
-  background: var(--green-grad);
-}
-
 .navbar {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+
   .navbar-brand {
-    color: var(--soft-white);
+    color: #2c2c2c;
     font-weight: 500;
   }
 
@@ -153,7 +151,7 @@ q {
         margin-right: 2rem;
 
         .nav-link {
-          color: var(--soft-white);
+          color: var(--greydark);
           font-weight: 600;
         }
       }

@@ -1,4 +1,4 @@
-<nav id="navbar_top" class="fixed-top navbar navbar-expand-lg p-lg-2">
+<nav class="fixed-top navbar bg-light navbar-light navbar-expand-lg p-lg-2">
   <div class="container-fluid me-lg-2">
     <a class="navbar-brand d-none d-lg-block ms-lg-4" href="{{ route('home')}}">
       <img
