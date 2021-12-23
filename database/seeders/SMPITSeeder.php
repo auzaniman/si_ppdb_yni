@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\SMAIT;
+use App\Models\SMPIT;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class SMAITSeeder extends Seeder
+class SMPITSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,9 @@ class SMAITSeeder extends Seeder
      */
     public function run()
     {
-        $smait = [
+        $smpit = [
           [
-            'school_id' => '6',
+            'school_id' => '5',
             'stay' => 'Reguler',
             'department' => 'IPA',
             'program' => 'Reguler',
@@ -40,7 +40,7 @@ class SMAITSeeder extends Seeder
             'image' => '1.jpeg'
           ],
           [
-            'school_id' => '6',
+            'school_id' => '5',
             'stay' => 'Reguler',
             'department' => 'IPA',
             'program' => 'Reguler',
@@ -64,6 +64,6 @@ class SMAITSeeder extends Seeder
           ],
         ];
 
-        SMAIT::insert($smait);
+        SMPIT::insert($smpit);
     }
 }

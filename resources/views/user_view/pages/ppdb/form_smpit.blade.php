@@ -11,7 +11,7 @@
     <div class="container-fluid py-5 mt-lg-5">
       <h1 class="display-5 fw-bold">Selamat Datang</h1>
       <h1 class="display-5 fw-bold">
-        PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
+        PPDB Online SMPIT <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
         Using a series of utilities, you can create this jumbotron, just
@@ -27,6 +27,22 @@
   </div>
 </section>
 <!-- JUMBOTRON END -->
+
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+
+@if (session('status'))
+<div class="alert alert-success" role="alert">
+    {{ session('status') }}
+</div>
+@endif
 
 {{-- Timeline --}}
 <section class="wrapper-timeline" id="timeline">
@@ -58,7 +74,7 @@
         <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-10">
           <div id="timeline-content">
             <h3 class="ms-5">
-              Lini Masa PPDB Online SMAIT
+              Lini Masa PPDB Online SMPIT
               <br />
               <span class="ni-font">Nurul 'Ilmi</span>
             </h3>
@@ -116,28 +132,12 @@
 @endguest
 
 @auth
-@if ($errors->any())
-<div class="alert alert-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-@endif
-
-@if (session('status'))
-<div class="alert alert-success" role="alert">
-    {{ session('status') }}
-</div>
-@endif
-
 <div class="container mt-3 mb-5 d-flex justify-content-center">
   <div class="card px-1 py-4">
-    <form action="{{ route('student.store') }}" method="POST">
+    <form action="{{ route('ppdb_smpit.store') }}" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="card-body">
-        <h5 class="card-title mb-2">Pendaftaran untuk SMAIT</h5>
+        <h5 class="card-title mb-2">Pendaftaran untuk SMPIT</h5>
         <h6 class="information">Silahkan isi formulir pendaftaran</h6>
         <div class="row mt-3">
           <div class="col-sm-12">
@@ -242,6 +242,23 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="kk">No KK</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="kk"
+                name="kk"
+                value=""
+              />
+              @error('kk')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="nisn">NISN</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -276,6 +293,23 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
+              <label for="nik_ayah">NIK Ayah</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nik_ayah"
+                name="nik_ayah"
+                value="{{ old('nik_ayah') }}"
+              />
+              @error('nik_ayah')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
               <label for="pekerjaan_ayah">Pekerjaan Ayah</label>
               <input
                 class="form-control mt-0 mb-2"
@@ -302,6 +336,23 @@
                 value="{{ old('nama_ibu') }}"
               />
               @error('nama_ibu')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="nik_ibu">NIK Ibu</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="text"
+                id="nik_ibu"
+                name="nik_ibu"
+                value="{{ old('nik_ibu') }}"
+              />
+              @error('nik_ibu')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>
@@ -378,14 +429,28 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="stay_id">Pilihan Tinggal</label>
-              <select name="stay_id" class="form-control wide mt-0 mb-2">
+              <label for="image">Upload KK</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="file"
+                id="image"
+                name="image"
+                value=""
+              />
+              @error('image')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="stay">Pilihan Tinggal</label>
+              <select name="stay" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
-                @foreach ($stays as $stay)
-                <option value="{{ $stay->id }}">
-                {{ $stay->pilihan_tinggal }}
-                </option>
-                @endforeach
+                <option value="Reguler">Reguler</option>
+                <option value="Boarding">Boarding</option>
               </select>
             </div>
           </div>
@@ -393,29 +458,11 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="department_id">Pilihan Jurusan</label>
-              <select name="department_id" class="form-control wide mt-0 mb-2">
+              <label for="program">Pilihan Program</label>
+              <select name="program" class="form-control wide mt-0 mb-2">
                 <option data-display="Pilih">-</option>
-                @foreach ($departments as $department)
-                <option value="{{ $department->id }}">
-                {{ $department->pilihan_jurusan }}
-                </option>
-                @endforeach
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="program_id">Pilihan Program</label>
-              <select name="program_id" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                @foreach ($programs as $program)
-                <option value="{{ $program->id }}">
-                {{ $program->pilihan_program }}
-                </option>
-                @endforeach
+                <option value="Reguler">Reguler</option>
+                <option value="Tahfidz">Tahfidz</option>
               </select>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreSMPITRequest;
 use App\Models\School;
 use App\Models\SMPIT;
 use Illuminate\Http\Request;
@@ -40,9 +41,35 @@ class SMPITController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreSMPITRequest $request)
     {
+      $smpit = new SMPIT();
 
+      $smpit->school_id = $request->school_id;
+      $smpit->stay = $request->stay;
+      $smpit->program = $request->program;
+      $smpit->nama = $request->nama;
+      $smpit->ttl = $request->ttl;
+      $smpit->alamat = $request->alamat;
+      $smpit->asal_sekolah = $request->asal_sekolah;
+      $smpit->nisn = $request->nisn;
+      $smpit->nik = $request->nik;
+      $smpit->kk = $request->kk;
+      $smpit->nama_ayah = $request->nama_ayah;
+      $smpit->nik_ayah = $request->nik_ayah;
+      $smpit->nama_ibu = $request->nama_ibu;
+      $smpit->nik_ibu = $request->nik_ibu;
+      $smpit->pekerjaan_ayah = $request->pekerjaan_ayah;
+      $smpit->pekerjaan_ibu = $request->pekerjaan_ibu;
+      $smpit->ukuran_baju = $request->ukuran_baju;
+      $smpit->hp_ortu = $request->hp_ortu;
+      $smpit->hp_siswa = $request->hp_siswa;
+      $smpit->image = $request->image;
+      $smpit['image'] = $request->file('image')->store('', 'public');
+
+      $smpit->save();
+
+      return redirect()->route('success');
     }
 
     /**

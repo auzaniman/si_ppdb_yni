@@ -17,7 +17,7 @@ Table Data
   <div class="card shadow mb-4">
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">
-        Pendaftaran SMPIT Nurul 'Ilmi
+        Pendaftaran SMAIT Nurul 'Ilmi
       </h6>
     </div>
     <div class="card-body">
@@ -34,14 +34,34 @@ Table Data
               <th>NIK/NISN</th>
               <th>Asal Sekolah</th>
               <th>Alamat</th>
-              <th>Status</th>
-              <th>Jurusan & Program</th>
-              <th>Status</th>
-              <th>Jurusan & Program</th>
+              <th>Nama Ayah/Pekerjaan/NIK</th>
+              <th>Nama Ibu/Pekerjaan/NIK</th>
+              <th>HP Siswa/Ortu</th>
+              <th>Tinggal/Program</th>
+              <th>File</th>
               <th>Status</th>
             </tr>
           </thead>
           <tbody>
+
+            @forelse ($smpit as $smp)
+            <tr>
+              <td>{{ $smp->nama }}</td>
+              <td>{{ $smp->nik }}/{{ $smp->nisn }}/{{ $smp->kk }}</td>
+              <td>{{ $smp->asal_sekolah }}</td>
+              <td>{{ $smp->alamat }}</td>
+              <td>{{ $smp->nama_ayah }}/{{ $smp->pekerjaan_ayah }}/{{ $smp->nik_ayah }}</td>
+              <td>{{ $smp->nama_ibu }}/{{ $smp->pekerjaan_ibu }}/{{ $smp->nik_ibu }}</td>
+              <td>{{ $smp->hp_siswa }}/{{ $smp->hp_ortu }}</td>
+              <td>{{ $smp->stay }}-{{ $smp->program }}</td>
+              <td>
+                <img src="{{ asset('storage/assets/ppdb/'.$smp->image) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
+              <td>{{ $smp->school->jenjang }}</td>
+            </tr>
+            @empty
+
+            @endforelse
 
           </tbody>
         </table>

@@ -13,6 +13,25 @@ class SMPIT extends Model
 
   protected $fillable = [
     'school_id',
+    'stay',
+    'program',
+    'nama',
+    'ttl',
+    'alamat',
+    'asal_sekolah',
+    'nisn',
+    'nik',
+    'kk',
+    'nama_ayah',
+    'nik_ayah',
+    'nama_ibu',
+    'nik_ibu',
+    'pekerjaan_ayah',
+    'pekerjaan_ibu',
+    'ukuran_baju',
+    'hp_siswa',
+    'hp_ortu',
+    'image',
   ];
 
   // Relation

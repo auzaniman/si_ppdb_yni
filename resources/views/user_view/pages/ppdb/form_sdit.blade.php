@@ -135,7 +135,7 @@
     <form action="{{ route('ppdb_sdit.store') }}" method="POST">
       @csrf
       <div class="card-body">
-        <h5 class="card-title mb-2">Pendaftaran untuk SMAIT</h5>
+        <h5 class="card-title mb-2">Pendaftaran untuk SDIT</h5>
         <h6 class="information">Silahkan isi formulir pendaftaran</h6>
         <div class="row mt-3">
           <div class="col-sm-12">

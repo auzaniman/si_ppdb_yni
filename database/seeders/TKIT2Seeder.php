@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\TKIT1;
+use App\Models\TKIT2;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class TKIT1Seeder extends Seeder
+class TKIT2Seeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,9 @@ class TKIT1Seeder extends Seeder
      */
     public function run()
     {
-        $tkit1 = [
+        $tkit2 = [
           [
-            'school_id' => '2',
+            'school_id' => '3',
             'nama' => 'auzan',
             'nama_panggilan' => 'auzan',
             'kelamin' => 'auzan',
@@ -45,6 +45,6 @@ class TKIT1Seeder extends Seeder
           ],
         ];
 
-        TKIT1::insert($tkit1);
+        TKIT2::insert($tkit2);
     }
 }
