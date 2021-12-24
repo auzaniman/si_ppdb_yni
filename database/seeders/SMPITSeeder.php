@@ -19,7 +19,6 @@ class SMPITSeeder extends Seeder
           [
             'school_id' => '5',
             'stay' => 'Reguler',
-            'department' => 'IPA',
             'program' => 'Reguler',
             'nama' => 'Auzan',
             'ttl' => 'Semarang, 12 Juni 1996',
@@ -42,7 +41,6 @@ class SMPITSeeder extends Seeder
           [
             'school_id' => '5',
             'stay' => 'Reguler',
-            'department' => 'IPA',
             'program' => 'Reguler',
             'nama' => 'Nuna',
             'ttl' => 'Tenggarong, 27 Juni 1997',
