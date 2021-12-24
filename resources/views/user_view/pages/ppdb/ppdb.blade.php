@@ -32,7 +32,7 @@
     <h2 class="text-center mb-lg-4">PENDAFTARAN SEKOLAH</h2>
   </div>
   <div class="row text-center mt-lg-5 mb-lg-4">
-    <div class="col-lg-6">
+    <div class="col-lg-4">
       <img
         src="{{ url ('frontend/assets/img/YNI/KBIT/logo.jpeg')}}"
         class="img-fluid"
@@ -56,7 +56,7 @@
         </button>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
       <img
         src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}"
         class="img-fluid"
@@ -80,7 +80,7 @@
         </button>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
       <img
         src="{{ url ('frontend/assets/img/YNI/TKIT2/logo.jpg')}}"
         class="img-fluid"

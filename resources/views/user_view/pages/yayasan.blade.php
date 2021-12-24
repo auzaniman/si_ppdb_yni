@@ -101,7 +101,7 @@ Yayasan Nurul 'Ilmi
   <h2 class="text-center mt-4">UNIT SEKOLAH</h2>
   <section class="section-popular-content mt-5 pt-3">
     <div class="container">
-      <div class="section-popular-unit row justify-content-center">
+      <div class="section-popular-unit row justify-content-center mb-5">
         <div class="col-sm-6 col-md-4 col-lg-3 me-4">
           <div
             class="card-unit d-flex flex-column text-center"
