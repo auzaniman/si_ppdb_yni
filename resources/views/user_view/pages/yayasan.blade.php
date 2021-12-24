@@ -105,6 +105,62 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3 me-4">
           <div
             class="card-unit d-flex flex-column text-center"
+            style="background-image: url(frontend/assets/img/YNI/TKIT1/5.jpg)"
+          >
+            <div class="unit-title mt-4 fw-bold">
+              KBIT <span class="ni-font">Nurul 'Ilmi</span>
+            </div>
+            <div class="unit-lokasi mt-2">Tenggarong</div>
+            <div class="mt-auto">
+              <button class="btn-custom border-0">
+                <a href="{{ route ('ppdb') }}" class="text-decoration-none"
+                  >Kunjungi Profil</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div
+            class="card-unit d-flex flex-column text-center"
+            style="background-image: url(frontend/assets/img/YNI/TKIT1/6.jpg)"
+          >
+            <div class="unit-title mt-4 fw-bold">
+              TKIT 1 <span class="ni-font">Nurul 'Ilmi</span>
+            </div>
+            <div class="unit-lokasi mt-2">Tenggarong</div>
+            <div class="mt-auto">
+              <button class="btn-custom border-0">
+                <a href="{{ route ('ppdb') }}" class="text-decoration-none"
+                  >Kunjungi Profil</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ms-4">
+          <div
+            class="card-unit d-flex flex-column text-center"
+            style="background-image: url(frontend/assets/img/YNI/TKIT2/4.jpg)"
+          >
+            <div class="unit-title mt-4 fw-bold">
+              TKIT 2 <span class="ni-font">Nurul 'Ilmi</span>
+            </div>
+            <div class="unit-lokasi mt-2">Tenggarong</div>
+            <div class="mt-auto">
+              <button class="btn-custom border-0">
+                <a href="{{ route ('ppdb') }}" class="text-decoration-none"
+                  >Kunjungi Profil</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-popular-unit row justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-3 me-4">
+          <div
+            class="card-unit d-flex flex-column text-center"
             style="background-image: url(frontend/assets/img/YNI/SDIT/1.jpeg)"
           >
             <div class="unit-title mt-4 fw-bold">
@@ -123,7 +179,7 @@ Yayasan Nurul 'Ilmi
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div
             class="card-unit d-flex flex-column text-center"
-            style="background-image: url(frontend/assets/img/YNI/SMAIT/2.jpeg)"
+            style="background-image: url(frontend/assets/img/YNI/SMPIT/7.jpg)"
           >
             <div class="unit-title mt-4 fw-bold">
               SMPIT <span class="ni-font">Nurul 'Ilmi</span>

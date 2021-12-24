@@ -34,6 +34,30 @@
   <div class="row text-center mt-lg-5 mb-lg-4">
     <div class="col-lg-6">
       <img
+        src="{{ url ('frontend/assets/img/YNI/KBIT/logo.jpeg')}}"
+        class="img-fluid"
+        width="200"
+        height="200"
+        alt=""
+      />
+      <p class="fs-3">KBIT</p>
+      <div class="mb-2">
+        <button class="btn-custom btn-red border-0">
+          <a href="" class="text-decoration-none"
+            >Kunjungi Profil</a
+          >
+        </button>
+      </div>
+      <div>
+        <button class="btn-custom btn-red border-0">
+          <a href="" class="text-decoration-none"
+            >Daftar</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img
         src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}"
         class="img-fluid"
         width="200"
@@ -58,7 +82,7 @@
     </div>
     <div class="col-lg-6">
       <img
-        src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}"
+        src="{{ url ('frontend/assets/img/YNI/TKIT2/logo.jpg')}}"
         class="img-fluid"
         width="200"
         height="200"
@@ -133,7 +157,7 @@
 
     <div class="col-lg-4">
       <img
-        src="{{ url ('frontend/assets/img/logo/logo.png')}}"
+        src="{{ url ('frontend/assets/img/YNI/SMAIT/logo.png')}}"
         class="img-fluid"
         width="200"
         height="200"
