@@ -30,34 +30,38 @@ Table Data
         >
           <thead>
             <tr>
-              <th>Nama Siswa</th>
-              <th>NIK/NISN</th>
-              <th>Asal Sekolah</th>
+              <th>Nama Siswa/Nama Panggilan/Kelamin</th>
+              <th>NIK</th>
               <th>Alamat</th>
-              <th>Nama Ayah/Pekerjaan/NIK</th>
-              <th>Nama Ibu/Pekerjaan/NIK</th>
-              <th>HP Siswa/Ortu</th>
-              <th>Jurusan/Tinggal/Program</th>
-              <th>File</th>
+              <th>Transportasi/Jarak dan Waktu ke Sekolah</th>
+              <th>No Akta</th>
+              <th>No HP</th>
+              <th>TB/BB</th>
+              <th>Lingkar Kepala</th>
+              <th>Jumlah Saudara</th>
+              <th>Nama Ayah/TTL Ayah/Pekerjaan Ayah/Pendidikan Ayah/Penghasilan Ayah</th>
+              <th>Nama Ibu/TTL Ibu/Pekerjaan Ibu/Pendidikan Ibu/Penghasilan Ibu</th>
               <th>Status</th>
             </tr>
           </thead>
           <tbody>
 
-            @forelse ($smait as $sma)
+            @forelse ($tkit2 as $tk)
             <tr>
-              <td>{{ $sma->nama }}</td>
-              <td>{{ $sma->nik }}/{{ $sma->nisn }}/{{ $sma->kk }}</td>
-              <td>{{ $sma->asal_sekolah }}</td>
-              <td>{{ $sma->alamat }}</td>
-              <td>{{ $sma->nama_ayah }}/{{ $sma->pekerjaan_ayah }}/{{ $sma->nik_ayah }}</td>
-              <td>{{ $sma->nama_ibu }}/{{ $sma->pekerjaan_ibu }}/{{ $sma->nik_ibu }}</td>
-              <td>{{ $sma->hp_siswa }}/{{ $sma->hp_ortu }}</td>
-              <td>{{ $sma->department }}-{{ $sma->stay }}-{{ $sma->program }}</td>
-              <td>
-                <img src="{{ Storage::url($sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
-              </td>
-              <td>{{ $sma->school->jenjang }}</td>
+              <td>{{ $tk->nama_akta }}/{{ $tk->nama_panggil }}/{{ $tk->jenis_kelamin }}</td>
+              <td>{{ $tk->nik_anak }}</td>
+              <td>{{ $tk->alamat_siswa }}</td>
+              <td>{{ $tk->agama }}</td>
+              <td>{{ $tk->jenis_tinggal }}</td>
+              <td>{{ $tk->transportasi }}/{{ $tk->jarak_tinggal }}/{{ $tk->waktu_tempuh }}</td>
+              <td>{{ $tk->no_akta }}</td>
+              <td>{{ $tk->hp_ortu }}</td>
+              <td>{{ $tk->tb }}/{{ $tk->bb }}</td>
+              <td>{{ $tk->lingkar_kepala }}</td>
+              <td>{{ $tk->jumlah_saudara }}</td>
+              <td>{{ $tk->nama_ayah }}/{{ $tk->ttl_ayah }}/{{ $tk->pekerjaan_ayah }}/{{ $tk->pendidikan_ayah }}/{{ $tk->penghasilan_ayah }}</td>
+              <td>{{ $tk->nama_ibu }}/{{ $tk->ttl_ibu }}/{{ $tk->pekerjaan_ibu }}/{{ $tk->pendidikan_ibu }}/{{ $tk->penghasilan_ibu }}</td>
+              <td>{{ $tk->school->jenjang }}</td>
             </tr>
             @empty
 

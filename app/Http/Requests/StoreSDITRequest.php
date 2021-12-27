@@ -68,12 +68,6 @@ class StoreSDITRequest extends FormRequest
         'tk_ibu' => 'required',
         'penghasilan_ibu' => 'required',
         'alamat_ortu' => 'required',
-        'nama_wali' => 'required',
-        'p_wali' => 'required',
-        'pekerjaan_wali' => 'required',
-        'penghasilan_wali' => 'required',
-        'hp_wali' => 'required',
-        'alamat_wali' => 'required',
         ];
     }
 }

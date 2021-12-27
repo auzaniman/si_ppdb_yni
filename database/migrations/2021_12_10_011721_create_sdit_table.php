@@ -58,12 +58,12 @@ class CreateSditTable extends Migration
             $table->string('tk_ibu');
             $table->string('penghasilan_ibu');
             $table->string('alamat_ortu');
-            $table->string('nama_wali');
-            $table->string('p_wali');
-            $table->string('pekerjaan_wali');
-            $table->string('penghasilan_wali');
-            $table->string('hp_wali');
-            $table->string('alamat_wali');
+            $table->string('nama_wali')->nullable();
+            $table->string('p_wali')->nullable();
+            $table->string('pekerjaan_wali')->nullable();
+            $table->string('penghasilan_wali')->nullable();
+            $table->string('hp_wali')->nullable();
+            $table->string('alamat_wali')->nullable();
             $table->timestamps();
         });
     }
