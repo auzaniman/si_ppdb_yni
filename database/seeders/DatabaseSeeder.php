@@ -15,8 +15,6 @@ class DatabaseSeeder extends Seeder
     {
       $this->call([
         KBITSeeder::class,
-        TKIT2Seeder::class,
-        SMPITSeeder::class,
         SchoolSeeder::class,
       ]);
     }
