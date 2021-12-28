@@ -14,7 +14,7 @@
         PPDB Online KBIT <span class="ni-font">Nurul 'Ilmi</span>
       </h1>
       <p class="col-md-8 fs-4">
-        Menjadi taman bermain dan belajar yang menyenangkan dengan pembiasaan  nilai-nilai islami.
+        Menjadi generasi Islam cerdas dan mandiri.
       </p>
       <button class="btn-custom border-0">
         <a href="" class="text-decoration-none"
