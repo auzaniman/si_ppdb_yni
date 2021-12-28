@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       $this->call([
+        KBITSeeder::class,
         TKIT2Seeder::class,
         SMPITSeeder::class,
         SchoolSeeder::class,

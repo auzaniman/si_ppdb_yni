@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\School;
+use App\Models\KBIT;
 use App\Models\TKIT1;
 use App\Models\TKIT2;
 use App\Models\SDIT;
@@ -86,6 +87,18 @@ class AdminController extends Controller
     public function destroy()
     {
         //
+    }
+
+    // Table KB
+    public function kbit()
+    {
+      $kbit = KBIT::where('school_id', '1')->get();
+      $schools = School::all();
+
+      return view('admin_view.pages.table_siswa.table_kbit', [
+        'kbit' => $kbit,
+        'schools' => $schools,
+        ]);
     }
 
     // Table TK1

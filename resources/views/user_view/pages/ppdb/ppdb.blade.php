@@ -50,7 +50,7 @@
       </div>
       <div>
         <button class="btn-custom btn-red border-0">
-          <a href="" class="text-decoration-none"
+          <a href="{{ route('ppdb_kbit.create') }}" class="text-decoration-none"
             >Daftar</a
           >
         </button>

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KBITController;
 use App\Http\Controllers\TKIT1Controller;
 use App\Http\Controllers\TKIT2Controller;
 use App\Http\Controllers\SDITController;
@@ -31,6 +32,7 @@ Route::get('/', function () {
 Route::get('/ppdb', [PPDBController::class, 'index'])->name('ppdb');
 
 // PPDB Form
+Route::resource('ppdb_kbit', KBITController::class);
 Route::resource('ppdb_tkit1', TKIT1Controller::class);
 Route::resource('ppdb_tkit2', TKIT2Controller::class);
 Route::resource('ppdb_sdit', SDITController::class);
@@ -52,6 +54,8 @@ Route::prefix('admin')
   Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
   // Table
+  Route::get('/kbit', [AdminController::class, 'kbit'])->name('kbit');
+
   Route::get('/tkit1', [AdminController::class, 'tkit1'])->name('tkit1');
 
   Route::get('/tkit2', [AdminController::class, 'tkit2'])->name('tkit2');

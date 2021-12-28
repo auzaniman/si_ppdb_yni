@@ -17,7 +17,7 @@ class SchoolSeeder extends Seeder
     {
       $school = [
           [
-            'jenjang' => 'PAUD'
+            'jenjang' => 'KBIT'
           ],
           [
             'jenjang' => 'TKIT1'
