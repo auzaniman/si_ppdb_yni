@@ -60,7 +60,7 @@ class TKIT2 extends Model
     'nama_wali',
     'pendidikan_wali',
     'pekerjaan_wali',
-    'penghasilan_ayah',
+    'penghasilan_wali',
     'no_wali',
     'alamat_wali',
   ];

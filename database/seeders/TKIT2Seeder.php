@@ -65,7 +65,7 @@ class TKIT2Seeder extends Seeder
             'nama_wali' => 'auzan',
             'pendidikan_wali' => 'auzan',
             'pekerjaan_wali' => 'auzan',
-            'penghasilan_ayah' => 'auzan',
+            'penghasilan_wali' => 'auzan',
             'no_wali' => 'auzan',
             'alamat_wali' => 'auzan',
           ],

@@ -32,15 +32,24 @@ Table Data
             <tr>
               <th>Nama Siswa/Nama Panggilan/Kelamin</th>
               <th>NIK</th>
+              <th>TTL</th>
               <th>Alamat</th>
-              <th>Transportasi/Jarak dan Waktu ke Sekolah</th>
-              <th>No Akta</th>
-              <th>No HP</th>
-              <th>TB/BB</th>
-              <th>Lingkar Kepala</th>
-              <th>Jumlah Saudara</th>
-              <th>Nama Ayah/TTL Ayah/Pekerjaan Ayah/Pendidikan Ayah/Penghasilan Ayah</th>
-              <th>Nama Ibu/TTL Ibu/Pekerjaan Ibu/Pendidikan Ibu/Penghasilan Ibu</th>
+              <th>Agama</th>
+              <th>Jenis Tinggal</th>
+              <th>Transportasi/Jarak/Waktu ke Sekolah</th>
+              <th>Penyakit</th>
+              <th>Anak ke/Saudara Kandung/Tiri/Angkat</th>
+              <th>Bahasa</th>
+              <th>TB/BB/GD</th>
+              <th>Hobi</th>
+              <th>Cita-Cita</th>
+              <th>Sekolah Asal</th>
+              <th>Alamat Sekolah Asal</th>
+              <th>No KK</th>
+              <th>Nama Ayah/NIK/TTL/Pekerjaan/Pendidikan/Tempat Kerja/Penghasilan/No/Alamat</th>
+              <th>Nama Ibu/NIK/TTL/Pekerjaan/Pendidikan/Tempat Kerja/Penghasilan/No/Alamat</th>
+              <th>Tinggal Bersama Wali</th>
+              <th>Nama Wali/Pekerjaan/Pendidikan/Penghasilan/No/Alamat</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -50,17 +59,24 @@ Table Data
             <tr>
               <td>{{ $tk->nama_akta }}/{{ $tk->nama_panggil }}/{{ $tk->jenis_kelamin }}</td>
               <td>{{ $tk->nik_anak }}</td>
+              <td>{{ $tk->tt_lahir }}</td>
               <td>{{ $tk->alamat_siswa }}</td>
               <td>{{ $tk->agama }}</td>
               <td>{{ $tk->jenis_tinggal }}</td>
               <td>{{ $tk->transportasi }}/{{ $tk->jarak_tinggal }}/{{ $tk->waktu_tempuh }}</td>
-              <td>{{ $tk->no_akta }}</td>
-              <td>{{ $tk->hp_ortu }}</td>
-              <td>{{ $tk->tb }}/{{ $tk->bb }}</td>
-              <td>{{ $tk->lingkar_kepala }}</td>
-              <td>{{ $tk->jumlah_saudara }}</td>
-              <td>{{ $tk->nama_ayah }}/{{ $tk->ttl_ayah }}/{{ $tk->pekerjaan_ayah }}/{{ $tk->pendidikan_ayah }}/{{ $tk->penghasilan_ayah }}</td>
-              <td>{{ $tk->nama_ibu }}/{{ $tk->ttl_ibu }}/{{ $tk->pekerjaan_ibu }}/{{ $tk->pendidikan_ibu }}/{{ $tk->penghasilan_ibu }}</td>
+              <td>{{ $tk->penyakit }}</td>
+              <td>{{ $tk->anak_ke }}/{{ $tk->jml_saudara_kandung }}/{{ $tk->jml_saudara_tiri }}/{{ $tk->jml_saudara_angkat }}</td>
+              <td>{{ $tk->bahasa_sehari }}</td>
+              <td>{{ $tk->tb }}/{{ $tk->bb }}/{{ $tk->gd }}</td>
+              <td>{{ $tk->hobi }}</td>
+              <td>{{ $tk->cita_cita }}</td>
+              <td>{{ $tk->sekolah_asal }}</td>
+              <td>{{ $tk->alamat_sekolah_asal }}</td>
+              <td>{{ $tk->no_kk }}</td>
+              <td>{{ $tk->nama_ayah }}/{{ $tk->nik_ayah }}/{{ $tk->ttl_ayah }}/{{ $tk->pekerjaan_ayah }}/{{ $tk->pendidikan_ayah }}/{{ $tk->tempat_kerja_ayah }}/{{ $tk->penghasilan_ayah }}/{{ $tk->no_ayah }}/{{ $tk->alamat_ayah }}</td>
+              <td>{{ $tk->nama_ibu }}/{{ $tk->nik_ibu }}/{{ $tk->ttl_ibu }}/{{ $tk->pekerjaan_ibu }}/{{ $tk->pendidikan_ibu }}/{{ $tk->tempat_kerja_ibu }}/{{ $tk->penghasilan_ibu }}/{{ $tk->no_ibu }}/{{ $tk->alamat_ibu }}</td>
+              <td>{{ $tk->tinggal_bersama_wali }}</td>
+              <td>{{ $tk->nama_wali }}/{{ $tk->pekerjaan_wali }}/{{ $tk->pendidikan_wali }}/{{ $tk->penghasilan_wali }}/{{ $tk->no_wali }}/{{ $tk->alamat_wali }}</td>
               <td>{{ $tk->school->jenjang }}</td>
             </tr>
             @empty

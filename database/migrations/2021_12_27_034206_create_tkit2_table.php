@@ -63,7 +63,7 @@ class CreateTkit2Table extends Migration
             $table->string('nama_wali')->nullable();
             $table->string('pendidikan_wali')->nullable();
             $table->string('pekerjaan_wali')->nullable();
-            $table->string('penghasilan_ayah')->nullable();
+            $table->string('penghasilan_wali')->nullable();
             $table->string('no_wali')->nullable();
             $table->string('alamat_wali')->nullable();
             $table->timestamps();
