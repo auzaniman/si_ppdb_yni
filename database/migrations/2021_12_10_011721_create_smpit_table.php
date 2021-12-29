@@ -16,7 +16,6 @@ class CreateSmpitTable extends Migration
         Schema::create('smpit', function (Blueprint $table) {
             $table->id();
             $table->foreignId('school_id');
-            $table->string('stay');
             $table->string('program');
             $table->string('nama');
             $table->string('ttl');

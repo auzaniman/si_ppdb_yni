@@ -58,16 +58,12 @@
         <div class="col-xl-5 col-lg-6 col-md-10">
           <div class="content-l5-2-content section__heading-2">
             <h3>
-              Persyaratan Daftar Ulang:
+              Alur Daftar Ulang:
             </h3>
             <ul class="mt-3">
-              <li>Menunjukkan Kuitansi/Bukti Pembayaran/Nomor Registrasi</li>
-              <li>Pas Foto Warna</li>
-              <li>Fotokopi Raport</li>
-              <li>Fotokopi Kartu Keluarga</li>
-              <li>Fotokopi Piagam</li>
-              <li>Fotokopi Ijazah</li>
-              <li>Biaya Pendaftaran</li>
+              <li>Membayar Biaya Daftar Ulang</li>
+              <li>Mengambil Buku dan Seragam Siswa</li>
+              <li>Bagi yang tidak daftar ulang dinyatakan gugur</li>
             </ul>
           </div>
         </div>
@@ -81,19 +77,27 @@
             <ul class="timeline">
               <li class="event" data-date="1">
                 <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>1 Desember 2021 - 25 April 2022</p>
+                <p>3 Januari 2022 - 26 Februari 2022</p>
               </li>
               <li class="event" data-date="2">
-                <h3>Pendaftaran Online Gelombang 2</h3>
-                <p>16 Mei - 20 Juli 2022</p>
+                <h3>Pendaftaran Offline Gelombang 1</h3>
+                <p>15 Februari 2022 - 26 Februari 2022</p>
               </li>
               <li class="event" data-date="3">
-                <h3>Pengumuman</h3>
-                <p>-</p>
+                <h3>Tes Tertulis (Offline)</h3>
+                <p>Rabu, 09 Maret 2022</p>
               </li>
               <li class="event" data-date="4">
+                <h3>Tes Baca Qur'an & Wawancara</h3>
+                <p>10 Maret 2022 - 12 Maret 2022</p>
+              </li>
+              <li class="event" data-date="5">
+                <h3>Pengumuman</h3>
+                <p>Sabtu, 19 Maret 2022</p>
+              </li>
+              <li class="event" data-date="6">
                 <h3>Daftar Ulang</h3>
-                <p>-</p>
+                <p>21 Maret 2022 - 2 April 2022</p>
               </li>
             </ul>
           </div>
@@ -429,7 +433,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="image">Upload KK</label>
+              <label for="image">Upload Foto</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="file"
@@ -440,18 +444,6 @@
               @error('image')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="stay">Pilihan Tinggal</label>
-              <select name="stay" class="form-control wide mt-0 mb-2">
-                <option data-display="Pilih">-</option>
-                <option value="Reguler">Reguler</option>
-                <option value="Boarding">Boarding</option>
-              </select>
             </div>
           </div>
         </div>

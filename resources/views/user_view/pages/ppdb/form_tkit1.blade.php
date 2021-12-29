@@ -59,13 +59,8 @@
               Persyaratan Daftar Ulang:
             </h3>
             <ul class="mt-3">
-              <li>Menunjukkan Kuitansi/Bukti Pembayaran/Nomor Registrasi</li>
-              <li>Pas Foto Warna</li>
-              <li>Fotokopi Raport</li>
               <li>Fotokopi Kartu Keluarga</li>
-              <li>Fotokopi Piagam</li>
-              <li>Fotokopi Ijazah</li>
-              <li>Biaya Pendaftaran</li>
+              <li>Fotokopi Akta Kelahiran</li>
             </ul>
           </div>
         </div>
@@ -87,11 +82,11 @@
               </li>
               <li class="event" data-date="3">
                 <h3>Pengumuman</h3>
-                <p>-</p>
+                <p>Langsung bisa diterima</p>
               </li>
               <li class="event" data-date="4">
                 <h3>Daftar Ulang</h3>
-                <p>-</p>
+                <p>Sesaat setelah selesai melakukan pendaftaran</p>
               </li>
             </ul>
           </div>

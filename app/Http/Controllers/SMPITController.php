@@ -46,7 +46,6 @@ class SMPITController extends Controller
       $smpit = new SMPIT();
 
       $smpit->school_id = $request->school_id;
-      $smpit->stay = $request->stay;
       $smpit->program = $request->program;
       $smpit->nama = $request->nama;
       $smpit->ttl = $request->ttl;

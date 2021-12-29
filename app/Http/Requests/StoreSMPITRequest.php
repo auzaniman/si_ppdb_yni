@@ -26,7 +26,6 @@ class StoreSMPITRequest extends FormRequest
     {
         return [
         'school_id' => 'required',
-        'stay' => 'required|string|in:Reguler,Boarding',
         'program' => 'required|string|in:Reguler,Tahfidz',
         'nama' => 'required',
         'ttl' => 'required',

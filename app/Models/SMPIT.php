@@ -13,7 +13,6 @@ class SMPIT extends Model
 
   protected $fillable = [
     'school_id',
-    'stay',
     'program',
     'nama',
     'ttl',
