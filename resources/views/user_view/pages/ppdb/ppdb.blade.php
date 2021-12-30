@@ -98,7 +98,7 @@
       </div>
       <div>
         <button class="btn-custom btn-blue border-0">
-          <a href="" class="text-decoration-none"
+          <a href="{{ route('ppdb_tkit2.create') }}" class="text-decoration-none"
             >Daftar</a
           >
         </button>
