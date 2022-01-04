@@ -31,6 +31,7 @@ class SMPIT extends Model
     'hp_siswa',
     'hp_ortu',
     'image',
+    'image_bukti',
   ];
 
   // Relation

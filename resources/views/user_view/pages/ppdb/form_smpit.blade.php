@@ -433,7 +433,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="image">Upload Foto</label>
+              <label for="image">Upload Pas Foto (4x6)</label>
               <input
                 class="form-control mt-0 mb-2"
                 type="file"
@@ -442,6 +442,23 @@
                 value=""
               />
               @error('image')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="image_bukti">Upload Bukti Pembayaran</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="file"
+                id="image_bukti"
+                name="image_bukti"
+                value=""
+              />
+              @error('image_bukti')
               <span class="bmd text-danger pl-5">{{ $message }}</span>
               @enderror
             </div>

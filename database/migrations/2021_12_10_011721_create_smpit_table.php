@@ -34,6 +34,7 @@ class CreateSmpitTable extends Migration
             $table->string('hp_siswa');
             $table->string('hp_ortu');
             $table->text('image');
+            $table->text('image_bukti');
             $table->timestamps();
         });
     }

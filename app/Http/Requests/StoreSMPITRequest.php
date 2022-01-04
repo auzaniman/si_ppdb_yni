@@ -44,6 +44,7 @@ class StoreSMPITRequest extends FormRequest
         'hp_siswa' => 'required',
         'hp_ortu' => 'required',
         'image' => 'required|image',
+        'image_bukti' => 'required|image',
         ];
     }
 }

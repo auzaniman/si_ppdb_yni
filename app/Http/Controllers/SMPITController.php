@@ -64,11 +64,13 @@ class SMPITController extends Controller
       $smpit->hp_ortu = $request->hp_ortu;
       $smpit->hp_siswa = $request->hp_siswa;
       $smpit->image = $request->image;
+      $smpit->image_bukti = $request->image_bukti;
       $smpit['image'] = $request->file('image')->store('', 'public');
+      $smpit['image_bukti'] = $request->file('image')->store('', 'public');
 
       $smpit->save();
 
-      return redirect()->route('success');
+      return redirect()->route('success_smpit');
     }
 
     /**
