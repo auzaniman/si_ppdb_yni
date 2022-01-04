@@ -59,12 +59,7 @@
               Persyaratan Daftar Ulang:
             </h3>
             <ul class="mt-3">
-              <li>Menunjukkan Kuitansi/Bukti Pembayaran/Nomor Registrasi</li>
-              <li>Pas Foto Warna</li>
-              <li>Fotokopi Raport</li>
               <li>Fotokopi Kartu Keluarga</li>
-              <li>Fotokopi Piagam</li>
-              <li>Fotokopi Ijazah</li>
               <li>Biaya Pendaftaran</li>
             </ul>
           </div>
@@ -79,7 +74,7 @@
             <ul class="timeline">
               <li class="event" data-date="1">
                 <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>11 Februari - 26 Februari 2022</p>
+                <p>14 Januari - 31 Januari 2022</p>
               </li>
               <li class="event" data-date="4">
                 <h3>Daftar Ulang</h3>

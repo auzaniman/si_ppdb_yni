@@ -79,11 +79,11 @@
             <ul class="timeline">
               <li class="event" data-date="1">
                 <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>1 Desember 2021 - 25 April 2022</p>
+                <p>7 Januari 2022 - 12 Februari 2022</p>
               </li>
               <li class="event" data-date="2">
-                <h3>Pendaftaran Online Gelombang 2</h3>
-                <p>16 Mei - 20 Juli 2022</p>
+                <h3>Pendaftaran Offline Gelombang 1</h3>
+                <p>14 Februari 2022 - 19 Februari 2022</p>
               </li>
               <li class="event" data-date="3">
                 <h3>Pengumuman</h3>
