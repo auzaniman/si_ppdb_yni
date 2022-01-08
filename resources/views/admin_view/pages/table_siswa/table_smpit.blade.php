@@ -31,6 +31,7 @@ Table Data
           <thead>
             <tr>
               <th>Nama Siswa</th>
+              <th>TTL</th>
               <th>NIK/NISN</th>
               <th>Asal Sekolah</th>
               <th>Alamat</th>
@@ -47,6 +48,7 @@ Table Data
             @forelse ($smpit as $smp)
             <tr>
               <td>{{ $smp->nama }}</td>
+              <td>{{ $smp->ttl }}</td>
               <td>{{ $smp->nik }}/{{ $smp->nisn }}/{{ $smp->kk }}</td>
               <td>{{ $smp->asal_sekolah }}</td>
               <td>{{ $smp->alamat }}</td>

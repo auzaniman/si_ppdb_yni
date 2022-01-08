@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class School extends Model
+class Status extends Model
 {
-  use HasFactory;
+    use HasFactory;
 
-  protected $fillable = [
-    'jenjang'
-  ];
+    protected $fillable = [
+      'state'
+    ];
 }

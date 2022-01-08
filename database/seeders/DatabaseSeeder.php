@@ -15,11 +15,12 @@ class DatabaseSeeder extends Seeder
     {
       $this->call([
         SchoolSeeder::class,
+        // StatusSeeder::class,
         // KBITSeeder::class,
         // TKIT1Seeder::class,
         // TKIT2Seeder::class,
         // SDITSeeder::class,
-        // SMPITSeeder::class,
+        SMPITSeeder::class,
         // SMAITSeeder::class,
       ]);
     }

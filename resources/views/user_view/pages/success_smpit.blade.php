@@ -1,4 +1,4 @@
-@extends('user_view.layouts.app_ppdb')
+@extends('user_view.layouts.app_ppdb_checkout')
 
 @section('title')
 Sukses Mendaftar
@@ -32,7 +32,9 @@ Sukses Mendaftar
         </p>
         <div class="d-flex justify-content-center">
           <button class="btn btn-view d-inline-flex text-white">
-            View My Order
+           <a href="{{ route('ppdb_smpit.index') }}" class="text-decoration-none text-reset">
+            Cetak Kartu
+           </a>
           </button>
         </div>
       </div>

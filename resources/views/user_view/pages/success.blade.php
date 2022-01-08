@@ -1,4 +1,4 @@
-@extends('user_view.layouts.app_ppdb')
+@extends('user_view.layouts.app_ppdb_checkout')
 
 @section('title')
 Sukses Mendaftar
@@ -30,11 +30,6 @@ Sukses Mendaftar
             class="d-sm-block d-none"
           />
         </p>
-        <div class="d-flex justify-content-center">
-          <button class="btn btn-view d-inline-flex text-white">
-            View My Order
-          </button>
-        </div>
       </div>
     </div>
   </div>

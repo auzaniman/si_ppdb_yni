@@ -16,7 +16,13 @@ class SMPITController extends Controller
      */
     public function index()
     {
+      $smpit = SMPIT::where('school_id', '5')->get();
+      $schools = School::all();
 
+      return view('user_view.pages.cetak_kartu.list', [
+        'smpit' => $smpit,
+        'schools' => $schools,
+        ]);
     }
 
     /**
@@ -76,18 +82,22 @@ class SMPITController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMPIT  $student
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        //
+      $smp = SMPIT::findOrFail($id);
+
+      return view('user_view.pages.cetak_kartu.cetak', [
+        'smp' => $smp
+      ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMPIT  $student
      * @return \Illuminate\Http\Response
      */
     public function edit()
@@ -99,7 +109,7 @@ class SMPITController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMPIT  $student
      * @return \Illuminate\Http\Response
      */
     public function update()
@@ -110,7 +120,7 @@ class SMPITController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Student  $student
+     * @param  \App\Models\SMPIT  $student
      * @return \Illuminate\Http\Response
      */
     public function destroy()

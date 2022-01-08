@@ -44,6 +44,18 @@ Route::get('success', function () {
     return view('user_view.pages.success');
   })->name('success');
 
+Route::get('success_smpit', function () {
+  return view('user_view.pages.success_smpit');
+})->name('success_smpit');
+
+// Route::get('success_list', function () {
+//   return view('user_view.pages.cetak_kartu.list');
+// })->name('success_list');
+
+// Route::get('success_cetak', function () {
+//   return view('user_view.pages.cetak_kartu.cetak');
+// })->name('success_cetak');
+
 // Admin
 Route::prefix('admin')
 ->namespace('Admin')

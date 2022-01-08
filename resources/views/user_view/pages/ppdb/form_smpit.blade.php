@@ -44,6 +44,22 @@
 </div>
 @endif
 
+@auth
+<div class="container">
+  <div class="card text-center border-0 shadow-sm">
+    <div class="card-header text-white fs-3 fw-bold border-0 bg-danger">PERHATIAN!</div>
+    <div class="card-body">
+      <div class="card-text fs-4">Sebelum melakukan pengisian Formulir silahkan melakukan pembayaran daftar ulang sebesar <strong>200.000</strong> dan simpan bukti pembayarannya karena akan menjadi persyaratan untuk mengisi formulir</div>
+      <div class="card-text fs-4">Silahkan transfer ke Rekening <strong>BSI 7879787976 a.n. SMPIT Nurul 'Ilmi Tenggarong</strong></div>
+      <div class="card-text fs-4">Tambahkan kode unik ini di 3 digit terakhir biaya daftar ulang. contoh: 200.123</div>
+      <div id="hasil-output" class="fw-bold fs-3"></div>
+      <div class="card-text">jangan merefresh layar, karena akan mengubah angka. transfer terlebih dahulu</div>
+    </div>
+  </div>
+</div>
+
+@endauth
+
 {{-- Timeline --}}
 <section class="wrapper-timeline" id="timeline">
   <div id="jadwal" class="content-area-l5-2">
