@@ -59,13 +59,12 @@
               Persyaratan Daftar Ulang:
             </h3>
             <ul class="mt-3">
-              <li>Menunjukkan Kuitansi/Bukti Pembayaran/Nomor Registrasi</li>
-              <li>Pas Foto Warna</li>
-              <li>Fotokopi Raport</li>
-              <li>Fotokopi Kartu Keluarga</li>
-              <li>Fotokopi Piagam</li>
-              <li>Fotokopi Ijazah</li>
-              <li>Biaya Pendaftaran</li>
+              <li>Pas Foto 2 Lembar</li>
+              <li>Fotokopi Kartu keluarga</li>
+              <li>Fotokopi akta kelahiran</li>
+              <li>Fotokopi kedua orangtua 1 lembar</li>
+              <li>Membayar biaya pendaftaran Rp. 200.000</li>
+              <li>Usia minimal 6 tahun pada tanggal 1 juli 2022</li>
             </ul>
           </div>
         </div>

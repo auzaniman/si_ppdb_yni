@@ -50,8 +50,9 @@
     >
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Jenjang:</h6>
+        <a class="collapse-item" href="{{route('kbit')}}">KBIT</a>
         <a class="collapse-item" href="{{route('tkit1')}}">TKIT 1</a>
-        <a class="collapse-item" href="">TKIT 2</a>
+        <a class="collapse-item" href="{{route('tkit2')}}">TKIT 2</a>
         <a class="collapse-item" href="{{route('sdit')}}">SDIT</a>
         <a class="collapse-item" href="{{route('smpit')}}">SMPIT</a>
         <a class="collapse-item" href="{{route('smait')}}">SMAIT</a>
@@ -60,7 +61,7 @@
   </li>
 
   <!-- Nav Item - Utilities Collapse Menu -->
-  <li class="nav-item">
+  {{-- <li class="nav-item">
     <a
       class="nav-link collapsed"
       href="#"
@@ -88,16 +89,16 @@
         <a class="collapse-item" href="utilities-other.html">Other</a>
       </div>
     </div>
-  </li>
+  </li> --}}
 
   <!-- Divider -->
   <hr class="sidebar-divider" />
 
   <!-- Heading -->
-  <div class="sidebar-heading">Addons</div>
+  {{-- <div class="sidebar-heading">Addons</div> --}}
 
   <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
+  {{-- <li class="nav-item">
     <a
       class="nav-link collapsed"
       href="#"
@@ -128,16 +129,16 @@
         <a class="collapse-item" href="blank.html">Blank Page</a>
       </div>
     </div>
-  </li>
+  </li> --}}
 
   <!-- Nav Item - Charts -->
-  <li class="nav-item">
+  {{-- <li class="nav-item">
     <a class="nav-link" href="charts.html">
       <i class="fas fa-fw fa-chart-area"></i>
       <span>Charts</span></a
     >
-  </li>
+  </li> --}}
 
   <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block" />
+  {{-- <hr class="sidebar-divider d-none d-md-block" /> --}}
 </ul>

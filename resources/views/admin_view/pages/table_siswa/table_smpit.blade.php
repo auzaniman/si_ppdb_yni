@@ -1,7 +1,7 @@
 @extends('admin_view.layouts.app')
 
 @section('title')
-Table Data
+Table Data SMPIT
 @endsection
 
 @section('content')
@@ -29,7 +29,7 @@ Table Data
   <div class="card shadow mb-4">
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">
-        Pendaftaran SMAIT Nurul 'Ilmi
+        Pendaftaran SMPIT Nurul 'Ilmi
       </h6>
     </div>
     <div class="card-body">
@@ -41,6 +41,7 @@ Table Data
           border="1"
           cellspacing="0"
           cellpadding="5"
+          align="center"
         >
           <thead class="text-center">
             <tr>

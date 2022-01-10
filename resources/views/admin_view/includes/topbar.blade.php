@@ -16,7 +16,7 @@
   </button>
 
   <!-- Topbar Search -->
-  <form
+  {{-- <form
     class="
       d-none d-sm-inline-block
       form-inline
@@ -41,7 +41,7 @@
         </button>
       </div>
     </div>
-  </form>
+  </form> --}}
 
   <!-- Topbar Navbar -->
   <ul class="navbar-nav ml-auto">
