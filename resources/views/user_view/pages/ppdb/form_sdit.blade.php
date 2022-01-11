@@ -62,8 +62,8 @@
               <li>Pas Foto 2 Lembar</li>
               <li>Fotokopi Kartu keluarga</li>
               <li>Fotokopi akta kelahiran</li>
-              <li>Fotokopi kedua orangtua 1 lembar</li>
-              <li>Membayar biaya pendaftaran Rp. 200.000</li>
+              <li>Fotokopi KTP Orangtua (salah satu) 1 lembar</li>
+              <li>Membayar biaya pendaftaran Rp. 200.000. Transfer ke Rekening BSI 7033521736 a.n. SDIT Nurul Ilmi Tenggarong </li>
               <li>Usia minimal 6 tahun pada tanggal 1 juli 2022</li>
             </ul>
           </div>
