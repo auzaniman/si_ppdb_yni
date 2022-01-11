@@ -82,7 +82,7 @@
               </li>
               <li class="event" data-date="2">
                 <h3>Pendaftaran Offline Gelombang 1</h3>
-                <p>14 Februari 2022 - 19 Februari 2022</p>
+                <p>7 Februari 2022 - 12 Februari 2022</p>
               </li>
               <li class="event" data-date="3">
                 <h3>Pengumuman</h3>

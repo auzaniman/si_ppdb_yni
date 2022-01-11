@@ -54,7 +54,8 @@ Table Data SMPIT
               <th colspan="3">Identitsan Ibu</th>
               <th colspan="2">Nomor HP</th>
               <th rowspan="2">Program</th>
-              <th rowspan="2">File</th>
+              <th rowspan="2">Pas Poto</th>
+              <th rowspan="2">Bukti Pembayaran</th>
               <th rowspan="2">Status</th>
             </tr>
             <tr>
@@ -93,6 +94,9 @@ Table Data SMPIT
               <td>{{ $smp->program }}</td>
               <td>
                 <img src="{{ asset('storage/assets/ppdb/'.$smp->image) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
+              <td>
+                <img src="{{ asset('storage/assets/ppdb/'.$smp->image_bukti) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
               <td>{{ $smp->school->jenjang }}</td>
             </tr>
