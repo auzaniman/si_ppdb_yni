@@ -78,7 +78,7 @@
             <ul class="timeline">
               <li class="event" data-date="1">
                 <h3>Pendaftaran Online Gelombang 1</h3>
-                <p>7 Januari 2022 - 12 Februari 2022</p>
+                <p>17 Januari 2022 - 17 Februari 2022</p>
               </li>
               <li class="event" data-date="2">
                 <h3>Pendaftaran Offline Gelombang 1</h3>
