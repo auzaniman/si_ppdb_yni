@@ -29,20 +29,19 @@ List Pendaftar
   </div>
 
     <div class="table-responsive" id="cetak">
-      <div class="row mb-3">
-        <div class="col-3 text-center">
-          <img width="100" height="100" class="img-fluid" src="{{ url ('frontend/assets/img/YNI/SMPIT/logo.png')}}" alt="logo SMPIT">
-        </div>
-        <div class="col-6 text-center">
-          <h4>KARTU BUKTI PENDAFTARAN CALON SISWA/SISWI BARU <br>
-          SEKOLAH ISLAM TERPADU NURUL 'ILMI TENGGARONG <br>
-        SMPIT TAHUN 2021/2022</h4>
-        </div>
-        <div class="col-3">
-          <h4>Keterangan</h4>
-        </div>
-      </div>
-      <table border="1" cellpadding="5" class="table table-bordered">
+      <table class="mb-3">
+        <tbody class="table text-center" cellpadding="5" style="vertical-align: middle">
+          <th colspan="2">
+            <img width="100" height="100" src="{{ url ('frontend/assets/img/YNI/SMPIT/logo.png')}}" alt="logo SMPIT">
+          </th>
+          <th colspan="4">
+            <h4 class="ms-lg-5 ps-lg-5" >KARTU BUKTI PENDAFTARAN CALON SISWA/SISWI BARU <br>
+            SEKOLAH ISLAM TERPADU NURUL 'ILMI TENGGARONG <br>
+          SMPIT TAHUN 2021/2022</h4>
+          </th>
+        </tbody>
+      </table>
+      <table border="1" cellpadding="5" class="table table-bordered mb-3">
         <tbody>
           <tr>
             <td>Nama</td>
@@ -90,6 +89,34 @@ List Pendaftar
           </tr>
         </tbody>
       </table>
+      <div class="card">
+        <div class="card-body">
+          <table class="table" cellpadding="5">
+            <th class="border-0">
+              <ul class="list-unstyled ms-3 mb-0">
+                <li class="mb-3">
+                  Jadwal penerimaan siswa baru
+                </li>
+                <li class="mb-3">Pendaftaran <br>
+                  15 Januari 2021 - 27 Februari
+                </li>
+                <li class="mb-3">Ujian <br>
+                  03 Maret 2021 - 06 Maret
+                </li>
+                <li class="mb-3">Wawancara Orangtua <br>
+                  04 Maret 2021 - 06 Maret
+                </li>
+                <li>Pengumuman <br>
+                  13 Maret 2021 - 30 Maret
+                </li>
+              </ul>
+            </th>
+            <th>
+              <img width="100" height="100" src="{{ asset('storage/'.$smp->image) }}" alt="pasfoto">
+            </th>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </section>
