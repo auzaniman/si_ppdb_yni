@@ -93,10 +93,10 @@ Table Data SMPIT
               <td>{{ $smp->hp_ortu }}</td>
               <td>{{ $smp->program }}</td>
               <td>
-                <img src="{{ asset('storage/assets/ppdb/'.$smp->image) }}" alt="" style="width: 150px" class="img-thumbnail">
+                <img src="{{ asset('storage/'.$smp->image) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
               <td>
-                <img src="{{ asset('storage/assets/ppdb/'.$smp->image_bukti) }}" alt="" style="width: 150px" class="img-thumbnail">
+                <img src="{{ asset('storage/'.$smp->image_bukti) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
               <td>{{ $smp->school->jenjang }}</td>
             </tr>

@@ -95,7 +95,7 @@ Table Data SMAIT
               <td>{{ $sma->stay }}</td>
               <td>{{ $sma->program }}</td>
               <td>
-                <img src="{{ asset('storage/assets/ppdb/'.$sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
+                <img src="{{ asset('storage/'.$sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
               <td>{{ $sma->school->jenjang }}</td>
             </tr>
