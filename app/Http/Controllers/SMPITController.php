@@ -72,7 +72,7 @@ class SMPITController extends Controller
       $smpit->image = $request->image;
       $smpit->image_bukti = $request->image_bukti;
       $smpit['image'] = $request->file('image')->store('', 'public');
-      $smpit['image_bukti'] = $request->file('image')->store('', 'public');
+      $smpit['image_bukti'] = $request->file('image_bukti')->store('', 'public');
 
       $smpit->save();
 
