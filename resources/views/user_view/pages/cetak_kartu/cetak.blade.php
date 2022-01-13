@@ -112,7 +112,7 @@ List Pendaftar
               </ul>
             </th>
             <th>
-              <img width="200" height="400" src="{{ asset('storage/'.$smp->image) }}" alt="pasfoto">
+              <img width="200" height="300" src="{{ asset('storage/'.$smp->image) }}" alt="pasfoto">
             </th>
           </table>
         </div>
