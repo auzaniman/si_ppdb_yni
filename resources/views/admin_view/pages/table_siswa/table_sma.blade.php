@@ -46,6 +46,7 @@ Table Data SMAIT
           <thead class="text-center">
             <tr>
               <th rowspan="2">Nama Siswa</th>
+              <th rowspan="2">TTL</th>
               <th colspan="3">No Induk</th>
               <th rowspan="2">Asal Sekolah</th>
               <th rowspan="2">Alamat</th>
@@ -78,6 +79,7 @@ Table Data SMAIT
             @forelse ($smait as $sma)
             <tr>
               <td>{{ $sma->nama }}</td>
+              <td>{{ $sma->ttl }}</td>
               <td>{{ $sma->nik }}</td>
               <td>{{ $sma->nisn }}</td>
               <td>{{ $sma->kk }}</td>
