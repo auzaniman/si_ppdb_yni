@@ -57,6 +57,10 @@ Table Data SDIT
               <th colspan="4">Identitas Wali</th>
               <th colspan="3">Info Kontak</th>
               <th rowspan="2">Bahasa</th>
+              <th rowspan="2">Bukti Pembayaran</th>
+              <th rowspan="2">KK</th>
+              <th rowspan="2">KTP</th>
+              <th rowspan="2">Akta</th>
               <th rowspan="2">Status</th>
             </tr>
             <tr>
@@ -158,6 +162,18 @@ Table Data SDIT
               <td>{{ $sd->hp_ortu }}</td>
               <td>{{ $sd->hp_wali }}</td>
               <td>{{ $sd->bahasa }}</td>
+               <td>
+                <img src="{{ asset('storage/'.$sd->image_pembayaran) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
+              <td>
+                <img src="{{ asset('storage/'.$sd->image_kk) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
+              <td>
+                <img src="{{ asset('storage/'.$sd->image_ktp) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
+              <td>
+                <img src="{{ asset('storage/'.$sd->image_akta) }}" alt="" style="width: 150px" class="img-thumbnail">
+              </td>
               <td></td>
             </tr>
             @empty

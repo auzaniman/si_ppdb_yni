@@ -107,7 +107,7 @@ Table Data TKIT 1
               <td>{{ $tkit->pendidikan_ibu }}</td>
               <td>{{ $tkit->pekerjaan_ibu }}</td>
               <td>{{ $tkit->penghasilan_ibu }}</td>
-              <td>{{ $tkit->school->jenjang }}</td>
+              <td></td>
             </tr>
             @empty
 

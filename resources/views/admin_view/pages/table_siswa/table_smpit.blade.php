@@ -98,7 +98,7 @@ Table Data SMPIT
               <td>
                 <img src="{{ asset('storage/'.$smp->image_bukti) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
-              <td>{{ $smp->school->jenjang }}</td>
+              <td></td>
             </tr>
             @empty
 

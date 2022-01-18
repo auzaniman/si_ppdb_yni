@@ -99,7 +99,7 @@ Table Data SMAIT
               <td>
                 <img src="{{ asset('storage/'.$sma->image) }}" alt="" style="width: 150px" class="img-thumbnail">
               </td>
-              <td>{{ $sma->school->jenjang }}</td>
+              <td></td>
             </tr>
             @empty
 

@@ -151,7 +151,7 @@ Table Data KBIT
               <td>{{ $kb->penghasilan_wali }}</td>
               <td>{{ $kb->no_wali }}</td>
               <td>{{ $kb->alamat_wali }}</td>
-              <td>{{ $kb->school->jenjang }}</td>
+              <td></td>
             </tr>
             @empty
 

@@ -162,7 +162,7 @@ Table Data TKIT 2
               <td>{{ $tk->penghasilan_wali }}</td>
               <td>{{ $tk->no_wali }}</td>
               <td>{{ $tk->alamat_wali }}</td>
-              <td>{{ $tk->school->jenjang }}</td>
+              <td></td>
             </tr>
             @empty
 
