@@ -259,7 +259,7 @@
               <label for="ttl">Tanggal Lahir</label>
               <input
                 class="form-control mt-0 mb-2"
-                type="date"
+                type="text"
                 id="ttl"
                 name="ttl"
                 value="{{ old('ttl') }}"
