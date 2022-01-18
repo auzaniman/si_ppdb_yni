@@ -68,6 +68,10 @@ class StoreSDITRequest extends FormRequest
         'tk_ibu' => 'required',
         'penghasilan_ibu' => 'required',
         'alamat_ortu' => 'required',
+        'image_pembayaran' => 'required|image',
+        'image_kk' => 'required|image',
+        'image_ktp' => 'required|image',
+        'image_akta' => 'required|image',
         ];
     }
 }

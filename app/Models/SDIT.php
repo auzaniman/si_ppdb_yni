@@ -61,6 +61,10 @@ class SDIT extends Model
     'penghasilan_wali',
     'hp_wali',
     'alamat_wali',
+    'image_pembayaran',
+    'image_kk',
+    'image_ktp',
+    'image_akta',
   ];
 
   // Relation

@@ -985,6 +985,74 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="image_pembayaran">Upload Bukti Pembayaran </label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="file"
+                id="image_pembayaran"
+                name="image_pembayaran"
+                value=""
+              />
+              @error('image_pembayaran')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="image_kk">Upload KK</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="file"
+                id="image_kk"
+                name="image_kk"
+                value=""
+              />
+              @error('image_kk')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="image_ktp">Upload KTP Orangtua</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="file"
+                id="image_ktp"
+                name="image_ktp"
+                value=""
+              />
+              @error('image_ktp')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="image_akta">Upload Akta Kelahiran</label>
+              <input
+                class="form-control mt-0 mb-2"
+                type="file"
+                id="image_akta"
+                name="image_akta"
+                value=""
+              />
+              @error('image_akta')
+              <span class="bmd text-danger pl-5">{{ $message }}</span>
+              @enderror
+            </div>
+          </div>
+        </div>
         <div class="d-flex flex-column text-center px-5 mt-3 mb-3">
           <small class="agree-text"
             >Dengan mengisi formulir anda sudah masuk dalam daftar
