@@ -92,7 +92,8 @@ class AdminController extends Controller
     // Table KB
     public function kbit()
     {
-      $kbit = KBIT::where('school_id', '1')->get();
+      // $kbit = KBIT::where('school_id', '1')->get();
+      $kbit = KBIT::all();
       $schools = School::all();
 
       return view('admin_view.pages.table_siswa.table_kbit', [
