@@ -7,7 +7,7 @@
 
   @stack('before-style')
   {{-- style --}}
-  @include('user_view.includes.style')
+  @include('user_view.includes.style_alt')
 
   @stack('after-style')
 
@@ -16,13 +16,13 @@
 
   @include('user_view.includes.navbar_alt')
   @yield('content')
-  @include('user_view.includes.footer')
+  @include('user_view.includes.footer_alt')
 
   @stack('before-script')
   {{-- script --}}
-  @include('user_view.includes.script')
-  
+  @include('user_view.includes.script_alt')
+
   @stack('after-script')
-  
+
 </body>
 </html>

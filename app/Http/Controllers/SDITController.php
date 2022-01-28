@@ -29,7 +29,7 @@ class SDITController extends Controller
       $sdit = SDIT::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form_sdit', [
+      return view('user_view.pages.ppdb.form.form_sdit', [
         'sdit' => $sdit,
         'schools' => $schools,
         ]);

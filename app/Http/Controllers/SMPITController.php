@@ -19,7 +19,7 @@ class SMPITController extends Controller
       $smpit = SMPIT::where('school_id', '5')->get();
       $schools = School::all();
 
-      return view('user_view.pages.cetak_kartu.list', [
+      return view('user_view.pages.ppdb.cetak_kartu.list', [
         'smpit' => $smpit,
         'schools' => $schools,
         ]);
@@ -35,7 +35,7 @@ class SMPITController extends Controller
       $smpit = SMPIT::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form_smpit', [
+      return view('user_view.pages.ppdb.form.form_smpit', [
         'smpit' => $smpit,
         'schools' => $schools,
         ]);
@@ -89,7 +89,7 @@ class SMPITController extends Controller
     {
       $smp = SMPIT::findOrFail($id);
 
-      return view('user_view.pages.cetak_kartu.cetak', [
+      return view('user_view.pages.ppdb.cetak_kartu.cetak', [
         'smp' => $smp
       ]);
     }

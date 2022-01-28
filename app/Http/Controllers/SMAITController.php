@@ -30,7 +30,7 @@ class SMAITController extends Controller
       $smait = SMAIT::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form_smait', [
+      return view('user_view.pages.ppdb.form.form_smait', [
         'smait' => $smait,
         'schools' => $schools,
         ]);

@@ -10,7 +10,7 @@
   /* BG */
   --dark-gradient: linear-gradient(
     127deg,
-    rgba(106, 106, 106, 1) 7%,
+    rgb(145, 57, 57) 7%,
     rgba(59, 59, 59, 1) 100%
   );
   --dark-blue: #2a3855;
@@ -108,8 +108,8 @@ q {
 
 .navbar .navbar-collapse {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
 }
 
 .navbar .navbar-collapse a {
@@ -132,7 +132,7 @@ q {
 .dropdown-menu {
   border: 0;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu li {
@@ -219,7 +219,7 @@ q {
   z-index: 3;
   padding: 15px 20px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
   text-decoration: none;
   font-family: Open Sans, sans-serif;
@@ -303,7 +303,7 @@ q {
 .visi-misi img {
   border-radius: 10px;
   -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
 }
 
 .wrapper-kabar-berita {
@@ -317,7 +317,7 @@ q {
   border: 0;
   border-radius: 1rem;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper-kabar-berita .card .card-body {
@@ -370,7 +370,7 @@ q {
   max-height: 400px;
   border-radius: 10px;
   -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
   margin-right: 0 !important;
 }
 
@@ -410,7 +410,7 @@ footer .copyright a {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
 }
@@ -472,7 +472,7 @@ button:hover {
 .form-pendaftaran button:hover:before {
   opacity: 1;
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .carousel button:before,
@@ -492,7 +492,7 @@ button:hover {
   font-size: 0.8em;
   opacity: 0;
   -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -504,7 +504,7 @@ button:hover {
 .form-pendaftaran button:hover div {
   opacity: 0;
   -webkit-transform: translate(100%, 0);
-          transform: translate(100%, 0);
+  transform: translate(100%, 0);
 }
 
 .carousel button div,
@@ -549,11 +549,11 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: -30px;
@@ -660,7 +660,7 @@ button:hover {
 .unit-pendaftaran button {
   padding: 6px 16px;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .unit-pendaftaran button::before {
@@ -709,8 +709,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: var(--greysoft);
   margin-bottom: 30px;
 }
@@ -837,7 +837,7 @@ button:hover {
 
 .wrapper-timeline .timeline .event:after {
   -webkit-box-shadow: 0 0 0 4px #329cff;
-          box-shadow: 0 0 0 4px #329cff;
+  box-shadow: 0 0 0 4px #329cff;
   left: -57.85px;
   background: #ffffff;
   border-radius: 50%;
@@ -896,7 +896,7 @@ button:hover {
 
 .form-pendaftaran .form-control:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 2px solid #039be5;
 }
 
@@ -918,7 +918,7 @@ button:hover {
 .form-pendaftaran button {
   padding: 4px 30px;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .form-pendaftaran button::before {

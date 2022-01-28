@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
 
 // Yayasan
 Route::get('/', function () {
-    return view('user_view.pages.yayasan');
+    return view('user_view.pages.yayasan.yayasan');
   })->name('home');
 
 // PPDB Home
@@ -41,20 +41,12 @@ Route::resource('ppdb_smait', SMAITController::class);
 
 // PPDB Checkout
 Route::get('success', function () {
-    return view('user_view.pages.success');
+    return view('user_view.pages.ppdb.checkout.success');
   })->name('success');
 
 Route::get('success_smpit', function () {
-  return view('user_view.pages.success_smpit');
+  return view('user_view.pages.ppdb.checkout.success_smpit');
 })->name('success_smpit');
-
-// Route::get('success_list', function () {
-//   return view('user_view.pages.cetak_kartu.list');
-// })->name('success_list');
-
-// Route::get('success_cetak', function () {
-//   return view('user_view.pages.cetak_kartu.cetak');
-// })->name('success_cetak');
 
 // Admin
 Route::prefix('admin')

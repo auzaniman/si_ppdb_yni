@@ -1,31 +1,19 @@
-<!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  />
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 
-  <!-- SLICK -->
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="{{ url ('frontend/assets/library/slick/slick.css')}}"
-  />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="{{ url ('frontend/assets/library/slick/slick-theme.css')}}"
-  />
+<!-- Nucleo Icons -->
+<link href="{{ url('frontend/material_kit/assets/css/nucleo-icons.css')}}" rel="stylesheet" />
+<link href="{{ url('frontend/material_kit/assets/css/nucleo-svg.css')}}" rel="stylesheet" />
 
-  {{-- NICE SELECT --}}
-  <link rel="stylesheet" href="{{ url ('frontend/assets/library/jquery-nice-select/css/nice-select.css')}}">
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/b6726cd1f6.js" crossorigin="anonymous"></script>
 
-  <!-- Font Awesome -->
-  <script
-    src="https://kit.fontawesome.com/b6726cd1f6.js"
-    crossorigin="anonymous"
-  ></script>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
-  <!-- My CSS -->
-  <link rel="stylesheet" href="{{ url ('frontend/assets/scss/style.css')}}" />
+<!-- CSS Files -->
+
+<link id="pagestyle" href="{{ url('frontend/material_kit/assets/css/material-kit.css?v=3.0.0')}}" rel="stylesheet" />
+
+{{-- my CSS --}}
+{{-- <link rel="stylesheet" href="{{ url('frontend/assets/scss/style.css')}}"> --}}

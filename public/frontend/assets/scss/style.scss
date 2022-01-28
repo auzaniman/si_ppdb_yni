@@ -1,13 +1,17 @@
+@font-face {
+  font-family: "Revenue";
+  src: url("/assets/font/revenue.ttf") format("truetype");
+}
+
+.ni-font {
+  font-family: "Revenue";
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 // font-family: 'Poppins', sans-serif;
 // font-family: "Montserrat", sans-serif;
-
-@font-face {
-  font-family: "Revenue";
-  src: url("/assets/font/revenue.ttf") format("truetype");
-}
 
 :root {
   /* BG */
@@ -82,10 +86,6 @@ p {
 q {
   font-size: 20px;
   color: var(--greysoft);
-}
-
-.ni-font {
-  font-family: "Revenue";
 }
 
 .bg-gradient-dark {

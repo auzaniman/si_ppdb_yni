@@ -29,7 +29,7 @@ class KBITController extends Controller
       $kbit = KBIT::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form_kbit', [
+      return view('user_view.pages.ppdb.form.form_kbit', [
         'kbit' => $kbit,
         'schools' => $schools,
         ]);

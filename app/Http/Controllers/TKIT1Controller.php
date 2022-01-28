@@ -29,7 +29,7 @@ class TKIT1Controller extends Controller
       $tkit1 = TKIT1::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form_tkit1', [
+      return view('user_view.pages.ppdb.form.form_tkit1', [
         'tkit1' => $tkit1,
         'schools' => $schools,
         ]);
