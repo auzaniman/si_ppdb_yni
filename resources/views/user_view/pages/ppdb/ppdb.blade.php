@@ -146,62 +146,107 @@ Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkar
     </div>
   </section>
 
-  <!-- Alur Pendaftaran -->
-  <section class="py-5" id="alur">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 my-auto">
-          <h3>Alur Pendaftaran</h3>
-          <p class="pe-5">Berikut adalah gambaran alur pendaftaran PPDB Online Sekolah Nurul 'Ilmi'.</p>
-        </div>
-        <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
-          <div class="p-3 info-horizontal">
-            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-              <i class="fas fa-ship opacity-10"></i>
-            </div>
-            <div class="description ps-3">
-              <p class="mb-0">Daftar Online. <br> Melalui link yang sudah disediakan oleh masing-masing sekolah.</p>
-            </div>
-          </div>
+  <hr class="horizontal dark">
 
-          <div class="p-3 info-horizontal">
-            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-              <i class="fas fa-handshake opacity-10"></i>
-            </div>
-            <div class="description ps-3">
-              <p class="mb-0">Mengisi Data Calon Siswa. <br>Melengkapi data calon siswa didalam formulir online.</p>
-            </div>
+  <!-- Alur Pendaftaran -->
+  <section class="py-2">
+    <div class="container mt-sm-5 mt-3">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+            <h3>Informasi Pendaftaran</h3>
+            <h6 class="text-secondary font-weight-normal pe-3">Informasi seputar pendaftaran sekolah Nurul 'Ilmi</h6>
           </div>
-          <div class="p-3 info-horizontal">
-            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-              <i class="fas fa-hourglass opacity-10"></i>
-            </div>
-            <div class="description ps-3">
-              <p class="mb-0">Transfer Biaya Pendaftaran. <br>Untuk beberapa unit sekolah akan dikenakan biaya pendaftaran.</p>
-            </div>
-          </div>
-          <div class="p-3 info-horizontal">
-            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-              <i class="fas fa-hourglass opacity-10"></i>
-            </div>
-            <div class="description ps-3">
-              <p class="mb-0">Tes Wawancara Siswa dan Ortu. <br>Melakukan tes wawancara kepada calon siswa dan orangtua.</p>
-            </div>
-          </div>
-          <div class="p-3 info-horizontal">
-            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-              <i class="fas fa-hourglass opacity-10"></i>
-            </div>
-            <div class="description ps-3">
-              <p class="mb-0">Pengumuman. <br>Akan diumumkan melalui masing-masing unit sekolah.</p>
-            </div>
-          </div>
-          <div class="p-3 info-horizontal">
-            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-              <i class="fas fa-hourglass opacity-10"></i>
-            </div>
-            <div class="description ps-3">
-              <p class="mb-0">Daftar Ulang. <br>Bagi siswa yang telah diterima, silahkan melakukan daftar ulang.</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="row mt-3">
+            <!-- Features -->
+            <div class="col-12">
+              <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+                <div class="container border-bottom">
+                  <div class="row justify-space-between py-2">
+                    <div class="col-lg-3 me-auto">
+                      <p class="lead text-dark pt-1 mb-0">Yayasan Nurul 'Ilmi</p>
+                    </div>
+                    <div class="col-lg-3"></div>
+                  </div>
+                </div>
+                <div class="tab-content tab-space">
+                  <div class="tab-pane active" id="preview-features-1">
+                    <iframe width="100%" height="600px" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+                      <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+                      <!-- Material Icons -->
+                      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+                      <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.0.0" rel="stylesheet" />
+                      <!-- -------- START Features w/ icons and text on left & gradient title and text on right -------- -->
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-6 my-auto">
+                            <h3 class="mt-5 mt-lg-0">Alur Pendaftaran</h3>
+                            <p class="pe-5">Berikut adalah gambaran alur pendaftaran PPDB Online Sekolah Nurul Ilmi.</p>
+                          </div>
+                          <div class="col-lg-6 mt-lg-0 mt-3 ps-lg-0 ps-0">
+                            <div class="p-3 info-horizontal">
+                              <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                <i class="fas fa-ship opacity-10"></i>
+                              </div>
+                              <div class="description ps-3">
+                                <p class="mb-0">Daftar Online. <br> Melalui link yang sudah disediakan oleh masing-masing sekolah.</p>
+                              </div>
+                            </div>
+
+                            <div class="p-3 info-horizontal">
+                              <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                <i class="fas fa-handshake opacity-10"></i>
+                              </div>
+                              <div class="description ps-3">
+                                <p class="mb-0">Mengisi Data Calon Siswa. <br>Melengkapi data calon siswa didalam formulir online.</p>
+                              </div>
+                            </div>
+                            <div class="p-3 info-horizontal">
+                              <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                <i class="fas fa-hourglass opacity-10"></i>
+                              </div>
+                              <div class="description ps-3">
+                                <p class="mb-0">Transfer Biaya Pendaftaran. <br>Untuk beberapa unit sekolah akan dikenakan biaya pendaftaran.</p>
+                              </div>
+                            </div>
+                            <div class="p-3 info-horizontal">
+                              <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                <i class="fas fa-hourglass opacity-10"></i>
+                              </div>
+                              <div class="description ps-3">
+                                <p class="mb-0">Tes Wawancara Siswa dan Ortu. <br>Melakukan tes wawancara kepada calon siswa dan orangtua.</p>
+                              </div>
+                            </div>
+                            <div class="p-3 info-horizontal">
+                              <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                <i class="fas fa-hourglass opacity-10"></i>
+                              </div>
+                              <div class="description ps-3">
+                                <p class="mb-0">Pengumuman. <br>Akan diumumkan melalui masing-masing unit sekolah.</p>
+                              </div>
+                            </div>
+                            <div class="p-3 info-horizontal">
+                              <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                <i class="fas fa-hourglass opacity-10"></i>
+                              </div>
+                              <div class="description ps-3">
+                                <p class="mb-0">Daftar Ulang. <br>Bagi siswa yang telah diterima, silahkan melakukan daftar ulang.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- -------- END Features w/ icons and text on left & gradient title and text on right -------- -->
+
+                      '>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
