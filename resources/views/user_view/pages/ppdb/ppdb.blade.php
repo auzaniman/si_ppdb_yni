@@ -1,251 +1,213 @@
 @extends('user_view.layouts.app_ppdb')
 
 @section('title')
-  PPDB Online
+PPDB Online
+@endsection
+
+@section('visi_misi')
+Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
 @endsection
 
 @section('content')
-<!-- JUMBOTRON -->
-<section class="jumbotron">
-  <div class="p-5 mb-4 bg-dark">
-    <div class="container-fluid py-5 mt-lg-5">
-      <h1 class="display-5 fw-bold">Selamat Datang</h1>
-      <h1 class="display-5 fw-bold">
-        PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
-      </h1>
-      <p class="col-md-8 fs-4">
-        Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
-      </p>
-      <button class="btn-custom border-0">
-        <a href="#daftar_sekolah" class="text-decoration-none"
-          >Daftar Sekarang</a
-        >
-      </button>
-    </div>
-  </div>
-</section>
-<!-- JUMBOTRON END -->
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
 
-<!-- UNIT -->
-<section class="unit-pendaftaran container p-lg-5 mt-4" id="daftar_sekolah">
-  <div class="row mt-4">
-    <h2 class="text-center mb-lg-4">PENDAFTARAN SEKOLAH</h2>
-  </div>
-  <div class="row text-center mt-lg-5 mb-lg-4">
-    <div class="col-lg-4">
-      <img
-        src="{{ url ('frontend/assets/img/YNI/KBIT/logo.jpeg')}}"
-        class="img-fluid"
-        width="200"
-        height="200"
-        alt=""
-      />
-      <p class="fs-3">KBIT</p>
-      <div class="mb-2">
-        <button class="btn-custom btn-red border-0">
-          <a href="" class="text-decoration-none"
-            >Kunjungi Profil</a
-          >
-        </button>
+  <!-- Unit Sekolah -->
+  <section class="py-5 mt-5" id="daftar_sekolah">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="mb-5">Daftar Sekolah</h3>
+        </div>
       </div>
-      <div>
-        <button class="btn-custom btn-red border-0">
-          <a href="{{ route('ppdb_kbit.create') }}" class="text-decoration-none"
-            >Daftar</a
-          >
-        </button>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <img
-        src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}"
-        class="img-fluid"
-        width="200"
-        height="200"
-        alt=""
-      />
-      <p class="fs-3">TKIT 1</p>
-      <div class="mb-2">
-        <button class="btn-custom btn-red border-0">
-          <a href="" class="text-decoration-none"
-            >Kunjungi Profil</a
-          >
-        </button>
-      </div>
-      <div>
-        <button class="btn-custom btn-red border-0">
-          <a href="{{ route('ppdb_tkit1.create')}}" class="text-decoration-none"
-            >Daftar</a
-          >
-        </button>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <img
-        src="{{ url ('frontend/assets/img/YNI/TKIT2/logo.jpg')}}"
-        class="img-fluid"
-        width="200"
-        height="200"
-        alt=""
-      />
-      <p class="fs-3">TKIT 2</p>
-      <div class="mb-2">
-        <button class="btn-custom btn-blue border-0">
-          <a href="" class="text-decoration-none"
-            >Kunjungi Profil</a
-          >
-        </button>
-      </div>
-      <div>
-        <button class="btn-custom btn-blue border-0">
-          <a href="{{ route('ppdb_tkit2.create') }}" class="text-decoration-none"
-            >Daftar</a
-          >
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="row text-center mt-lg-5 mb-lg-4">
-    <div class="col-lg-4">
-      <img
-        src="{{ url ('frontend/assets/img/YNI/SDIT/logo.png')}}"
-        class="img-fluid"
-        width="200"
-        height="200"
-        alt=""
-      />
-      <p class="fs-3">SDIT</p>
-      <div class="mb-2">
-        <button class="btn-custom btn-red border-0">
-          <a href="" class="text-decoration-none"
-            >Kunjungi Profil</a
-          >
-        </button>
-      </div>
-      <div>
-        <button class="btn-custom btn-red border-0">
-          <a href="{{ route('ppdb_sdit.create')}}" class="text-decoration-none"
-            >Daftar</a
-          >
-        </button>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <img
-        src="{{ url ('frontend/assets/img/YNI/SMPIT/logo.png')}}"
-        class="img-fluid"
-        width="200"
-        height="200"
-        alt=""
-      />
-      <p class="fs-3">SMPIT</p>
-      <div class="mb-2">
-        <button class="btn-custom btn-blue border-0">
-          <a href="" class="text-decoration-none"
-            >Kunjungi Profil</a
-          >
-        </button>
-      </div>
-      <div>
-        <button class="btn-custom btn-blue border-0">
-          <a href="{{ route('ppdb_smpit.create')}}" class="text-decoration-none"
-            >Daftar</a
-          >
-        </button>
-      </div>
-    </div>
-
-    <div class="col-lg-4">
-      <img
-        src="{{ url ('frontend/assets/img/YNI/SMAIT/logo.png')}}"
-        class="img-fluid"
-        width="200"
-        height="200"
-        alt=""
-      />
-      <p class="fs-3">SMAIT</p>
-      <div class="mb-2">
-        <button class="btn-custom btn-green border-0">
-          <a href="" class="text-decoration-none"
-            >Kunjungi Profil</a
-          >
-        </button>
-      </div>
-      <div>
-        <button class="btn-custom btn-green border-0">
-          <a href="{{ route('ppdb_smait.create')}}" class="text-decoration-none"
-            >Daftar</a
-          >
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- UNIT END -->
-
-<!-- ALUR PENDAFTARAN -->
-<section class="alur-pendaftaran p-lg-5" id="alur">
-  <div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5 mt-3 text-center">
-      <h1 class="display-5 fw-bold">Alur Pendaftaran</h1>
-      <h1 class="display-5 fw-bold">
-        PPDB Online <span class="ni-font">Nurul 'Ilmi</span>
-      </h1>
-
-      {{-- Roadmap --}}
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col">
-            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">1</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Daftar Online</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Mengisi Data Calon Siswa</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">3</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Transfer Biaya Pendaftaran</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">4</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Tes Wawancara Siswa-Ortu</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">5</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Pengumuman</p>
-                </div>
-              </div>
-              <div class="timeline-step mb-0">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">6</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Daftar Ulang</p>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card card-plain">
+            <div class="card-header p-0 position-relative">
+              <a class="d-block blur-shadow-image">
+                <img src="{{ url ('frontend/assets/img/YNI/KBIT/logo.jpeg')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" width="200" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body px-0">
+              <h5>
+                <a href="" class="text-dark font-weight-bold">KBIT Nurul 'Ilmi</a>
+              </h5>
+              <p>
+                Menjadi generasi Islam cerdas dan mandiri.
+              </p>
+              <a href="{{ route('ppdb_kbit.create') }}" class="text-info text-sm icon-move-right">Daftar Sekarang
+                <i class="fas fa-arrow-right text-xs ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card card-plain">
+            <div class="card-header p-0 position-relative">
+              <a class="d-block blur-shadow-image">
+                <img src="{{ url ('frontend/assets/img/YNI/TKIT1/logo.png')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" width="200" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body px-0">
+              <h5>
+                <a href="" class="text-dark font-weight-bold">TKIT 1 Nurul 'Ilmi</a>
+              </h5>
+              <p>
+                Menjadi taman bermain dan belajar yang menyenangkan dengan pembiasaan  nilai-nilai islami.
+              </p>
+              <a href="{{ route('ppdb_tkit1.create')}}" class="text-info text-sm icon-move-right">Daftar Sekarang
+                <i class="fas fa-arrow-right text-xs ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card card-plain">
+            <div class="card-header p-0 position-relative">
+              <a class="d-block blur-shadow-image">
+                <img src="{{ url ('frontend/assets/img/YNI/TKIT2/logo.jpg')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" width="200" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body px-0">
+              <h5>
+                <a href="" class="text-dark font-weight-bold">TKIT 2 Nurul 'Ilmi</a>
+              </h5>
+              <p>
+                Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
+              </p>
+              <a href="{{ route('ppdb_tkit2.create') }}" class="text-info text-sm icon-move-right">Daftar Sekarang
+                <i class="fas fa-arrow-right text-xs ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      {{-- End Roadmap --}}
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card card-plain">
+            <div class="card-header p-0 position-relative">
+              <a class="d-block blur-shadow-image">
+                <img src="{{ url ('frontend/assets/img/YNI/SDIT/logo.png')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" width="200" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body px-0">
+              <h5>
+                <a href="" class="text-dark font-weight-bold">SDIT Nurul 'Ilmi</a>
+              </h5>
+              <p>
+                Menjadi sekolah dasar yang terbaik yang menerapkan sistem pendidikan islam terpadu.
+              </p>
+              <a href="{{ route('ppdb_sdit.create')}}" class="text-info text-sm icon-move-right">Daftar Sekarang
+                <i class="fas fa-arrow-right text-xs ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card card-plain">
+            <div class="card-header p-0 position-relative">
+              <a class="d-block blur-shadow-image">
+                <img src="{{ url ('frontend/assets/img/YNI/SMPIT/logo.png')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" width="200" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body px-0">
+              <h5>
+                <a href="" class="text-dark font-weight-bold">SMPIT Nurul 'Ilmi</a>
+              </h5>
+              <p>
+                Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli lingkungan.
+              </p>
+              <a href="{{ route('ppdb_smpit.create')}}" class="text-info text-sm icon-move-right">Daftar Sekarang
+                <i class="fas fa-arrow-right text-xs ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card card-plain">
+            <div class="card-header p-0 position-relative">
+              <a class="d-block blur-shadow-image">
+                <img src="{{ url ('frontend/assets/img/YNI/SMAIT/logo.png')}}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" width="200" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body px-0">
+              <h5>
+                <a href="https://smait.ynikoetaikartanagara.com" class="text-dark font-weight-bold">SMAIT Nurul 'Ilmi</a>
+              </h5>
+              <p>
+                Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkarakter, kompetitif dan berwawasan global.
+              </p>
+              <a href="{{ route('ppdb_smait.create')}}" class="text-info text-sm icon-move-right">Daftar Sekarang
+                <i class="fas fa-arrow-right text-xs ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-<!-- ALUR PENDAFTARAN END -->
+  </section>
+
+  <!-- Alur Pendaftaran -->
+  <section class="py-5" id="alur">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 my-auto">
+          <h3>Alur Pendaftaran</h3>
+          <p class="pe-5">Berikut adalah gambaran alur pendaftaran PPDB Online Sekolah Nurul 'Ilmi'.</p>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+          <div class="p-3 info-horizontal">
+            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+              <i class="fas fa-ship opacity-10"></i>
+            </div>
+            <div class="description ps-3">
+              <p class="mb-0">Daftar Online. <br> Melalui link yang sudah disediakan oleh masing-masing sekolah.</p>
+            </div>
+          </div>
+
+          <div class="p-3 info-horizontal">
+            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+              <i class="fas fa-handshake opacity-10"></i>
+            </div>
+            <div class="description ps-3">
+              <p class="mb-0">Mengisi Data Calon Siswa. <br>Melengkapi data calon siswa didalam formulir online.</p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal">
+            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+              <i class="fas fa-hourglass opacity-10"></i>
+            </div>
+            <div class="description ps-3">
+              <p class="mb-0">Transfer Biaya Pendaftaran. <br>Untuk beberapa unit sekolah akan dikenakan biaya pendaftaran.</p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal">
+            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+              <i class="fas fa-hourglass opacity-10"></i>
+            </div>
+            <div class="description ps-3">
+              <p class="mb-0">Tes Wawancara Siswa dan Ortu. <br>Melakukan tes wawancara kepada calon siswa dan orangtua.</p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal">
+            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+              <i class="fas fa-hourglass opacity-10"></i>
+            </div>
+            <div class="description ps-3">
+              <p class="mb-0">Pengumuman. <br>Akan diumumkan melalui masing-masing unit sekolah.</p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal">
+            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+              <i class="fas fa-hourglass opacity-10"></i>
+            </div>
+            <div class="description ps-3">
+              <p class="mb-0">Daftar Ulang. <br>Bagi siswa yang telah diterima, silahkan melakukan daftar ulang.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 @endsection
+

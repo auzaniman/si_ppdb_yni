@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  @include('user_view.includes.navbar_ppdb')
+  @include('user_view.includes.navbar_checkout')
   @yield('content')
   @include('user_view.includes.footer_alt')
 
