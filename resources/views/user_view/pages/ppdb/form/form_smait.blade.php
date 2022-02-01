@@ -13,7 +13,7 @@
 @endsection
 
 @section('content')
-
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
 @if ($errors->any())
 <div class="alert alert-danger">
   <ul>
@@ -424,4 +424,5 @@
 @endauth
 </section>
 <!-- FORM PENDAFTARAN END -->
+</div>
 @endsection

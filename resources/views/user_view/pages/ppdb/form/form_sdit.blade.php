@@ -13,6 +13,7 @@
 @endsection
 
 @section('content')
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
 
 @if (session('status'))
 <div class="alert alert-success" role="alert">
@@ -834,4 +835,5 @@
 @endauth
 </section>
 <!-- FORM PENDAFTARAN END -->
+</div>
 @endsection
