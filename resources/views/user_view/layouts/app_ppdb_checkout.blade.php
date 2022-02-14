@@ -8,6 +8,7 @@
   @stack('before-style')
   {{-- style --}}
   @include('user_view.includes.style_alt')
+  @include('user_view.includes.style')
 
   @stack('after-style')
 

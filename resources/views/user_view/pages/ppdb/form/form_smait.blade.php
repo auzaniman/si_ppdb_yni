@@ -287,7 +287,7 @@ Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkar
                             type="text"
                             id="kk"
                             name="kk"
-                            value=""
+                            value="{{ old('kk') }}"
                           />
                         </div>
                       </div>
