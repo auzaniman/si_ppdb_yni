@@ -114,7 +114,7 @@ Menjadi lembaga pendidikan unggul dan profesional dalam mencetak SDM yang berkar
                 <a href="" class="text-dark font-weight-bold">SMPIT Nurul 'Ilmi</a>
               </h5>
               <p>
-                Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli lingkungan.
+                Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi, serta peduli lingkungan.
               </p>
               <a href="{{ route('ppdb_smpit.create')}}" class="text-info text-sm icon-move-right">Daftar Sekarang
                 <i class="fas fa-arrow-right text-xs ms-1"></i>
