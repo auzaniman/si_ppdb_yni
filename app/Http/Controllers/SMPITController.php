@@ -35,7 +35,7 @@ class SMPITController extends Controller
       $smpit = SMPIT::all();
       $schools = School::all();
 
-      return view('user_view.pages.ppdb.form.form_smpit', [
+      return view('user_view.pages.ppdb.form.formppdb_smpit', [
         'smpit' => $smpit,
         'schools' => $schools,
         ]);
