@@ -94,7 +94,7 @@ Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli
                               <i class="fas fa-ship opacity-10"></i>
                             </div>
                             <div class="description ps-3">
-                              <p class="mb-0"><strong>Pendaftaran Online Gelombang 1</strong> <br> 3 Januari 2022 - 26 Februari 2022</p>
+                              <p class="mb-0"><strong>Pendaftaran Online</strong> <br> 21 Maret 2022 - 14 Mei 2022</p>
                             </div>
                           </div>
                           <div class="p-3 info-horizontal">
@@ -102,7 +102,7 @@ Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli
                               <i class="fas fa-ship opacity-10"></i>
                             </div>
                             <div class="description ps-3">
-                              <p class="mb-0"><strong>Test Tertulis Offline</strong> <br> Rabu, 09 Maret 2022</p>
+                              <p class="mb-0"><strong>Pendaftaran Offline Gelombang 1</strong> <br> 6 April 2022 - 16 April 2022</p>
                             </div>
                           </div>
                           <div class="p-3 info-horizontal">
@@ -110,7 +110,15 @@ Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli
                               <i class="fas fa-ship opacity-10"></i>
                             </div>
                             <div class="description ps-3">
-                              <p class="mb-0"><strong>Tes Baca Quran & Wawancara</strong> <br> 10 Maret 2022 - 12 Maret 2022</p>
+                              <p class="mb-0"><strong>Pendaftaran Offline Gelombang 2</strong> <br> 9 Mei 2022 - 14 Mei 2022</p>
+                            </div>
+                          </div>
+                          <div class="p-3 info-horizontal">
+                            <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                              <i class="fas fa-ship opacity-10"></i>
+                            </div>
+                            <div class="description ps-3">
+                              <p class="mb-0"><strong>Tes Tertulis, Tes Baca Quran & Wawancara</strong> <br> 16 Mei 2022 </p>
                             </div>
                           </div>
                           <div class="p-3 info-horizontal">
@@ -118,7 +126,7 @@ Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli
                               <i class="fas fa-handshake opacity-10"></i>
                             </div>
                             <div class="description ps-3">
-                              <p class="mb-0"><strong>Pengumuman</strong> <br> Sabtu, 19 Maret 2022</p>
+                              <p class="mb-0"><strong>Pengumuman</strong> <br> 18 Mei 2022</p>
                             </div>
                           </div>
                           <div class="p-3 info-horizontal">
@@ -126,7 +134,7 @@ Terwujudnya pribadi yang shaleh dan shalehah, berintelektual tinggi serta peduli
                               <i class="fas fa-hourglass opacity-10"></i>
                             </div>
                             <div class="description ps-3">
-                              <p class="mb-0"><strong>Daftar Ulang</strong> <br> 21 Maret 2022 - 2 April 2022</p>
+                              <p class="mb-0"><strong>Daftar Ulang</strong> <br> 19, 20, 21 Mei 2022 </p>
                             </div>
                           </div>
                         </div>
